@@ -1,0 +1,425 @@
+.xpy-Detailspage {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #fafafa;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 3% 5%;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+header div {
+  width: 6%;
+}
+header div img {
+  width: 100%;
+}
+header div:nth-child(1) {
+  margin-right: 4%;
+}
+header div:nth-child(4) {
+  margin-right: 4%;
+}
+.main {
+  /*2*/
+}
+.main .banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 100px;
+}
+.main .banner .fasf {
+  width: 400%;
+  transform: translateX(-25%);
+}
+.main .banner .fasf li {
+  float: left;
+  width: 25%;
+}
+.main .banner .fasf li a {
+  display: block;
+  width: 100%;
+  margin-bottom: -4px;
+  vertical-align: middle;
+}
+.main .suo_yin {
+  position: absolute;
+  bottom: 10px;
+  left: 46%;
+}
+.main .suo_yin > li {
+  float: left;
+  width: 16px !important;
+  height: 8px;
+  border: 1px solid #fff;
+  border-radius: 40%;
+  margin-right: 5px;
+  background: #000;
+  opacity: .2;
+}
+.main .afgr {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 100px;
+}
+.main .afgr .yjfd {
+  width: 400%;
+  transform: translateX(-25%);
+}
+.main .afgr .yjfd li {
+  float: left;
+  width: 25%;
+}
+.main .afgr .yjfd li a {
+  display: block;
+  width: 100%;
+}
+.main .suo_y {
+  position: absolute;
+  bottom: 10px;
+  left: 42%;
+}
+.main .suo_y > li {
+  float: left;
+  width: 16px !important;
+  height: 8px;
+  border: 1px solid #fff;
+  border-radius: 46%;
+  margin-right: 5px;
+  background: #000;
+  opacity: .2;
+}
+.main .main1 {
+  padding: 3% 2%;
+}
+.main .main1 div img {
+  float: left;
+  width: 3%;
+  margin-right: 1%;
+}
+.main .main1 div p {
+  float: left;
+  font-family: "微软雅黑";
+  font-size: 1%;
+  margin-right: 1%;
+}
+.main .main2 {
+  padding: 3% 5%;
+  margin-bottom: 2%;
+  background-color: #fff;
+}
+.main .main2 .main2-shang {
+  width: 100%;
+}
+.main .main2 .main2-shang .main2-shang-left {
+  width: 70%;
+  border-right: 1px solid #b5b6b5;
+}
+.main .main2 .main2-shang .main2-shang-left p:nth-child(1) {
+  font-family: "微软雅黑";
+  font-size: 100%;
+  color: #212021;
+}
+.main .main2 .main2-shang .main2-shang-left p:nth-child(2) {
+  font-family: "微软雅黑";
+  font-size: 80%;
+  color: #848284;
+}
+.main .main2 .main2-shang .main2-shang-right {
+  width: 30%;
+  text-align: center;
+}
+.main .main2 .main2-shang .main2-shang-right p:nth-child(1) {
+  font-family: "微软雅黑";
+  font-size: 100%;
+  color: #212021;
+}
+.main .main2 .main2-shang .main2-shang-right p:nth-child(2) {
+  font-family: "微软雅黑";
+  font-size: 80%;
+  color: #ff6d5a;
+}
+.main .main2 .main2-shang .main2-shang-he {
+  padding: 14% 0;
+  width: 100%;
+  border-bottom: 1px solid #efebef;
+}
+.main .main2 .main2-shang .main2-shang-he p {
+  width: 50%;
+  font-family: "微软雅黑";
+  font-size: 140%;
+  color: #d60018;
+}
+.main .main2 .main2-shang .main2-shang-he span {
+  width: 20%;
+  display: block;
+  text-align: center;
+  border: 1px solid #101010;
+}
+.main .main2 .main2-shang .main2-shang-he span img {
+  position: relative;
+  top: 2%;
+}
+.main .main2 .main2-xia {
+  width: 100%;
+  padding: 4% 0 0 0;
+}
+.main .main2 .main2-xia p {
+  width: 50%;
+  font-family: "微软雅黑";
+  font-size: 90%;
+  color: #63656b;
+}
+.main .main3 {
+  padding: 3% 5%;
+  width: 100%;
+  margin-bottom: 2%;
+  background-color: #fff;
+}
+.main .main3 .main3-one {
+  width: 100%;
+  padding-bottom: 2%;
+  font-family: "微软雅黑";
+  font-size: 160%;
+  color: #212021;
+}
+.main .main3 .main3-two {
+  width: 100%;
+}
+.main .main3 .main3-two div {
+  padding: 2% 0;
+  width: 100%;
+}
+.main .main3 .main3-two div p:nth-child(1) {
+  float: left;
+  width: 30%;
+  font-family: "微软雅黑";
+  font-size: 100%;
+  color: #212021;
+}
+.main .main3 .main3-two div p:nth-child(2) {
+  float: left;
+  width: 70%;
+  font-family: "微软雅黑";
+  font-size: 100%;
+  color: #212021;
+}
+.main .main4 {
+  width: 100%;
+  padding: 3% 5%;
+  background-color: #fff;
+}
+.main .main4 .main4-one {
+  width: 100%;
+}
+.main .main4 .main4-one p {
+  padding-bottom: 2%;
+  width: 100%;
+  font-family: "微软雅黑";
+  font-size: 160%;
+  color: #212021;
+}
+.main .main4 .main4-one div {
+  width: 100%;
+}
+.main .main4 .main4-one div img {
+  width: 100%;
+}
+.main .main4 .main4-two {
+  width: 100%;
+  text-align: center;
+}
+.main .main4 .main4-two .main4-two-shang {
+  width: 100%;
+  padding: 5% 0 10% 0;
+}
+.main .main4 .main4-two .main4-two-shang p:nth-child(1) {
+  font-family: "微软雅黑";
+  font-size: 160%;
+  color: #212021;
+}
+.main .main4 .main4-two .main4-two-shang p:nth-child(2) {
+  font-family: "微软雅黑";
+  font-size: 100%;
+  color: #101410;
+}
+.main .main4 .main4-two .main4-two-zhong {
+  width: 100%;
+  padding-bottom: 3%;
+}
+.main .main4 .main4-two .main4-two-zhong img {
+  width: 100%;
+}
+.main .main4 .main4-two .main4-two-xia {
+  width: 100%;
+  padding-bottom: 5%;
+}
+.main .main4 .main4-two .main4-two-xia div {
+  float: left;
+  width: 33.3333333333333%;
+}
+.main .main4 .main4-two .main4-two-xia div div {
+  width: 100%;
+  float: none;
+  padding: 0 40.5%;
+}
+.main .main4 .main4-two .main4-two-xia div div img {
+  width: 100%;
+}
+.main .main4 .main4-two .main4-two-xia div > p:nth-child(2) {
+  font-family: "微软雅黑";
+  font-size: 100%;
+  color: #101410;
+}
+.main .main4 .main4-two .main4-two-xia div > p:nth-child(3) {
+  font-family: "微软雅黑";
+  font-size: 80%;
+  color: #736d6b;
+}
+.main .main4 .main4-three {
+  width: 100%;
+  padding: 6% 0;
+  text-align: center;
+  border-top: 2px solid #efefef;
+  background: linear-gradient(to bottom, #f7f3f7, #ffffff);
+}
+.main .main4 .main4-three .main4-three-shang {
+  width: 100%;
+}
+.main .main4 .main4-three .main4-three-shang > p:nth-child(1) {
+  padding-bottom: 3%;
+  font-family: "微软雅黑";
+  font-size: 100%;
+  font-weight: bold;
+  color: #000400;
+}
+.main .main4 .main4-three .main4-three-shang > p:nth-child(2) {
+  padding-bottom: 10%;
+  font-family: "微软雅黑";
+  font-size: 75%;
+  color: #181c18;
+}
+.main .main4 .main4-three .main4-three-shang > div:nth-child(3) {
+  width: 80%;
+  margin-bottom: 5%;
+}
+.main .main4 .main4-three .main4-three-shang > div:nth-child(3) img {
+  width: 100%;
+}
+.main .main4 .main4-three .main4-three-shang > div:nth-child(4) {
+  margin-left: 20%;
+  margin-bottom: 10%;
+  width: 80%;
+}
+.main .main4 .main4-three .main4-three-shang > div:nth-child(4) img {
+  width: 100%;
+}
+.main .main4 .main4-three .main4-three-zhong {
+  width: 100%;
+}
+.main .main4 .main4-three .main4-three-zhong > p:nth-child(1) {
+  padding-bottom: 3%;
+  font-family: "微软雅黑";
+  font-size: 100%;
+  font-weight: bold;
+  color: #000400;
+}
+.main .main4 .main4-three .main4-three-zhong > p:nth-child(2) {
+  padding-bottom: 10%;
+  font-family: "微软雅黑";
+  font-size: 75%;
+  color: #181c18;
+}
+.main .main4 .main4-three .main4-three-zhong > div {
+  width: 100%;
+  padding: 0 3% 10% 3%;
+}
+.main .main4 .main4-three .main4-three-zhong > div img {
+  width: 94%;
+}
+.main .main4 .main4-three .main4-three-xia {
+  width: 100%;
+}
+.main .main4 .main4-three .main4-three-xia div {
+  width: 49%;
+}
+.main .main4 .main4-three .main4-three-xia div div {
+  width: 100%;
+  margin-bottom: 5%;
+}
+.main .main4 .main4-three .main4-three-xia div div img {
+  width: 100%;
+}
+.main .main4 .main4-three .main4-three-xia div > p:nth-child(2) {
+  padding-bottom: 3%;
+  font-family: "微软雅黑";
+  font-size: 100%;
+  font-weight: bold;
+  color: #000400;
+}
+.main .main4 .main4-three .main4-three-xia div > p:nth-child(3) {
+  padding-bottom: 25%;
+  font-family: "微软雅黑";
+  font-size: 75%;
+  color: #636163;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #ebebeb;
+  background-color: #fff;
+}
+footer .z1 {
+  width: 14%;
+  margin: 2%;
+}
+footer .z1 div {
+  margin: 0 20%;
+  width: 60%;
+}
+footer .z1 div img {
+  width: 100%;
+}
+footer .z1 p {
+  text-align: center;
+  font-family: "微软雅黑";
+  font-size: 80%;
+  color: #636563;
+}
+footer .z2 {
+  width: 14%;
+  margin: 2%;
+}
+footer .z2 div {
+  margin: 2% 20%;
+  width: 60%;
+}
+footer .z2 div img {
+  width: 100%;
+}
+footer .z2 p {
+  text-align: center;
+  font-family: "微软雅黑";
+  font-size: 80%;
+  color: #636563;
+}
+footer .y1 {
+  width: 40%;
+  padding: 5.6% 0;
+  background-color: #ff5541;
+}
+footer .y1 p {
+  text-align: center;
+  font-family: "微软雅黑";
+  font-size: 120%;
+  color: #fff;
+}

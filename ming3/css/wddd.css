@@ -1,0 +1,83 @@
+.geren{
+	width: 100%;
+	
+}
+.history{
+	width: 90%;
+	height:50px;
+	/*background: red;*/
+	margin: 0 auto;
+	line-height: 50px;
+}
+.history .cl{
+	
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	
+}
+.history .cl>img{
+	vertical-align:middle;
+	width: 20px;
+	height: 20px;
+}
+.history .cll{
+	font-size: 16px;
+	font-weight: 500;
+	/*float: left;*/
+	color: #000;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+/*选项卡*/
+.xxk{
+	width: 100%;
+	height: 30px;
+	/*background: red;*/
+}
+.xxk>ul{
+	width: 100%;
+	height: 30px;
+}
+.xxk>ul>li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	line-height:30px;
+	font-size: 14px;
+	/*border-bottom: 1px solid #000;*/
+}
+
+
+
+
+
+
+/*页面*/
+.ym{
+	width: 100%;
+	height:700px;
+	background: #fafafa;
+	position: relative;
+}
+.ym .shafa{
+	width: 192px;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	top:10%;
+}
+.ym .shafa>img{
+	margin: 0 auto;
+	display: block;
+}
+.ym .shafa>a{
+	display: block;
+	color: #999;font-size: 14px;
+	text-align: center;
+}
+.ym .shafa>a>span{
+	text-decoration: underline;
+	color: red;
+}

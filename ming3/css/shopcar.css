@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+.wzp_shopcar{
+	width:100%;
+	position: relative;
+	background: #f2f2f2;
+	z-index: 9999;
+}
+.wzp_shopcar .wzp_shop_header{
+	width: 100%;
+	height: 40px;
+	font-size: 18px;
+	margin-bottom: 1px;
+	background: #fff;
+}
+.wzp_shopcar .wzp_shop_header>a{
+	text-decoration: none;
+}
+.wzp_shopcar .wzp_shop_header a>span{
+	font-size: 25px;
+	line-height: 40px;
+	padding: 0 0 0 3%;
+    box-sizing: border-box;
+}
+.wzp_shopcar .wzp_shop_header div{
+	float: left;
+	width: 80%;
+	text-align: center;
+}
+.wzp_shopcar .wzp_shop_header .wzp_edit{
+	color: #999;
+	line-height: 40px;
+	padding: 0 3% 0 0 ;
+}
+.wzp_shopcar .wzp_shop_header div span{
+	line-height: 40px;
+	display: inline-block;
+	color: #666;
+}
+.wzp_shopcar .wzp_shop_header a{
+	display: inline-block;
+	line-height: 40px;	
+	text-align: center;
+	color: #999;
+	float:left;
+	font-size: 14px;
+}
+.wzp_shopcar .wzp_contant1{
+	width: 100%;
+	height: 586px;
+	text-align: center;
+}
+.wzp_shopcar .wzp_contant1 .kx3{
+	width: 100%;
+	height: 200px;
+}
+.wzp_shopcar .wzp_contant1 p{
+	color: #666;
+	margin-top: 10px;
+}
+.wzp_shopcar .wzp_contant1 input{
+	width: 126px;
+	height: 40px;
+	background: #ffa84a;
+	color: #FFFFFF;
+	border-radius: 5px;
+	margin-top: 10px;
+	border: none;
+	outline: none;
+}
+.wzp_shopcar .wzp_bottom{
+	
+	width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    position: fixed;
+    bottom: 50px;
+}
+.wzp_shopcar .wzp_bottom div{
+		display: inline-block;
+		
+}
+.wzp_shopcar .wzp_bottom .bd2 p{
+	margin:0px; 
+	height: 40px;
+    line-height: 40px;
+}
+.wzp_shopcar .wzp_bottom .bd1{
+	float: left;
+	width:30%;
+	font-size: 14px;
+	padding: 0 0 0 5%;
+	line-height: 40px;
+	box-sizing: border-box;
+}
+.wzp_shopcar .wzp_bottom .bd2{
+	width:40%;
+}
+.wzp_shopcar .wzp_bottom .bd2 .p1 .s1{
+	font-size: 18px;
+	color: #545353;
+	padding: 0 0 0 4%;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.wzp_shopcar .wzp_bottom .bd2 .p1 .s2{
+	font-size: 14px;
+	color: #ffa939;
+}
+.wzp_shopcar .wzp_bottom .bd2 .p2{
+	font-size: 10px;
+	color: #b2b0b0;
+}
+.wzp_shopcar .wzp_bottom .bd2 .p2>p{
+	margin: 0px;
+}
+.wzp_shopcar .wzp_bottom .bd3{
+	float: right;
+	width:30%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #ffa939;
+	color:#fff ;
+}

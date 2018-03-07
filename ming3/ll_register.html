@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/ll_login.css">
+	<link rel="stylesheet" href="css/jquery.idcode.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.idcode.js"></script>
+</head>
+<body>
+<!-- .....................注册开始 -->
+	<div class="ll_register">
+		<div class="ll_register_top">
+			<a href="javascript:history.back()">
+			<i class="glyphicon glyphicon-menu-left"></i></a>
+			<h3>注册</h3>
+		</div>
+		<form onsubmit="return yz()">
+			<div class="ll_register_middle">
+				<input type="text" placeholder="请输入11位手机号" class="name1" name="user" id="name1">
+				<span class="ll_user"></span>
+				<input type="password" placeholder="请输入6位密码" class="pass1 name1" name="pass" id="pass1">
+				<span class="ll_user"></span>
+				<div class="get clearfix">
+					<input type="text" placeholder="获取验证码" class="ll_test" name="pass1" id="Txtidcode">
+					<span class="ll_user1"></span>
+					 <span id="idcode">
+					<div id="ehong-code" class="ehong-idcode-val ehong-idcode-val2" href="#" onblur="return false" onfocus="return false" oncontextmenu="return false" onclick="$.idcode.setCode()">
+						<font color="#E69A2A">P</font>
+						<font color="#780320">8</font>
+						<font color="#73C841">J</font>
+						<font color="#18975F">B</font>
+					</div>
+					<span id="ehong-code-tip-ck" class="ehong-code-val-tip" onclick="$.idcode.setCode()">换个验证码?</span>
+					</span>
+				</div>
+			</div>
+			<div class="register_blank"></div>
+			<div class="ll_register_bottom">
+				<input type="button" value="注册" class="sub1">
+			</div>
+		</form>
+	</div>
+</body>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$.idcode.setCode();
+</script>
+</html>
+<script type="text/javascript" src="js/ll_register.js"></script>

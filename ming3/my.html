@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>名品之家</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css" />
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+	</head>
+	<body>
+		<div>
+		<div class="head">
+			<div class="mui-icon-extra mui-icon-extra-sweep head_z" ></div>
+			<div class="head_y">
+				<div class="mui-icon-extra mui-icon-extra-notice y_sz fr"></div>
+			</div>
+			<div class="head_tx">
+				<a href="shezhi.html">
+					<img src="img/mingpin.jpg" class="saffw"/>
+				</a>
+				
+			</div>
+			<div class="text">
+				<a href="#" class="syj_yhm"></a>
+			</div>
+			
+		</div>
+<!--body-->
+		<div class="dh">
+			<div class="dh_z">
+				<div class="tubiao" id="tb1"><a href="gouwucar.html" class="mui-icon-extra mui-icon-extra-cart"></a><span class="sp1">购物车</span><span class="sp2">0</span></div>
+				<div class="tubiao" id="tb2"><a href="#" class="mui-icon mui-icon-star"></a><span class="sp1">收藏</span><span class="sp2">0</span></div>
+				<div class="tubiao" id="tb3"><a href="#" class="mui-icon-extra mui-icon-extra-card"></a><span class="sp1">礼券</span><span class="sp2">15</span></div>
+				<div class="tubiao"><a href="#" class="mui-icon-extra mui-icon-extra-share"></a><span class="sp1">分享奖励</span><span class="sp2">1.00%返利</span></div>
+				
+			</div>
+		</div>
+<!--分割线-->
+        <div class="line"></div>
+<!--我的订单-->
+        <div class="wod">
+        	<div class="dingd">
+        		<a href="javascript:;">我的订单</a>
+        		<a href="#" style="float: right;"><img src="img/yjiantou.png"/ style="width:12px; height:17px;"></a>
+        	</div>
+        	<div class="wliu">
+        		<div class="tubiao"><a href="#" class="mui-icon-extra mui-icon-extra-order"></a><span class="sp1">待付款</span></div>
+				<div class="tubiao"><a href="#" class="mui-icon-extra mui-icon-extra-express"></a><span class="sp1">待收货</span></div>
+				<div class="tubiao"><a href="#" class="mui-icon mui-icon-chatboxes"></a><span class="sp1">代评价</span></div>
+				<div class="tubiao"><a href="#" class="mui-icon-extra mui-icon-extra-trend"></a><span class="sp1">退换/售后</span></div>
+				
+        	</div>
+        </div>
+<!--分割线-->
+        <div class="line"></div>
+<!--我的预约-->
+        <div class="yuyue">
+        		<a href="javascript:;">我的预约</a>
+        		<a href="#" style="float: right;"><img src="img/yjiantou.png"/ style="width:12px; height:17px;"></a>
+        </div>
+<!--分割线-->
+        <div class="line"></div>
+<!--图片-->
+     <!--   <div class="tu"><a href="#"><img src="img/tupian.jpg"/></a></div>-->
+<!--分割线-->
+        <div class="line"></div>
+<!--底部-->
+        <div class="kefu">
+        		<div class="tubiao"><a href="#" class="mui-icon-extra mui-icon-extra-custom"></a><span class="sp1">在线客服</span><span class="sp1" style="font-size: 12px;line-height: 30px;color: #999;">9:00-21:00</span></div>
+				<div class="tubiao"><a href="#" class="mui-icon mui-icon-help"></a><span class="sp1">帮助</span></div>
+				<div class="tubiao"><a href="#" class="mui-icon mui-icon-chat"></a><span class="sp1">意见反馈</span></div>
+				<div class="tubiao"><a href="#" class="mui-icon-extra mui-icon-extra-peoples"></a><span class="sp1">关于我们</span></div>
+				
+        </div>
+        <!--底部-->
+			<nav class="mui-bar mui-bar-tab" style="background: #fff;border-top: 1px solid #ccc;">
+				<div class="t-line">
+					<a class="aui-tab-item" href="index1.html">
+						<span class="mui-icon mui-icon-home" ></span>
+						<span class="mui-tab-label" >首页</span>
+					</a>
+					<a class="aui-tab-item " href="fenlei.html">
+						<span class="mui-icon mui-icon-bars"></span>
+						<span class="mui-tab-label">分类</span>
+					</a>
+					<a class="aui-tab-item mui-active" href="shopcar1.html">
+						<span class="mui-icon-extra mui-icon-extra-cart" style="color: #929292;"></span>
+						<span class="mui-tab-label" style="display: block;    font-size: 12px;color: #929292;">购物车</span>
+					</a>
+					<a class="aui-tab-item" href="my.html">
+						<span class="mui-icon mui-icon-person" style="color: #ff3366;"></span>
+						<span class="mui-tab-label" style="color: #ff3366;">我的</span>
+					</a>
+				</div>
+			</nav>
+			<!--底部结束-->
+      </div>     
+	</body>
+	<script type="text/javascript">
+	var phone=document.querySelector(".syj_yhm");
+	var ssValue=sessionStorage.name;
+	if(ssValue){
+			phone.innerHTML=ssValue	;
+	}else{
+		phone.innerHTML="名品之家";
+	};
+</script>
+		
+	
+	<!--<script type="text/javascript" src="js/geren.js" ></script>-->
+</html>

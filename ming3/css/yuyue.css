@@ -1,0 +1,169 @@
+.geren{
+	width: 100%;
+	
+}
+.history{
+	width: 90%;
+	height:50px;
+	/*background: red;*/
+	margin: 0 auto;
+	line-height: 50px;
+}
+.history .cl{
+	
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	
+}
+.history .cl>img{
+	vertical-align:middle;
+	width: 20px;
+	height: 20px;
+}
+.history .cll{
+	font-size: 16px;
+	font-weight: 500;
+	/*float: left;*/
+	color: #000;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+
+
+/*分割线*/
+.line{
+	width: 100%;
+	height: 20px;
+	background:#fafafa;
+}
+
+
+/*体验*/
+.tijian{
+	width: 100%;
+	height: 150px;
+	border-bottom: 1px solid #999;
+	border-top: 1px solid #999;
+	position: relative;
+}
+
+.biao{
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.biao>img{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+}
+.biao>a{
+	font-size: 12px;
+	color: #000;
+}
+
+
+.tiyan{
+	width: 150px;
+	height: 40px;
+	margin: 0 auto;
+}
+.tiyan .a1{
+	display: block;
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+}
+
+.tiyan .a2{
+	text-align: center;
+	display: block;
+	font-size: 12px;
+	color: red;
+	margin-top: 5px;
+}
+.tiyan .a2>img{
+	vertical-align: middle;
+}
+
+
+
+/*分割线*/
+.line{
+	width: 100%;
+	height: 20px;
+	background:#fafafa;
+}
+
+
+
+/*结束预约*/
+.jies{
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #999;
+	border-top: 1px solid #999;
+}
+
+.jstu{
+	width: 100px;
+	height: 60px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+.jstu>img{
+	width: 20px;
+	height: 20px;
+	display: block;
+	margin: 0 auto;
+}
+
+.jstu>a{
+	display: block;
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

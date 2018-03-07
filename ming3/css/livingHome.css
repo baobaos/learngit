@@ -1,0 +1,177 @@
+.m_livingHome {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fafafa;
+}
+.m_livingHome header {
+  height: 78px;
+  line-height: 78px;
+  padding: 12px 26px;
+  border-top: 1px solid #6d6f6d;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.m_livingHome .main .main1 {
+  margin: 4% 0;
+  padding: 30px 0px;
+  background-color: #fff;
+}
+.m_livingHome .main .main1 .main1-table {
+  height: 30%;
+  line-height: 30%;
+}
+.m_livingHome .main .main1 .main1-table p:nth-child(1) {
+  margin-left: 28px;
+  font-family: "微软雅黑";
+  font-size: 100%;
+  color: #060606;
+  display: block;
+}
+.m_livingHome .main .main1 .main1-table p:nth-child(2) {
+  margin-right: 28px;
+  font-family: "微软雅黑";
+  font-size: 80%;
+  color: #afafaf;
+  display: block;
+}
+.m_livingHome .main .main1 .main1-img {
+  width: 100%;
+  height: 100%;
+  margin-top: 28px;
+  overflow: hidden;
+}
+.m_livingHome .main .main1 .main1-img ul {
+  width: 200%;
+  height: 100%;
+}
+.m_livingHome .main .main1 .main1-img ul li {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 100%;
+  margin: 0 0 0 20px;
+  border: 1px solid #999;
+  border-radius: 20px;
+}
+.m_livingHome .main .main1 .main1-img ul li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+.m_livingHome .main .main1 .main1-img ul li span {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "微软雅黑";
+  font-size: 80%;
+  color: #fff;
+  text-align: center;
+  padding-top: 22.5%;
+  box-sizing: border-box;
+}
+.m_livingHome .main .main2 {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 4%;
+  background-color: #fff;
+}
+.m_livingHome .main .main2 .main2-left {
+  width: 60%;
+}
+.m_livingHome .main .main2 .main2-left img {
+  width: 100%;
+  vertical-align: middle;
+}
+.m_livingHome .main .main2 .main2-right {
+  width: 40%;
+  height: 100%;
+}
+.m_livingHome .main .main2 .main2-right .main2-right-shang {
+  height: 80%;
+  padding: 12% 0;
+}
+.m_livingHome .main .main2 .main2-right .main2-right-shang span {
+  padding: 17% 0 0 10%;
+  display: block;
+  float: left;
+  font-family: "微软雅黑";
+  font-size: 100%;
+  color: #f9543e;
+}
+.m_livingHome .main .main2 .main2-right .main2-right-shang p {
+  display: block;
+  float: left;
+  font-family: "微软雅黑";
+  font-size: 260%;
+  color: #f9543e;
+}
+.m_livingHome .main .main2 .main2-right .main2-right-xia {
+  height: 20%;
+  padding: 0 22%;
+}
+.m_livingHome .main .main2 .main2-right .main2-right-xia input {
+  background-color: #f9543e;
+  font-size: 100%;
+  color: #ffe6e1;
+  padding: 2% 10%;
+  border: 1px solid #d46d5e;
+}
+@media screen and (max-width: 320px) {
+  body,
+  input,
+  select {
+    font-size: 15.5px;
+  }
+}
+@media screen and (min-width: 360px) {
+  body,
+  input,
+  select {
+    font-size: 15.75px;
+  }
+}
+@media screen and (min-width: 400px) {
+  body,
+  input,
+  select {
+    font-size: 17.5px;
+  }
+}
+@media screen and (min-width: 480px) {
+  body,
+  input,
+  select {
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 560px) {
+  body,
+  input,
+  select {
+    font-size: 24.5px;
+  }
+}
+@media screen and (min-width: 600px) {
+  body,
+  input,
+  select {
+    font-size: 26.25px;
+  }
+}
+@media screen and (min-width: 640px) {
+  body,
+  input,
+  select {
+    font-size: 28px;
+  }
+}

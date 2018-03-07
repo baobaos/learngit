@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/Detailspage.css" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css" />
+	</head>
+
+	<body ng-app="app">
+		<div class="xpy-Detailspage" ng-controller="DemoController">
+			<header class="clearfix">
+				<div class="fl">
+					<a href="javascript:history.back()">
+						<img src="img/fhjt.png" />
+					</a>
+
+				</div>
+				<p style="display: block;" class="fl"></p>
+				<div class="fr">
+					<img src="img/fxlj.png" />
+				</div>
+				<div class="fr">
+					<img src="img/fztb.png" />
+				</div>
+			</header>
+			<div class="main">
+				<!--轮播图-->
+				<div class="banner clearfix" id="b06">
+					
+					<div class="mui-slider">
+						<div class="mui-slider-group mui-slider-loop">
+							<!--支持循环，需要重复图片节点-->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="#"><img src="{{buy.comm_pit}}" /></a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#"><img src="{{buy.comm_picture}} " id="shang_pi1"/></a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#"><img src="{{buy.comm_pit}}" id="shang_pi2"/></a>
+							</div>
+							<!--支持循环，需要重复图片节点-->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="#"><img src="{{buy.comm_picture}}" /></a>
+							</div>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+				<!--轮播图end-->
+				<div class="main1 clearfix">
+					<div>
+						<img src="img/xdg.png" alt="">
+						<p>七天无理由退换货</p>
+					</div>
+					<div>
+						<img src="img/xdg.png" alt="">
+						<p>三年质保终身维护</p>
+					</div>
+					<div>
+						<img src="img/xdg.png" alt="">
+						<p>保价180天</p>
+					</div>
+					<div>
+						<img src="img/zjt.png" style="margin-right: 0;" alt="">
+					</div>
+				</div>
+				<div class="main2 clearfix">
+					<div class="main2-shang  clearfix">
+						<div class="main2-shang-left fl">
+							<p>{{buy.comm_name	}}</p>
+							<p>{{buy.comm_ping}}</p>
+						</div>
+						<div class="main2-shang-right fr">
+						<p>数量</p>
+						<p id="num">
+							<button type="button">-</button>
+							<span style="font-size: 20px;">1</span>
+							<button type="button">+</button>
+						</p>
+					</div>
+						<div class="main2-shang-he">
+							<p class="fl">￥{{buy.comm_price}}</p>
+						</div>
+					</div>
+					<!--<div class="main2-xia  clearfix">
+					<p class="fl">请选择规格尺寸</p>
+					<div class="fr">
+						<img src="img/hsxjty.png" alt="">
+					</div>
+				</div>-->
+				</div>
+				<div class="main3 clearfix">
+					<div class="main3-one clearfix">
+						<p class="fl">商品基础信息</p>
+						<div class="fr">
+							<img src="img/hsxjty.png" alt="">
+						</div>
+					</div>
+					<div class="main3-two clearfix">
+						<div class="clearfix">
+							<p>商品风格</p>
+							<p>{{buy.comm_style}}</p>
+						</div>
+						<div class="clearfix">
+							<p>主材</p>
+							<p>{{buy.comm_main}}</p>
+						</div>
+						<div class="clearfix">
+							<p>辅材</p>
+							<p>{{buy.comm_fu}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="main4 clearfix">
+					<div class="main4-one clearfix">
+						<p>商品详情</p>
+						<div><img src="img/mpjj.png" alt=""></div>
+					</div>
+					<div class="main4-two clearfix">
+						<div class="main4-two-shang  clearfix">
+							<p>电视柜</p>
+							<p>意式设计经典电视柜</p>
+						</div>
+						<div class="main4-two-zhong  clearfix">
+							<img src="img/dsg.png" alt="">
+						</div>
+						<div class="main4-two-xia clearfix">
+							<div class="clearfix">
+								<div>
+									<img src="img/zc.png" alt="">
+								</div>
+								<p class="wz1">主材</p>
+								<p>EO级环保板材</p>
+							</div>
+							<div class="clearfix">
+								<div>
+									<img src="img/fc.png" alt="">
+								</div>
+								<p class="wz1">辅材</p>
+								<p>烤漆五金脚架</p>
+							</div>
+							<div class="clearfix">
+								<div>
+									<img src="img/tz.png" alt="">
+								</div>
+								<p class="wz1">涂装</p>
+								<p>环保水性漆</p>
+							</div>
+						</div>
+					</div>
+					<div class="main4-three clearfix">
+						<div class="main4-three-shang clearfix">
+							<p>追求高雅的生活气息</p>
+							<p>创造自然、简朴、高雅的氛围<br/>跳出常规的特别设计，表现更广的生活气息</p>
+							<div>
+								<img src="img/shqx1.png" alt="">
+							</div>
+							<div>
+								<img src="img/shqx2.png" alt="">
+							</div>
+						</div>
+						<div class="main4-three-zhong clearfix">
+							<p>演绎简约轻奢风</p>
+							<p>以优雅沉着的深色为基调，再加上跳脱的黄铜<br/>深沉的颜色亦掩盖不了它的锋芒</p>
+							<div>
+								<img src="img/shqx3.png" alt="">
+							</div>
+						</div>
+						<div class="main4-three-xia clearfix">
+							<div class="fl">
+								<div>
+									<img src="img/shqx4.png" alt="">
+								</div>
+								<p>铜色柜脚</p>
+								<p>沉稳大气的设计感与时尚<br/>亮眼的黄铜结合更显品味</p>
+							</div>
+							<div class="fr">
+								<div>
+									<img src="img/shqx5.png" alt="">
+								</div>
+								<p>大容量储物</p>
+								<p>开合与抽拉的抽屉<br/>满足不同物品的收纳</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="z1 fl clearfix">
+					<div>
+						<img src="img/wjxtb.png" alt="">
+					</div>
+					<p>收藏</p>
+				</div>
+				<div class="z2 fl clearfix">
+					<div>
+						<img src="img/xgwc.png" alt="">
+					</div>
+					<p>购物车</p>
+				</div>
+				<div class="y1 fr clearfix" id="ajax_get">
+					<p>加入购物车</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/angular-route.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+		//获得slider插件对象
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+			interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
+		});
+		
+		var jian=document.querySelector('#num button:nth-child(1)');
+        var jia=document.querySelector('#num button:nth-child(3)');
+        var shu=document.querySelector('#num span:nth-child(2)');
+        jian.onclick=function(){
+        	
+        	if(shu.innerText<=0){
+  			shu.innerText=0;
+  		}else{
+  			shu.innerText--;
+       }
+        }
+        jia.onclick=function(){
+        	
+        	if(shu.innerText>=99){
+  			shu.innerText=99;
+  		}else{
+  			shu.innerText++;
+       }
+        }
+        
+	</script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/controller.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>名品之家</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/shopcar.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css" />
+		<link rel="stylesheet" type="text/css" href="css/shopcar1.css">
+		<link rel="stylesheet" href="css/modal.css" />
+	</head>
+	<style>
+		[v-cloak] {
+			display: none;
+		}
+		
+		;
+		li {
+			list-style: none;
+		}
+	</style>
+
+	<body>
+		<div class="wzp_shopcar" id="app" v-cloak>
+			<div class="wzp_shop_header clearfix">
+				<a href="javascript:history.back()"><span class="mui-icon mui-icon-undo fl"></span></a>
+				<div><span>购物车</span></div>
+				<span class="wzp_edit">编辑</span>
+			</div>
+			<div class="wzp_contant1" id="home">
+				<div class="kx3"></div>
+				<img src="img/kong_cart.png">
+				<p>还没有挑到喜欢的家具吗？</p>
+				<p>联系家具顾问帮忙找下！</p>
+				<input type="button" value="去逛逛">
+			</div>
+			<ul class="wzp_contant1" id="home2">
+				<li class="wzp_car" v-for="item in productList">
+					<a class="wzp_check fl" v-bind:class="{'check':item.checked}" @click="selectProduct(item)"></a>
+					<div class="fl wzp_pic"><img v-bind:src="item.shop_picture"></div>
+					<div class="fl wzp_car_con">
+						<div>{{item.shop_name}}</div>
+						<div>{{item.shop_xi}}</div>
+						<div class="wzp_num clearfix">
+							<span class="fl" @click="changeMoney(item,-1)">-</span>
+							<span class="fl">{{item.productQuantity}}</span>
+							<span class="fl" @click="changeMoney(item,1)">+</span>
+						</div>
+					</div>
+					<div class="wzp_price">
+						
+						<span>￥{{item.shop_price}}</span>
+					</div>
+					<div class="wzp_del mui-icon mui-icon-closeempty" @click="delConfirm(item)"></div>
+				</li>
+			</ul>
+			<div class="wzp_bottom  clearfix">
+				<div class="bd1">
+					<a href="javascript::" class="wzp_check fl" v-bind:class="{'check':checkAllFlag}" @click="checkAll(true)"></a>全选</div>
+				<div class="bd2">
+					<p class="p1">
+						<span class="s1">合计：</span><span class="s2">￥{{totalMoney}}</span>
+					</p>
+					
+				</div>
+				<div class="bd3">
+					<input type="button" style="border: none;padding: 0;">去结算
+				</div>
+			</div>
+			
+			<div class="md-modal modal-msg md-modal-transition" id="showModal" v-bind:class="{'md-show':delFlag}">
+				<div class="md-modal-inner">
+					<div class="md-top">
+						<button class="md-close" @click="delFlag=false">关闭</button>
+					</div>
+					<div class="md-content">
+						<div class="confirm-tips">
+							<p id="cusLanInfo">你确认删除此订单信息吗?</p>
+						</div>
+						<div class="btn-wrap col-2">
+							<button class="btn btn--m" id="btnModalConfirm" @click="delProduct()">Yes</button>
+							<button class="btn btn--m btn--red" id="btnModalCancel" @click="delFlag=false">No</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--底部-->
+			<nav class="mui-bar mui-bar-tab" style="background: #fff;border-top: 1px solid #ccc;">
+				<div class="t-line">
+					<a class="aui-tab-item" href="index1.html">
+						<span class="mui-icon mui-icon-home" ></span>
+						<span class="mui-tab-label" >首页</span>
+					</a>
+					<a class="aui-tab-item " href="fenlei.html">
+						<span class="mui-icon mui-icon-bars" ></span>
+						<span class="mui-tab-label" >分类</span>
+					</a>
+					<a class="aui-tab-item mui-active" href="shopcar1.html">
+						<span class="mui-icon-extra mui-icon-extra-cart" ></span>
+						<span class="mui-tab-label" style="display: block;    font-size: 12px;">购物车</span>
+					</a>
+					<a class="aui-tab-item" href="my.html">
+						<span class="mui-icon mui-icon-person"></span>
+						<span class="mui-tab-label">我的</span>
+					</a>
+				</div>
+			</nav>
+			<!--底部结束-->
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/shop.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/vue.min.js"></script>
+	<script type="text/javascript" src="js/vue-resource.js"></script>
+	<script type="text/javascript" src="js/shopcar.js"></script>
+    <script type="text/javascript" src="js/mui.min.js"></script>
+</html>

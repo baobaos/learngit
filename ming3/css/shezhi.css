@@ -1,0 +1,237 @@
+.geren{
+	width: 100%;
+	
+}
+.history{
+	width: 90%;
+	height:50px;
+	/*background: red;*/
+	margin: 0 auto;
+	line-height: 50px;
+}
+.history .cl{
+	
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	
+}
+.history .cl>img{
+	vertical-align:middle;
+	width: 20px;
+	height: 20px;
+}
+.history .cll{
+	font-size:18px;
+	font-weight: 500;
+	/*float: left;*/
+	color: #000;
+	display: inline-block;
+	margin-left: 30px;
+}
+/*分割线*/
+.line{
+	width: 100%;
+	height: 10px;
+	background:#fafafa;
+}
+
+
+
+/*个人信息*/
+.grxx{
+	width: 100%;
+}
+.grxx_{
+	width: 90%;
+	margin: 0 auto;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.grxx_zi{
+	display: inline-block;
+	height: 40px;
+	font-size: 12px;
+	margin-right: 10px;
+	
+}
+.grxx_zi>a{
+	line-height: 40px;
+	color: #000;
+}
+.y_jt3{
+	display: inline-block;
+	float: right;
+	line-height: 40px;
+	
+}
+
+.number{
+	display: inline-block;
+	height: 40px;
+	margin-right: 10px;
+	
+	float: right;
+	font-size: 12px;
+	
+}
+.number>a{
+	line-height: 40px;
+	color: #999;
+}
+
+
+/*分割线*/
+.line{
+	width: 100%;
+	height: 10px;
+	background:#fafafa;
+}
+
+
+
+/*退出账号*/
+.tchu{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #fafafa;
+}
+.tchu>a{
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	color: red;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shezhi.css"/>
+		
+	</head>
+	<body>
+		<div> 
+			<div class="geren">
+	       	 <div class="history">
+	       	 	<a href="javascript:history.back()" class="cl">
+	       	 		<img src="img/fhjt.png"/>
+	       	 	</a>
+	       	 	<a href="#" class="cll">设置</a>
+	       	 </div>
+	     </div>
+<!--分割线-->
+        <div class="line"></div>
+<!--个人信息-->
+        <div class="grxx" id="gr">
+        	<div class="grxx_" style="border: none;">
+        		<div class="grxx_zi">
+        			<a href="#">个人信息</a>
+        		</div>
+        		<div class="y_jt3">
+	       			<img src="img/yjiantou.png"/ style="width: 5px;height: 10px;">
+	       		</div>
+	       		<div class="number" id="num">
+	       			<a href="new_file.html">完整度31%</a>
+	       		</div>
+        	</div>
+        </div>
+<!--分割线-->
+        <div class="line"></div>
+<!--清除缓存-->
+        <div class="grxx">
+        	<div class="grxx_">
+        		<div class="grxx_zi">
+        			<a href="#">清除缓存</a>
+        		</div>
+        		<div class="y_jt3">
+	       			<img src="img/yjiantou.png"/ style="width: 5px;height: 10px;">
+	       		</div>
+	       		<div class="number">
+	       			<a href="#">0KB</a>
+	       		</div>
+        	</div>
+        </div>
+<!--应用评分-->
+        <div class="grxx">
+        	<div class="grxx_">
+        		<div class="grxx_zi">
+        			<a href="#">应用评分</a>
+        		</div>
+        		<div class="y_jt3">
+	       			<img src="img/yjiantou.png"/ style="width: 5px;height: 10px;">
+	       		</div>
+	       		
+        	</div>
+        </div>
+<!--当前版本-->
+        <div class="grxx">
+        	<div class="grxx_" style="border: none;">
+        		<div class="grxx_zi">
+        			<a href="#">当前版本</a>
+        		</div>
+        		<div class="y_jt3">
+	       			<img src="img/yjiantou.png"/ style="width: 5px;height: 10px;">
+	       		</div>
+	       		<div class="number">
+	       			<a href="#">V4.4.1</a>
+	       		</div>
+        	</div>
+        </div>
+<!--分割线-->
+        <div class="line" style="height: 25px;"></div>
+<!--退出账号-->
+        <div class="tchu">
+        	<a href="#" id="tui">退出账号</a>
+        </div>
+        
+		</div>
+	</body>
+<!--<script type="text/javascript" src="js/geren.js" ></script>-->
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+   $("#tui").on("click",function(){
+// 	 $.ajax({
+//  	type:"post",
+//  	url:"php/clear.php",
+//  	success:function(data){
+//  		if(data==1){
+//  			location.href="Verification.html";
+//  		}
+//  	}
+      
+//  });
+      sessionStorage.id=null;
+      sessionStorage.name=null;
+      location.href="Verification.html";
+   })
+  
+
+
+</script>
+</html>

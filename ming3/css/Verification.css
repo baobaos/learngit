@@ -1,0 +1,110 @@
+.sjyz-Verification {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  padding: 3% 4%;
+}
+header div {
+  width: 6%;
+}
+header div img {
+  width: 100%;
+}
+.main {
+  width: 100%;
+  padding: 5% 10%;
+}
+.main .main1 {
+  width: 100%;
+}
+.main .main1 p {
+  font-family: "微软雅黑";
+  font-size: 120%;
+  font-weight: bold;
+  color: #0e0e0e;
+}
+.main .main1 div {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 3%;
+}
+.main .main1 div img {
+  width: 100%;
+}
+.main form {
+  width: 100%;
+  margin-top: 10%;
+}
+.main form .sjhm {
+  width: 100%;
+  padding: 3% 5%;
+  background-color: #f7f7f7;
+  outline: none;
+}
+.main form .hqyzm {
+  width: 100%;
+  margin-top: 5%;
+}
+.main form .hqyzm input {
+  float: left;
+  width: 100%;
+  padding: 3% 5%;
+  background-color: #f7f7f7;
+  outline: none;
+}
+.ll_user {
+    position: relative;
+    left: 12px;
+    font-size: 13px;
+}
+.main form .hqyzm>span {
+  position: relative;
+    left: 12px;
+    font-size: 13px !important;
+    background: #fff;
+}
+.main form .ty {
+  width: 100%;
+  font-family: "微软雅黑";
+  font-size: 80%;
+  color: #63666b;
+  margin-top: 3%;
+}
+.main form .ty .dg {
+  width: 5%;
+  height: 5%;
+  border: 1px solid #ddd;
+}
+.main form .ty > a {
+  font-family: "微软雅黑";
+  font-size: 13px;
+  color: #63666b;
+  display: block;
+    float: right;
+}
+.main form .dl {
+  width: 100%;
+  padding: 3% 5%;
+  margin-top: 20%;
+  color: #fff;
+}
+.main .dsfdl {
+  width: 100%;
+  margin-top: 16%;
+}
+.main .dsfdl img {
+  width: 100%;
+}
+.main .wxtb {
+  width: 10%;
+  margin-top: 5%;
+  margin-left: 45%;
+}
+.main .wxtb img {
+  width: 100%;
+}

@@ -1,0 +1,144 @@
+.xinpin_container{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	
+}
+.xinpin_head{
+	padding:  2.5%;
+	padding-bottom: 0;
+	background: #fff;
+}
+.xinpin_jian{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.shadow{
+	width: 100%;
+	height: 2px;
+	border-bottom: 1px solid gainsboro;
+}
+.xinpin_jian span{
+	font-size: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #ccc;
+}
+.red{
+	color: red;
+}
+.xinpin_jian p{
+	margin-left: 20px;
+	display: inline-block;
+	font-size: 21px;
+	font-weight: 600;
+	font-family: "微软雅黑";
+}
+.xinpin_nav{
+text-align: center;
+border: 2px solid white;
+}
+.xinpin_nav span{
+	padding: 0 3%;
+	
+}
+.xinpin_nav_left{
+	width: 50%;
+}
+
+.red_border{
+	border-bottom: 2px solid red;
+}
+.xinpin_nav_right{
+	width: 50%;
+}
+
+.xp_main {
+    width: 100%;
+    background-color: #F7F7F7;
+    padding-top: 2%;
+}
+.main_xinpin {
+	width: 45%;
+	margin: 0 2.5%;
+	font-size: 12px;
+	color: red;
+}
+.main_xinpin img{
+	width: 100%;
+}
+.main_xinpin p{
+	font-size: 16px;
+	color: black;
+}
+.main_xinpin span{
+	color: gray;
+	display: block;
+}
+
+/*==================================================本周小物*/
+.xinpin_container{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	
+}
+.xinpin_nav{
+text-align: center;
+border: 2px solid white;
+}
+.xinpin_nav span{
+	padding: 0 3%;
+	
+}
+.xinpin_nav_left{
+	width: 50%;
+}
+
+.red_border{
+	border-bottom: 2px solid red;
+}
+.xinpin_nav_right{
+	width: 50%;
+}
+.xiaowu_mian{
+	width: 100%;
+    margin-top: 10px;
+	background-color: #F7F7F7;
+}
+.xiaowu_mian .main_xiaowu{
+	width: 100%;
+}
+.xiaowu_mian .main_xiaowu img{
+	width: 50% !important;
+	margin:0 5% 4% 4% !important;
+}
+.xiaowu_mian .main_xiaowu .xiaowu_text{
+	color: darkgray;
+}
+.xiaowu_mian .main_xiaowu .xiaowu_text p{
+	color: black;
+}
+.xiaowu_mian .main_xiaowu .xiaowu_text span{
+	margin: 4% 0;
+}
+.xiaowu_mian .main_xiaowu .xiaowu_text .xw_1{
+	display: block;
+}
+.xiaowu_mian .main_xiaowu .xiaowu_text .xw_2{
+	color: red;
+}
+.xiaowu_mian .main_xiaowu .xiaowu_text .xw_3{
+	text-decoration: line-through;
+}
+.xiaowu_mian .main_xiaowu .xiaowu_text .xw_4{
+	padding: 2% 3%;
+	background-color: red;
+	text-align: center;
+	color: white;
+	margin-top: 5%;
+}
