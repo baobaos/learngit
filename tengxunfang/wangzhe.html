@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/wangzhe.css"/>
+		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--nav-->
+		<div class="site_head">
+			<div class="head_inner parent">
+				<a href="#" class="link_logo fl"></a>
+				<div class="channel_area fl parent">
+					<a href="index.html" class="channel_home fl" style=" padding-left: 18px;">
+						<img src="img/shouye.png"/>
+						<span>首页</span>
+					</a>
+					<a href="#" class="channel_home fl">
+						<img src="img/pindao.png"/>
+						<span>频道</span>
+						
+					</a>
+					
+				</div>
+				<div class="mod_search fl">
+						<form action="" class="searchForm">
+							<div class="search_inner">
+								<div class="search_keywords">
+									<input type="text"  value="爸爸去哪儿 第5季"    onclick="this.value=''" onblur="this.value='爸爸去哪儿 第5季'"/>				    
+								</div>
+								<button class="search_btn">	
+									<span class="sou"></span>
+									<span>全网搜</span>
+								</button>
+								<a href="javascript:;" class="btn_search_hot">
+								 	<span></span>
+								 	热搜榜
+								 </a>   
+							</div>
+						</form>
+					</div>
+					<!--快捷登录-->
+					<div class="mod_quick fr parent">
+						<div class="quick_vip fl">
+							<a href="dasizhang.html">
+								<span class="icon_vip_golden">
+									<img src="img/icon_quick_vip.png"/>
+								</span>
+								<span class="text" style="color: #ffcf5d;">VIP</span>								
+							</a>
+						</div>
+						<div class="quick_vip fl">
+							<a href="#">
+								<span class="icon_vip_golden" style="background: url(img/ico_6b3106e.png) no-repeat 0 -60px;">
+									
+								</span>
+								<span class="text">看过</span>								
+							</a>
+							<img src="img/kanguo_03.png" class="erkan"/>
+						</div>
+						<div class="quick_vip fl">
+							<a href="#">
+								<span class="icon_vip_golden" style="background: url(img/ico_6b3106e.png) no-repeat 0 -100px;">
+									
+								</span>
+								<span class="text">上传</span>								
+							</a>
+						</div>
+						<div class="quick_vip fl">
+							<a href="#">
+								<span class="icon_vip_golden" style="background: url(img/ico_6b3106e.png) no-repeat 0 -80px;">									
+								</span>
+								<span class="text">客户端</span>								
+							</a>
+							<img src="img/kehu_03.png" class="erkehu"/>
+						</div>
+						<div class="quick_user fl">
+							<a href="#">
+								<img src="img/avatar.png"/>
+							</a>
+						</div>
+					</div>
+					<!--快捷登录结束-->
+			</div>
+		</div>
+		<!--nav结束-->
+		<div class="jimu_background">
+			<div class="jimu_module">
+				<img src="img/erwei.png"/>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="site_footer">
+			<div class="footer_inner">
+				<div class="mod_footer_contentinfo">
+				<div class="mod_footer">
+					<div class="footermenu">
+						<a href="#">关于腾讯</a>
+						<span>|</span>
+						<a href="#">About Tencent</a>
+						<span>|</span>
+						<a href="#">服务条款</a>
+						<span>|</span>
+						<a href="#">广告服务</a>
+						<span>|</span>
+						<a href="#">腾讯招聘</a>
+						<span>|</span>
+						<a href="#">客服中心</a>
+						<span>|</span>
+						<a href="#">网站导航</a>
+					</div>
+					<div class="footermenu">
+						<span>Copyright © 1998 - </span>
+						<span> Tencent.  </span>
+						<a href="#">All Rights Reserved.</a>
+					</div>
+					<div class="footermenu">
+						<span>腾讯公司  </span>
+						<a href="#">版权所有</a>
+						<a href="#">腾讯网络文化经营许可证</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部结束-->
+		<div class="mod_fiexdtool">
+			<a href="javascript:;" class="ft_cell" id="icon_text">
+				<img src="img/dingbu.jpg" class="icon_lg"/>
+				<span class="icon_text" id="icon_text">返回顶部</span>
+			</a>
+			<a href="javascript:;" class="ft_cell">
+				<img src="img/yijian.jpg" class="icon_lg"/>
+				<span class="icon_text" >意见反馈</span>
+			</a>
+		</div>
+		<!--挂件-->
+		<div class="fixed_box">
+			<a href="shouye.html">
+			<img src="img/logo3.png"/>
+			</a>
+		</div>
+	</body>
+	<script type="text/javascript">
+		
+				$(window).scroll(function(){	
+
+					var scheight=$('body').scrollTop();	
+					console.log(scheight)
+					if(scheight>600){
+						$(".site_head").css({
+						 "position":"fixed",
+						 "top":0,
+						 "background-color":"#000"
+						});
+					}else{
+						$(".site_head").css({
+						 "position":"absolute",
+						 "top":0,
+						 "background-color":""
+						});
+					}
+			});	
+					
+		    ////回到顶部点击事件
+		    var gert=document.getElementById("icon_text");
+gert.onclick=function(){
+		
+		var timer=setInterval(function(){
+			//获取滚动条滚动高度
+		var height=document.body.scrollTop||document.documentElement.scrollTop;	
+			//设置速度
+			var speed=height/10;
+//			设置滚动条滚动高度
+			document.body.scrollTop=height-speed;
+			document.documentElement.scrollTop=height-speed;
+			if(height==0){
+				clearInterval(timer);
+			}
+			
+			
+		},30);
+
+
+};
+	</script>
+</html>

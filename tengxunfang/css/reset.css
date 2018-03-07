@@ -1,0 +1,42 @@
+
+ul,body,h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: #202020;
+	font-size: 14px;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.parent:after{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+image{
+	border: none;
+}
+figure,figcaption,article,aside,section,header{
+	display: block;
+}
+input{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+dl,dd{
+	margin: 0;
+}
+/*input::-ms-clear{
+	display: none;
+}*/
