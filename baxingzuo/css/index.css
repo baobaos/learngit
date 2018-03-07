@@ -1,0 +1,227 @@
+header{width: 100%;height: 117px;}
+header .head{width:1200px ;height: 117px;margin: 0 auto;}
+.head_left{width: 430px;height: 60px;}
+.head_mid{width: 420px;height: 100px;margin-left: 150px;}
+.head_mid a{color:#585858;}
+.head_mid ul li{float: left;padding:55px 0 0 25px;margin-right:20px;position: relative;height: 62px;}
+.head_mid li:hover .menu{display: block;}
+.menu{width: 680px;height: 440px;background: white;z-index: 2000;left: -180px;top: 100px;display: none;
+position: absolute;padding: 50px 10px 10px 10px;}
+.menu dd{font-size: 18px;color: #85d4d9;height: 30px;line-height: 30px;}
+.menu dl{margin:0 15px 15px 15px;width: 300px;height: 82px;float: left;}
+.menu dt{font-size: 14px;height: 26px;line-height: 26px;}
+.menu dt a{display: inline-block;padding-right: 20px;}
+.menu dt a:hover{text-decoration: underline;color: #85d4d9;}
+a{
+	    color: #000000 !important;
+}
+.a_one{display: block;position: relative;margin-right: 15px;}
+.jiao{position: absolute; border-left: 5px solid transparent;border-right: 5px solid transparent;
+border-top: 5px solid #585858;right: -15px;top: 8px;}
+.head_right{    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #000;
+    padding-left: 35px;
+    margin-top: 52px;
+    margin-right: 20px;background: url(../img/route_sprites.png) -5px -775px;}
+/*头部结束*/
+.leck{width: 100%;height: 600px;}
+* { padding: 0; margin: 0; list-style: none; }
+/************************样式区。原本都打算写到JS里面的。不过这玩意改的比较多。新手改CSS没啥问题我就写在这了*****************************************/
+/*  修改输出屏大小  */
+.banner {/*  修改输出屏大小  */ width: 100%; height: 530px; position: relative; margin-left: auto; margin-right: auto;overflow: hidden; }
+.banner .img {position: absolute; left: 0px; top: 0; overflow: hidden;height: 530px;}
+.banner .img li { float: left;height: 530px;}
+.banner .img li a{display: block;width: 100%;height: 530px;}
+/*/ 修改图片大小 /*/
+.banner .img img { width: 550px; }
+/*/ 小圆圈 /*/
+.banner .num { position: absolute; width: 100%; bottom: 10px; left: 0; text-align: center; font-size: 0px; }
+.banner .num li { width: 10px; height: 10px; background: #888; border-radius: 50%; display: inline-block; margin: 0 3px; cursor: pointer; }
+.banner .num li.on { background: #F60; }
+/*/ 按钮 /*/
+.banner .btn { width: 65px; height: 115px;  position: absolute; top:207.5px;cursor: pointer; }
+.banner .btn_l { left: 0; background:url(../images/slider_control.png) -25px -3px;left: 30px;}
+.banner .btn_r { right: 0;background:url(../images/slider_control.png) -213px -3px;right: 30px; }
+/*/ 第一个轮播 / 原本有固定样式。所以第二个轮播我就没写 */
+#ban1 .banner { width: 100%; height: 600px ;}
+
+.li01{background: url(../images/shou_lunb_01.jpg) center no-repeat;}
+.li02{background: url(../images/shou_lunb_02.jpg) center no-repeat;}
+.li03{background: url(../images/shou_lunb_03.jpg) center no-repeat;}
+.li04{background: url(../images/shou_lunb_04.jpg) center no-repeat;}
+.li05{background: url(../images/shou_lunb_05.jpg) center no-repeat;}
+/*轮播图结束*/
+article{width: 100%;}
+.art{width: 1200px;margin: 0 auto;margin-top: 80px;position: relative;}
+.art_p{font-size: 60px;text-align: center;width: 248px;margin: 0 auto;}
+.art_top{width: 248px;height: 21px;margin: 0 auto;letter-spacing: 15px;}
+.art_mid{height: 400px;padding: 40px 0 0 0;width: 1000px;margin: 0 auto;}
+.art_mid_son{width: 150px;margin: 0 50px 60px 50px;height: 141px;}
+.art_mid_top{position: absolute;top: 250px;left: 100px;}
+.art_mid_bot{position: absolute;top: 400px;left: 100px;}
+.art_mid_son div{width: 105px;height: 105px;margin: 0 auto;}
+.art_ms01{background: url(../img/service_ico.png) -8px 5px;}
+.art_ms02{background: url(../img/service_ico.png) -148px 5px;}
+.art_ms03{background: url(../img/service_ico.png) -272px 5px;}
+.art_ms04{background: url(../img/service_ico.png) -380px 7px;}
+.art_ms05{background: url(../img/service_ico.png) -8px -97px;}
+.art_ms06{background: url(../img/service_ico.png) -148px -97px;}
+.art_ms07{background: url(../img/service_ico.png) -266px -94px;}
+.art_ms08{background: url(../img/service_ico.png) -388px -94px;}
+.art_mid_son p{width: 150px;height: 21px;line-height: 21px;margin-top: 15px;text-align: center;}
+/*服务结束*/
+section{width: 100%;overflow: hidden;}
+.set{width: 1200px;height: 1059px;margin: 0 auto;}
+.set_top{width: 1200px;height: 66px;padding: 60px 0 60px 0;text-align: center;font-size: 60px;}
+.set_mid{width: 1200px;height:750px;position: relative;}
+.set_mid div{position: absolute;font-size: 40px;text-align: center;line-height: 50px;}
+.set_mid div a{display: block;position: relative;}
+.ser{height: 52px;color: white;top:50%;margin-top: -26px;width: 100%;}
+.set_mid_so1{top: 0;left: -100px;}
+.set_mid_so2{top: 0;right: -100px;}
+.set_mid_so3{bottom: -100px;left: 0;}
+.set_mid_so4{right: 410px;bottom: -100px;}
+.set_mid_so5{bottom:-100px;right: 0;}
+.set_bot{width: 100%;padding-bottom: 50px;height: 43px;line-height: 41px;text-align: center;}
+.set_bot a{display: block;width: 258px;height: 41px;margin: 0 auto;border: 1px solid #e6e6e6;color: #7f7f7f;}
+/*热门目的地结束*/
+.part{width: 100%;}
+.part_par{width: 1200px;overflow: hidden;height:408px ;}
+.par_mom{width: 2000px;height:408px ;}
+.part_son{width: 500px;height: 300px;}
+.part_son_op{width: 500px;height: 300px;}
+.part_mid{width: 1200px;margin: 0 auto;height: 1092px;}
+.part_mid_top{width: 100%;text-align: center;height: 66px;line-height: 66px;font-size: 50px;padding: 60px 0;}
+.part_one{width: 100%;height: 906px;position: relative;}
+.part_one_top{width:1200px;height:408px ;}
+.part_one_bot{width:1200px;height:408px ;}
+
+.sub a{display: block;color: white;width: 100%;height: 100%;}
+
+.vic_bla{width:0px;height: 0px;border-radius: 50%;position: absolute;transition: all 0.5s;
+bottom: 50%;left: 50%;background: black;filter:alpha(opacity=50);opacity: 0.5;}
+.sub_mid_bot >div:hover .vic_bla{width: 100%;height: 100%;bottom: 0;left: 0;}
+
+.sub_mid{width: 1200px;height: 520px;margin: 0 auto;}
+.sub_mid_top{text-align: center;font-size: 50px;font-weight: 100;padding: 60px 0;}
+.sub_mid_bot{position: relative;height: 254px;}
+.sub_mid_bot >div{width: 265.5px;height: 254px;border-radius: 50%;position: relative;}
+.sub_mid_bot_o{background: url(../img/s1.jpg) center;margin-right: 46px;}
+.sub_mid_bot_t{background: url(../img/s2.jpg) center;margin-right: 46px;}
+.sub_mid_bot_h{background: url(../img/s3.jpg) center;margin-right: 46px;}
+.sub_mid_bot_f{background: url(../img/s4.jpg) center;}
+.vic_nam{height: 30px;text-align: center;line-height: 30px;z-index: 100;font-size: 24px;bottom: 50px;position: absolute;width: 100%;}
+body{font-family: "微软雅黑";font-size: 14px;}
+
+.hot_xian{width: 370px;height: 408px;margin: 0 15px;}
+.hot_adv{width: 370px;height: 108px;text-align: center;}
+.hot_price a{font-size: 14px;color: #333;}
+.sp01 a{font-size: 26px;color: rgb(247, 151, 2);}
+
+.hot_tit{height: 24px;padding: 5px 0;color: #333;font-size: 18px;font-weight: 600;}
+.hot_tit a{color: #333;}
+.hot_sub a{color: #333;}
+footer{width: 100%;height: 269px;padding:30px 0 30px 0;background: rgb(47, 56, 64);}
+.foot{width: 1200px;height: 269px;margin: 0 auto;font-size: 14px;}
+.foot_top{width: 1200px;height: 150px;margin-bottom:20px;}
+.foot_top_mid{width: 280px;height: 73px;margin: 50px 0 0 50px;color: rgb(63, 91, 116);}
+.foot_top_mid small{font-size: 16px;}
+.foot_mid_{width: 280px;height: 52px;font-size: 40px;line-height: 52px;}
+.foot_mid_righ{width: 293px;height: 155px;margin-left: 100px;}
+.foot_mid_righ ul{width: 60px;float: left;margin: 0 40px;}
+.foot_mid_righ ul li{height: 21px;padding: 5px 0;line-height: 21px;}
+.foot_mid_righ a{color: rgb(91, 136, 177);}
+.foot_top_righ{width: 140px;height: 154px;padding-top: 5px;}
+.foot_top_righ img{width: 120px;height: 120px;margin: 0 auto;}
+.foot_top_righ p{margin-top: 10px;color: rgb(63, 91, 116);}
+.foot_bot{height: 48px;margin-top: 50px;text-align: center;line-height: 24px;padding-top: 20px;border-top: 1px solid rgb(59, 85, 108);color: #3f5b74;}
+
+.fixed{position: fixed;width: 50px;height: 255px;right: 0;z-index: 4000;bottom: 180px;}
+.fixed ul li{width: 50px;height: 51px;}
+.li11{background: url(../img/bg_kefu.png) no-repeat 0% 0%;}
+.li11:hover{background: url(../img/bg_kefu.png) no-repeat -51px 0%;}
+.li12{background: url(../img/bg_kefu.png) no-repeat -102px -102px;}
+.li12:hover{background: url(../img/bg_kefu.png) no-repeat -153px -102px;}
+.li13{background: url(../img/bg_kefu.png) no-repeat 0 -153px;}
+.li13:hover{background: url(../img/bg_kefu.png) no-repeat -51px -153px;}
+.li14{background: url(../img/bg_kefu.png) no-repeat 0 -51px;}
+.li14:hover{background: url(../img/bg_kefu.png) no-repeat -51px -51px;}
+.li15{background: url(../img/bg_kefu.png) no-repeat -0px -102px;}
+.li15:hover{background: url(../img/bg_kefu.png) no-repeat -51px -102px;}
+.li16{background: url(../img/bg_kefu.png) no-repeat -0px -204px;}
+.li16:hover{background: url(../img/bg_kefu.png) no-repeat -51px -204px;}
+.fixet{height: 157px;position: fixed;bottom: 0;width: 100%;z-index: 5001;}
+.fixe{height: 157px;background-color: rgb(0, 5, 25);opacity: 0.85;position: fixed;bottom: 0;width: 100%;z-index: 5000;}
+.fixe_mid{width: 1000px;margin: 0 auto;height: 157px;position: relative;}
+.fixt{width: 1000px;height: 185px;position: absolute;bottom: 0;z-index: 5500;}
+.fixd{width: 280px;height: 100px;position: absolute;z-index: 5600;top: 57px;right: 149px;}
+.fix_img{width: 39px;height: 39px;position: absolute;right: -45px;top: 10px;transition: all 0.3s;transform: rotate(0deg);}
+.fix_img:hover{transform: rotate(180deg);}
+.fixd input{height: 38px;border: none;padding: 0 5px 0 5px;}
+.fixd_top{width: 280px;height: 38px;margin-bottom:10px ;}
+.fixd_bot{width: 280px;background: chartreuse;height: 38px;}
+.name{width: 95px;margin-right: 3px;}
+.phone{width: 162px;}
+.xuqiu{width: 200px;}
+.rt{width: 196px;}
+.subd{width: 74px;color: white;background-color: rgb(255, 153, 0);font-size: 16px;}
+
+.now{width: 100%;height: 120px;}
+.now_son{width: 1200px;height: 60px;margin: 0 auto;}
+.sp02{color: #333;margin-bottom:20px ;font-size: 45px;font-weight: 100;}
+.sp03{font-size: 20px;color: #333;}
+.now_girl{width: 1200px;height: 40px;margin: 0 auto;}
+.now_girl .inpd{width: 288px;height: 28px;padding: 5px;border: 1px solid rgb(191,191,191);margin-right: 15px;}
+.now_girl button{background: rgb(0,171,201);border: none;color: white;padding: 0 35px 0 35px;height: 40px;font-size:16px ;}
+.fast{width: 30px;height: 100px;position: fixed;bottom: 0px;padding: 10px;right: 0;text-align: center;
+font-size: 20px;z-index: 6000;background: rgb(38,54,70);}
+
+.fast a{display: block;width: 100%;height: 100%;color: rgb(255,186,0);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

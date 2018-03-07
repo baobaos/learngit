@@ -1,0 +1,50 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+}
+body, ul, li, h1, h2, h3, h4, p, div, img, input {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    }
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+img {
+	border: none;
+}
+
+ul {
+	list-style: none;
+}
+li{
+	float: left;
+}
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+.mm{
+    border-radius: 4px;
+}
+.op{
+	position: relative;
+}
+.yj1{
+	border-radius:50%;
+}
+.parten:after 
+{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+.po{
+	position: relative;
+}

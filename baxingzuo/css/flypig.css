@@ -1,0 +1,219 @@
+.head {
+	width: 100%;
+	height: 96px;
+	background: url(../img/eig_2_top.png) center;
+}
+
+.head a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/*nav*/
+.nav {
+	z-index: 10000;
+    position: relative;
+    width: 100%;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
+}
+.nav_bd{
+	width: 1190px;
+	margin: 0 auto;
+	height: 25px;
+    background: #F2F2F2;
+}
+.nav_bd_l{
+	float: left;
+}
+.nav_bd_l .menu_home{
+	    padding: 0 6px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    
+}
+.nav_bd_l .menu_home>a{
+	    float: left;
+    margin-right: 7px;
+    font-size: 12px;
+    color: #6C6C6C;
+    display: block;
+}
+.nav_bd_l .menu_home>a .ticonfont{
+	margin-right: 5px;
+    line-height: 24px;
+    color: #ffc300!important;
+}
+.nav_bd_l .menu_home>a>span{
+	font-size: 12px;
+    color: #6C6C6C;
+}
+.menu{
+	float: left;
+	padding: 0 6px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.menu .l{
+	    color: #aaa;
+	        line-height: 25px;
+	    float: left;
+	    font-size: 12px;
+}
+.menu>a{
+	 float: left;
+	    margin-right: 7px;
+    font-size: 12px;
+    color: #6C6C6C;
+}
+.nav_bd a:hover{
+	color: #f39b03;
+}
+.nav_bd_r li{
+	float:left;
+	    position: relative;
+    padding: 0 6px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.nav_bd_r li>a{
+    font-size: 12px;
+    color: #6C6C6C;
+}
+.nav_bd_r li>span{
+	display: inline-block;
+	background-position: center;
+	width: 11px;
+	height: 7px;
+	 background: url(../images/feizhu/jian.png) no-repeat;
+    transition: all .5s;
+}
+.nav_bd_r li:hover>span{
+	transform: rotate(360deg);
+}
+.nav_pipe{
+	height: 25px !important;
+    line-height: 25px !important;
+    padding: 0 5px !important;
+    font-style: normal;
+    color: #ddd;
+}
+/*nav结束*/
+/*header开始*/
+.header {
+	border-bottom: 1px solid #c8baaa;
+    background: #fff;
+    width: 100%;
+    min-width: 990px;
+}
+.headerCon{
+	    width: 1190px;
+    margin: 0 auto;
+    height: 85px;
+    font-family: tahoma,arial,"\5b8b\4f53";
+}
+.mallLogo{
+	
+    float: left;
+    width: 162px;
+    margin-right: 10px;
+    padding-top: 9px!important;
+    height: 64px;
+    line-height: 18px;
+}
+.mallLogo>a{
+	display: block;
+	height: 62px;
+	background: url(../images/feizhu/pig.png) no-repeat;
+}
+.shopExtra{
+	    position: relative;
+    padding: 15px 0 0;
+    height: 50px;
+}
+.slogo{
+	float: left;
+    padding: 0 10px;
+    height: 38px;
+    border-left: 1px solid #f0f0f0;
+}
+.slogo>a{
+	display: block;
+	height: 22px;
+    line-height: 19px;
+    overflow: hidden;
+    background-color: #fff;
+    font-size: 12px;
+    font-family: "\5b8b\4f53";
+    color: #333;
+    font-weight: 700;
+}
+.slogo_extraicon{
+	    height: 25px;
+    width: 80px;
+}
+.slogo_extraicon>a{
+   display: block;
+    height: 22px;
+    line-height: 19px;
+    overflow: hidden;
+    background-color: #fff;
+    font-size: 12px;
+    font-family: "\5b8b\4f53";
+    color: #333;
+    font-weight: 700;
+    width: 67px;
+    background: url(../images/feizhu/wangwang.gif) no-repeat;
+}
+.shop_info{
+	position: relative;
+    width: 132px;
+    height: 38px;
+    font-weight: 400;
+    padding: 0 10px;
+    border-left: 1px dotted #f0f0f0;
+}
+.shopdsr_item{
+	float: left;
+    color: #999;
+    width: 36px;
+    height: 36px;
+    position: relative;
+}
+.shopdsr_item .shopdsr_title{
+	    color: #999;
+	    font-size: 12px;
+	        font-weight: 400;
+}
+.shopdsr_score{
+	    color: #ff0036;
+    padding-left: 5px;
+    height: 18px;
+    line-height: 18px;
+    width: 31px;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+}
+/*header结束*/
+.thord {
+	
+	width: 100%;
+	height: 150px;
+	background: url(../images/feizhu/wahah.jpg) repeat center 0;
+}
+
+.daoh {
+	height: 30px;
+	background: rgb(50, 163, 255);
+}
+
+.daoh .son {
+	width: 990px;
+	height: 30px;
+	margin: 0 auto;
+	background: cyan;
+}

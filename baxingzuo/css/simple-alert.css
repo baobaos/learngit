@@ -1,0 +1,38 @@
+.sAlert-overlay{
+    position: fixed; top:0; right:0; bottom: 0; left: 0;  z-index: 99998;
+}
+.sAlert-box{
+    position: fixed; top:30%; left: 50%; background-color: #FFF; z-index: 99999;
+    -webkit-box-shadow:0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.sAlert-box > .sAlert-title{
+    padding:15px 10px; font-size: 18px; color: #333; border-bottom: 1px solid #F4F4F4;
+}
+.sAlert-box > .sAlert-icon{
+    padding-top:20px; padding-bottom: 10px;
+}
+.sAlert-box > .sAlert-icon > img{
+    display: block; margin: 0 auto;
+}
+
+.sAlert-box > .sAlert-content{
+    padding:20px; text-align: center; font-size: 18px; color: #333;
+}
+.sAlert-box > .sAlert-btns{
+    padding: 15px 0; text-align: center;
+}
+.sAlert-box > .sAlert-btns > button{
+    display: inline-block; margin: 0 10px; padding: 10px 20px; color: #FFF; border: 0;
+    outline: none;
+}
+.sAlert-box > .sAlert-btns > button.sAlert-okbtn{
+    background-color: rgb(140, 212, 245);
+}
+.sAlert-box > .sAlert-btns > button.sAlert-cancelbtn{
+    background-color: rgb(221, 107, 85);
+}
+.sAlert-box > .sAlert-close{
+    position: absolute; top: 12px; right: 12px; width: 25px; height: 25px;
+    background-repeat: no-repeat; background-position: center center; background-size: cover;
+}

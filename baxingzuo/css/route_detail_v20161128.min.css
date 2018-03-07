@@ -1,0 +1,122 @@
+.img-responsive{width:100%}
+.route-title{width:900px;float:left}
+.route-order{margin-right:30px;float:right;position:relative}
+.route-title>h1{font-size:26px;font-weight:400}
+.route-title>h5{margin-top:10px;font-size:14px;color:#537798;font-weight:400}
+.route-order>.route-f{margin-top:15px;margin-left:50px;position:relative;color:#537798}
+.route-order>.route-f>.flight-icon{width:30px;height:30px;background:url(route_sprites.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/route_sprites.png*/ no-repeat -5px -5px;overflow:hidden;position:absolute;top:-5px;left:-45px}
+.route-order>.route-min-price{font-size:16px}
+.route-order>.route-min-price>.money{font-size:30px;font-family:arial;font-weight:400}
+.route-order-btn{float:right;width:120px}
+.route-order-btn>a{display:inline-block;padding:5px 20px;margin-top:10px;border-radius:18px;text-align:center;color:#FFF;background-color:#7a8489}
+.gallery-box{position:relative}
+.tags-box{position:absolute;top:0;left:50%;bottom:0;z-index:1100;margin-left:-600px}
+.route-theme-tags{position:relative;top:0;left:0}
+.route-theme-tags-item{float:left;width:120px;height:107px;padding:15px 20px;background:url(../img/route_sprites.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/route_sprites.png*/ no-repeat -5px -50px;margin:0 10px;color:#FFF;font-size:18px;text-align:center;line-height:30px}
+.route-theme-tags-item:last-child{background-position:-135px -50px}
+.maidian{position:absolute;top:100px;right:100px;width:290px;color:#FFF}
+.maidian>.maidian-item{height:130px;padding:20px 60px;background-color:rgba(41,50,55,.7);box-shadow:inset 0 10px 15px -10px rgba(0,0,0,.5)}
+.maidian>.maidian-item>span{font-size:18px}
+.maidian>.maidian-item>p{font-size:14px;line-height:18px;margin-top:5px}
+.route-gallery{overflow:hidden}
+ul.route-gallery-list>li>.route-gallery-list-img{height:760px;background-repeat:no-repeat;background-size:cover;background-position:50% 50%}
+.route-gallery-pager{position:absolute;right:120px;bottom:80px;width:260px;background-color:rgba(0,0,0,.75)}
+.route-gallery-pager-item,.route-gallery-pager-left,.route-gallery-pager-right{float:left;height:40px;overflow:hidden}
+.route-gallery-pager-left,.route-gallery-pager-right{width:40px;background-image:url(../img/route_sprites.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/route_sprites.png*/;background-repeat:no-repeat;cursor:pointer}
+.route-gallery-pager-left{background-position:-40px -3px}
+.route-gallery-pager-right{background-position:-90px -3px}
+.route-gallery-pager-item{width:180px}
+#pagerNumber >a{display:inline-block;width:30px;line-height:40px;color:#FFF;text-align:center;font-size:16px}
+#pagerNumber>a.cur,#pagerNumber>a:hover{background-color:#37b3be}
+.route-navbar{height:50px;background-color:#2f3840}
+.route-navbar div.route-navbar-item>a{display:inline-block;height:50px;line-height:50px;padding:0 25px;margin-right:15px;color:#FFF;font-size:15px}
+.route-navbar div.route-navbar-item>a.cur{background-color:#3bc1cd}
+.route-navbar .quick-order{float:right;:mar}
+.route-navbar .quick-order>a{display:inline-block;height:50px;line-height:50px;padding:0 50px;color:#FFF;font-size:15px;background-color:#00a2ca}
+.bg-gray{background-color:#f9f9f9}
+.part{padding:40px 0 60px}
+.part-title{text-align:center;margin-bottom:60px}
+.part-title>h2{margin-top:0;margin-bottom:20px;color:#333;font-size:45px;font-weight:100}
+div.sub-title{color:gray;font-size:15px;font-style:normal;width:600px;margin:0 auto;line-height:24px}
+.part-title>small{font-size:14px;color:#5e5e5e;font-style:italic;position:relative}
+.part-title>small::after{position:absolute;top:40px;left:50%;margin-left:-30px;content:'';display:block;width:65px;height:1px;border-bottom:1px solid #e1e1e1}.ty-hotel{position:relative}
+.ty-hotel-slider{height:540px;padding:20px;margin-top:50px;background-color:#f7f7f7;overflow:hidden}
+ul.hotel-gallery{height:500px;min-width:2400px}
+ul.hotel-gallery>li{width:1160px;height:500px;float:left;position:relative}
+ul.hotel-gallery>li>.hotel-name{position:absolute;top:20px;left:0;padding:5px 25px;color:#FFF;font-size:20px;text-shadow:0 0 3px #333;-webkit-text-shadow:0 0 3px #333;-moz-text-shadow:0 0 3px #333}
+ul.hotel-gallery>li .hotel-pic-main{float:left;width:759px;height:500px;background-repeat:no-repeat;background-position:50% 50%;background-size:cover}ul.hotel-gallery>li .hotel-pic-main>img{width:759px;height:500px}
+ul.hotel-gallery>li .hotel-pic-room{float:left;width:399px;margin-left:2px}
+ul.hotel-gallery>li .hotel-pic-room>.room-item{width:399px;height:249px;overflow:hidden;margin-bottom:2px;background-repeat:no-repeat;background-position:50% 50%;background-size:cover}
+ul.hotel-gallery>li .hotel-pic-room>.room-item>img{width:399px;height:249px}
+ul.hotel-gallery>li .hotel-pic-room>.room-item:last-child{margin-bottom:0}
+.hotel-control-left,.hotel-control-right{position:absolute;width:63px;height:63px;background-image:url(route_sprites.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/route_sprites.png*/;background-repeat:none;cursor:pointer}
+.hotel-control-left>a,.hotel-control-right>a{display:block;height:63px;width:63px;cursor:pointer;text-indent:-70px;overflow:hidden}.hotel-control-left{top:230px;left:-80px;background-position:-5px -185px}
+.hotel-control-right{top:230px;right:-80px;background-position:-125px -185px}.ty-food{width:1200px;height:500px;margin-top:50px;margin-bottom:70px;overflow:hidden;position:relative}
+.ty-food:last-child{margin-bottom:40px}
+ul.food-list>li{width:1200px;height:500px;position:relative}
+ul.food-list>li>img{width:1200px;height:500px}
+ul.food-list>li>.food-title{position:absolute;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.5);padding:10px 20px}
+ul.food-list>li>.food-title>span{line-height:30px;color:#FFF;font-size:16px}
+ul.food-list>li>.car-title{top:auto;right:300px;left:0;bottom:0;padding:20px;color:#FFF;font-size:16px;text-shadow:none;-webkit-text-shadow:none;-moz-text-shadow:none;background:-linear-gradient(left,rgba(0,0,0,.3),rgba(0,0,0,0));background:-webkit-linear-gradient(left,rgba(0,0,0,.3),rgba(0,0,0,0));background:-moz-linear-gradient(left,rgba(0,0,0,.3),rgba(0,0,0,0))}
+.slider-next,.slider-prev{position:absolute;top:50%;width:64px;height:127px;margin-top:-63px;cursor:pointer;background-image:url(../img/route_sprites.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/route_sprites.png*/;background-repeat:no-repeat;z-index:100}
+.slider-next>a,.slider-prev>a{display:block;width:64px;height:127px}
+.slider-prev{left:30px;background-position:-310px -375px}
+.slider-next{right:30px;background-position:-450px -375px}
+ul.feature-list{margin-top:50px}
+ul.feature-list>li{margin-bottom:20px;zoom:1;overflow:hidden;position:relative}
+ul.feature-list>li>.feature-text{position:absolute;top:50px;left:100px;width:800px;line-height:24px;font-size:16px;color:#FFF;text-shadow:0 0 2px #333;-webkit-text-shadow:0 0 2px #333;-moz-text-shadow:0 0 2px #333;z-index:100}
+ul.feature-list>li>.feature-text>h2{font-size:50px;line-height:60px;font-weight:100;margin-top:20px;margin-bottom:40px}
+ul.feature-list>li>.feature-img{height:400px}
+ul.feature-list>li>.img-overlay{position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.3)}
+.price-box{padding:30px 40px;background-color:#f5f5f5;text-align:center;display:table;margin:0 auto}
+.price-box>dl{display:table-cell;border-right:1px solid #DEDEDE;padding:0 40px}
+.price-box>dl:last-child{border-right:0}.price-box>dl>dt{font-size:20px;color:#000;padding:10px 0;font-weight:400}
+.price-box>dl>dd{padding:5px 0}
+.price-box>dl>dd>label{display:inline-block;padding:3px 10px;font-size:16px;color:#484848;margin-right:25px}
+.price-box>dl>dd>span{display:inline-block;padding:3px 10px;color:#00abc9;font-size:16px}
+.price-box>dl>dd>span>strong{font-size:28px;margin:0 5px;font-weight:100}
+.cost-item{position:relative;min-height:200px;margin-bottom:30px;padding-bottom:30px;border-bottom:1px solid #DEDEDE}
+.cost-item:last-child{border-bottom:0;margin-bottom:0}
+.cost-item-title{padding:15px 0;font-size:24px;font-weight:100}
+.cost-toggle{display:block;width:26px;height:26px;background:url(../imgroute_sprites.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/route_sprites.png*/ no-repeat -290px -185px;float:right;transition:transform .2s linear .2s;-webkit-transition:transform .2s linear .2s;-moz-transition:transform .2s linear .2s}
+.cost-toggle-open{transform:rotate(135deg)}
+.cost-item-text{color:#5a5a5a;line-height:30px;font-size:14px;margin:-40px 100px 0 250px}
+.cost-item-text>p{margin:0}.part-itinerary{padding:40px 0 60px}
+.part-itinerary:last-child{padding-bottom:0}
+.itinerary-map{margin-top:50px}
+.itinerary-list{position:relative;padding-left:130px;margin-top:50px}
+aside{position:absolute;left:0;top:0}aside.scroll-start{position:fixed;top:70px;margin-left:-130px;left:auto}
+aside.scroll-end{position:absolute;bottom:50px}
+aside>a{display:block;width:80px;padding:7px 0;margin-bottom:5px;text-align:center;background-color:#f2f5f7;color:#444;-webkit-transition:background-color .3s linear .05s;transition:background-color .3s linear .05s}aside>a.cur{background-color:#2f3840;color:#FFF}.itinerary-items{zoom:1;overflow:hidden;margin-bottom:50px}.itinerary-items>.day-title{height:52px;line-height:52px;background-color:#f2f2f2;padding-left:10px;font-size:18px;color:#444}.itinerary-items>.day-title>span{font-size:20px;color:#333;margin-right:20px}.itinerary-items>.day-content{clear:both;margin-top:10px}.itinerary-items>.day-content>.day-gallery{width:620px;height:420px;float:left;overflow:hidden;position:relative}ul.day-slider>li{position:relative;width:620px;height:420px}ul.day-slider>li>.day-slider-title{position:absolute;left:0;right:0;bottom:0;padding:15px;text-align:center;font-size:16px;color:#FFF;background-color:rgba(0,0,0,.6)}.day-gallery-next,.day-gallery-prev{position:absolute;width:38px;height:73px;background-image:url(route_sprites.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/route_sprites.png*/;background-repeat:no-repeat;cursor:pointer;margin-top:-36.5px;z-index:100}.day-gallery-prev{top:185px;left:15px;background-position:-290px -50px}.day-gallery-next{top:185px;right:15px;background-position:-355px -50px}.day-info{float:left;width:420px;margin-left:30px}.day-info-list{height:280px;overflow:hidden;padding-right:15px;position:relative}.day-info-list>.day-info-item{margin-bottom:20px;position:relative;line-height:24px;color:#5e5e5e;padding-left:50px}.day-info-list>.day-info-item>span{position:absolute;top:0;left:0;font-size:14px;color:#333;text-align:center;font-weight:700}.day-info>.day-czx{height:140px;border-top:1px dashed #d9d9d9;overflow:hidden}
+.day-info>.day-czx>ul.day-czx-list>li{line-height:25px;margin:10px 0;padding-left:35px;background-image:url(../img/route_sprites.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/route_sprites.png*/;background-repeat:no-repeat;color:#5e5e5e}.day-info>.day-czx>ul.day-czx-list>li:last-child{margin-bottom:0}
+.day-info>.day-czx>ul.day-czx-list>li.traffic-icon{background-position:-415px -5px}
+.day-info>.day-czx>ul.day-czx-list>li.food-icon{background-position:-415px -40px}
+.day-info>.day-czx>ul.day-czx-list>li.hotel-icon{background-position:-415px -96px}
+.part-pk h3,.part-service h3{font-size:28px;color:#FFF;margin:20px 0 50px 50px}ul.part-service-list{text-align:center;font-size:0;margin-bottom:50px;padding-bottom:100px;border-bottom:1px solid #D6D6D6}ul.part-service-list>li{display:inline-block;width:300px;height:200px;padding-top:30px;padding-bottom:20px;border-right:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6}ul.part-service-list>li>
+.part-service-icon{width:90px;height:90px;margin:0 auto;background-image:url(../img/route_sprites.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/route_sprites.png*/;background-repeat:no-repeat;overflow:hidden}
+ul.part-service-list>li.br-none{border-right:0}
+ul.part-service-list>li.bb-none{border-bottom:0}
+.service-icon1{background-position:-12px -296px}
+.service-icon2{background-position:-144px -296px}
+.service-icon3{background-position:-12px -392px}
+.service-icon4{background-position:-144px -392px}
+.service-icon5{background-position:-12px -486px}
+.service-icon6{background-position:-144px -486px}
+.service-icon7{background-position:-12px -596px}
+.service-icon8{background-position:-144px -596px}
+ul.part-service-list>li>.part-service-title{display:block;text-align:center;padding-top:10px;font-size:14px;color:#333}.part-pk{padding:0 0 20px}table.pk-table{width:880px;margin:0 auto;color:#323945;border-collapse:collapse}table.pk-table>thead>tr{background-color:#FFF;color:#333;border-bottom:1px solid #D6D6D6}table.pk-table>tbody>tr>td,table.pk-table>thead>tr>th{padding:12px 0;text-align:center}table.pk-table>thead>tr>th{font-size:18px;font-weight:400}table.pk-table>tbody>tr{color:#5b5b5b;border-bottom:1px solid #D6D6D6}table.pk-table>tbody>tr>td:nth-child(2){color:#00abc9}.part-comments{padding:40px 0 60px;background-color:#61abc3;background-image:url(route_tryit_bg.jpg)/*tpa=http://www.8stour.com/Public/Web/images/newindex/route_tryit_bg.jpg*/;background-repeat:no-repeat;background-position:center center;background-size:cover}.comments-title>.sub-title,.comments-title>h2{color:#FFF}.comments-box{position:relative;overflow:hidden}ul.comments-list{height:300px}ul.comments-list>li{width:100%;height:300px;float:left}ul.comments-list>li>.customer-avatar{text-align:center}ul.comments-list>li>.customer-avatar>img{width:126px;height:126px;border:4px solid #FFF;border-radius:50%;margin:0 auto}ul.comments-list>li>.customer-avatar>span{display:inline-block;padding:10px 0;text-align:center;font-size:18px;font-weight:700;color:#FFF}ul.comments-list>li>p{width:800px;margin:10px auto;font-size:20px;color:#FFF;line-height:36px;text-align:center}ul.comments-list>li>p.comments-remark{font-size:14px;line-height:18px;color:#bff8ff}.comments-pager{position:absolute;left:0;right:0;bottom:0;text-align:center}.comments-pager>a{display:inline-block;width:12px;height:12px;margin:0 5px;border-radius:7px;background-color:rgba(255,255,255,.3);-webkit-transition:height .2s linear .2s;transition:height .2s linear .2s}.comments-pager>a.active{height:28px}.part-order h4{margin-top:0;margin-bottom:20px;color:#333;font-size:45px;font-weight:100}.part-order h4>small{font-size:20px}#orderForm{overflow:hidden}.input{float:left;margin-right:15px;height:40px;line-height:30px;padding:5px;background-color:#FFF;border:1px solid #bfbfbf;border-radius:3px}.input:hover{border-color:#00abc9}.input-lg{width:400px}.input-md{width:200px}.input.error{border-color:red}.input-border:-ms-input-placeholder,.input-border::-moz-placeholder,.input::-webkit-input-placeholder{　　color:#DEDEDE}.input-border{border:1px solid #DEDEDE;width:100%}.input-border:focus{border:1px solid #66afe9}.btn-order{position:relative;float:left;height:40px;line-height:40px;padding:0 35px 0 25px;color:#FFF;font-size:16px;border:0;background-color:#00abc9;border-radius:3px;cursor:pointer}.btn-order2::after{content:'';position:absolute;top:18px;right:25px;border-left:5px solid #FFF;border-top:5px solid transparent;border-bottom:5px solid transparent}.quick-tour{background-color:#F6F6F6;overflow:hidden;position:relative}.quick-tour-pic{height:250px;background-position:center center;background-repeat:no-repeat;background-size:cover}.quick-tour-title{position:absolute;left:0;right:0;bottom:0;padding:10px;background-color:rgba(0,0,0,.6);color:#FFF}.quick-tour-title>h3{margin-bottom:5px}.quick-tour-title>small{font-size:14px;line-height:24px}
+.quick-tour-form{padding:20px 40px;zoom:1;overflow:hidden;clear:both}
+.quick-tour-form-l{width:400px;display:table-cell;vertical-align:top;float:left}
+.quick-tour-form-r{width:250px;padding:20px;display:table-cell;text-align:center;vertical-align:middle;float:right}
+.quick-tour-form-r>img{margin:0 auto}
+.quick-tour-form-r>span>em{color:#f99800;font-style:normal}
+.quick-tour-form-item{margin-bottom:20px;overflow:hidden}
+.quick-tour-form-item>label{display:block;float:left;width:60px;margin-bottom:10px;color:#666;margin-top:10px}
+.quick-tour-form-item>.input{float:left;width:340px;margin-right:0}
+.quick-tour-form-item>.btn-order{width:100%;float:none}
+.quick-tour-form-item>.input-textarea{resize:none;height:80px;border:1px solid #bfbfbf;font-size:14px}
+.quick-tour-form-item>.input-textarea:hover{border-color:#00abc9}
+.modal-overlary{background-color:rgba(0,0,0,.5);position:fixed;top:0;right:0;left:0;bottom:0;z-index:1500;display:none}
+.modal{position:fixed;top:50%;left:50%;background-color:#FFF;z-index:1501;border-radius:2px;-moz-border-radius:2px;-webkit-border-raidus:2px;overflow:hidden;display:none}
+.modal-title,.msg-modal-title{padding:15px;font-size:26px;font-weight:400;background-color:#f9f9f9;position:relative}
+.modal-close{position:absolute;width:32px;height:32px;top:10px;right:10px;background:url(close.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/close.png*/ no-repeat center center;z-index:1502;cursor:pointer;-webkit-transition:transform .5s linear .2s;-webkit-transition:-webkit-transform .5s linear .2s;transition:-webkit-transform .5s linear .2s;transition:transform .5s linear .2s;transition:transform .5s linear .2s,-webkit-transform .5s linear .2s}.modal-close:hover{-webkit-transform:rotate(360deg);transform:rotate(360deg)}.booking-modal{margin-top:-310px;margin-left:-400px;width:800px;height:620px}.msg-modal{display:none;width:500px;height:auto;margin-left:-250px;margin-top:-150px;z-index:1504}.msg-overlary{z-index:1503}.modal-body>.alert-msg{min-height:80px;text-align:center}.modal-body>.alert-msg>span{display:inline-block;padding:35px 0 35px 80px;text-align:left;font-size:20px}.modal-body>.alert-msg>span.success{color:#f99800;background:url(face_smile.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/face_smile.png*/ no-repeat left center}.modal-body>.alert-msg>span.failed{padding-left:70px;color:#666;background:url(face_sad.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/face_sad.png*/ no-repeat left center}

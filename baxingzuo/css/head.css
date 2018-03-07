@@ -1,0 +1,347 @@
+/*头部开始*/
+.head{
+	width: 100%;
+	height: 117px;
+	background-color: #FFFFFF;
+}
+.head-box{
+	width: 1200px;
+	height: 117px;
+	margin: 0 auto;
+}
+.head-box-left{
+	cursor: pointer;
+}
+.head-box-right>ul{
+	width: 420px;
+}
+.head-box-right>ul>li{
+	float: left;
+	height: 117px;
+	line-height: 117px;
+	padding: 0 22px;
+}
+.head-box-right>ul>li>a{
+	color: #585858;
+}
+.head-box-right>ul>li>a>i{
+	display: inline-block;
+	vertical-align: middle;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #585858;
+	margin-left: 5px;
+}
+.head-box-right-tel{
+	width: 170px;
+	height: 117px;
+	line-height: 117px;
+	position: relative;
+	font-size: 20px;
+}
+.tel{
+	width: 26px;
+	height: 26px;
+	background-image: url(../img/route_sprites.png);
+	background-position: -5px -775px;
+	position: absolute;
+	top: 45px;
+}
+/*二级菜单*/
+.destination{
+	display: none;
+	position: absolute;
+	background-color: rgba(255,255,255,.98);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#e5ffffff,endColorstr=#e5ffffff);
+	top: 117px;
+	left:  564px;
+	width: 700px;
+	margin: 0 auto;
+	z-index: 3000;
+	padding: 10px;
+	padding-top: 50px;
+	text-align: left;
+}
+.destination>dl{
+	float: left;
+	margin: 0 15px 15px;
+	width: 300px;
+}
+.destination>dl>dt{
+	line-height: 26px;
+	margin-left: -10px;
+	color: #85d4d9;
+	font-weight: 400;
+}
+.destination>dl>dd{
+	line-height: 26px;
+	margin-left: -10px;
+}
+.destination>dl>dd>a{
+	color: #666;
+	display: inline-block;
+	font-size: 14px;
+	height: 26px;
+	line-height: 26px;
+	margin: 0 10px;
+}
+.destination>dl>dd>a:hover{
+	color: #85d4d9;
+	text-decoration: underline;
+}
+/*头部结束*/
+/*尾部开始*/
+.stern{
+	width: 100%;
+	/*height: 329px;*/
+	background-color: #2f3840;
+    padding: 30px 0;
+}
+.stern-box{
+	width: 1200px;
+	margin: 0 auto;
+}
+.stern-box-top{
+	height: 150px;
+	margin-bottom:50px ;
+}
+.stern-box-top2{
+	width: 280px;
+	height: 76px;
+	margin: 50px 0 0 50px;
+}
+.stern-box-top2>p{
+	font-size: 16px;
+	color: #3d556b;
+}
+.stern-box-top2>div{
+	font-size: 40px;
+	color: #3d556b;
+}
+.stern-box-top3{
+	width: 292px;
+	height: 160px;
+	margin-left: 100px;
+}
+.stern-box-top3>ul{
+	margin: 0 40px;
+}
+.stern-box-top3>ul>li{
+	padding: 5px 0;
+}
+.stern-box-top3>ul>li>a{
+	color: #5b88b1;
+	font-size: 16px;
+}
+.stern-box-top4{
+	padding-top: 5px;
+}
+.stern-box-top4>img{
+	width: 120px;
+	height: 120px;
+}
+.stern-box-top4>div{
+	font-size: 14px;
+	color: #3f5b74;
+	margin-top: 10px;
+}
+.stern-box-bottom{
+	border-top: 1px solid #3f5b74;
+	margin-top: 50px;
+	padding-top: 20px;
+	color: #3f5b74;
+	text-align: center;
+	line-height: 24px;
+	font-size: 14px;
+}
+/*尾部结束*/
+/*下部私人订制开始*/
+.PersonalTailor{
+	width: 100%;
+	height: 158px;
+	background-color: rgba(0,0,0,0.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#c8000000,endColorstr=#c8000000);
+	position: fixed;
+	bottom: 0px;
+	z-index: 9999;
+}
+.PersonalTailorbox{
+	width: 1039px;
+	height: 158px;
+	margin: 0 auto;
+	position: relative;
+}
+.PersonalTailorbox-left{
+	width: 1000px;
+	height: 185px;
+	background-image: url(../img/bg_wx.png);
+	position: absolute;
+	top: -28px;
+}
+.PersonalTailorbox-left>ul{
+	width: 280px;
+	height: 82px;
+	position: absolute;
+	top: 90px;
+	left: 572px;
+}
+.PersonalTailorbox-left>ul>li{
+	width: 280px;
+	height: 38px;
+	margin-bottom:6px ;
+}
+.input1{
+	width: 104px;
+	height: 38px;
+	border: 0px;
+	float: left;
+	padding-left: 10px;
+	font-size: 12px;
+	outline: none;
+}
+.input2{
+	width: 175px;
+	height: 38px;
+	border: 0px;
+	float: right;
+	padding-left: 10px;
+	font-size: 12px;
+	outline: none;
+}
+.input3{
+	width: 200px;
+	height: 38px;
+	border: 0px;
+	float: left;
+	padding-left: 10px;
+	font-size: 12px;
+	outline: none;
+}
+.input3-btn{
+	width: 80px;
+	height: 38px;
+	border: 0px;
+	float: left;
+	font-size: 16px;
+	color: #FFFFFF;
+	background-color: #ff9900;
+	outline: none;
+}
+.PersonalTailorbox-right{
+	width: 39px;
+	height: 39px;
+	background-image: url(../img/btn_close.png);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	transition: 2s;
+}
+.PersonalTailorbox-right:hover{
+	transform: rotate(180deg);
+}
+/*下部私人订制结束*/
+/*右侧固定导航开始*/
+.right-fixed-navigation{
+	width: 50px;
+	position: fixed;
+	right: 0;
+	bottom: 10px;
+	z-index: 9998;
+}
+.right-fixed-navigation>ul>li{
+	width: 50px;
+	height: 50px;
+	margin-bottom: 1px;
+}
+.fixed-navigation1,.fixed-navigation2,.fixed-navigation3,.fixed-navigation4,.fixed-navigation5,.fixed-navigation6{
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/bg_kefu.png);
+	z-index: 9999;
+	position: relative;
+}
+.fixed-navigation1:hover{
+	background-position: -51px 0;
+}
+.fixed-navigation2{
+	background-position: 0 -51px;
+}
+.fixed-navigation6{
+	background-position: -102px -102px;
+}
+.fixed-navigation6:hover{
+	background-position: -153px -102px;
+}
+.fixed-navigation2:hover{
+	background-position: -51px -51px;
+}
+.fixed-navigation3{
+	background-position: 0 -102px;
+}
+.fixed-navigation3:hover{
+	background-position: -51px -102px;
+}
+.fixed-navigation3-1{
+	width: 220px;
+	height: 110px;
+	position: absolute;
+	top: 204px;
+	left: 51px;
+	background-color:#FFFFFF;
+	font-size: 12px;
+	padding:17px 0 0 38px;
+	transition-duration: 0.5s;
+	transform:left;
+	opacity: 0;
+}
+.fixed-navigation3-1 span{
+	height: 37px;
+	line-height: 37px;
+}
+.fixed-navigation4{
+	background-position: 0 -153px;
+}
+.fixed-navigation4:hover{
+	background-position: -51px -153px;
+}
+.fixed-navigation4-1{
+	width: 190px;
+	height: 270px;
+	position: absolute;
+	left: 51px;
+	top: 102px;
+	transition-duration: 0.5s;
+	transform:left;
+	opacity: 0;
+}
+.fixed-navigation5{
+	background-position: 0 -204px;
+}
+.fixed-navigation5:hover{
+	background-position: -51px -204px;
+}
+.right-fixed-navigation>div{
+	width: 50px;
+	height: 120px;
+	margin-top: 30px;
+	background-color: #263646;
+	font-size: 20px;
+	padding:10px 0 0 15px;
+	position: relative;
+}
+.right-fixed-navigation>div>a{
+	color: #ffba00;
+}
+/*右侧固定导航结束*/
+/*热卖*/
+.rm{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.rm>span{
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #f90;
+	color: #FFF;
+}

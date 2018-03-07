@@ -1,0 +1,153 @@
+.nav{
+	height: 450px;
+    background-repeat: no-repeat;
+    background: url(../img/5833f8e077031.jpg);
+}
+.naver{
+	position: relative;
+	width: 1200px;
+    margin: 0 auto;
+}
+.db{
+	position: absolute;
+    top: 50px;
+    right: 100px;
+    font-size: 60px;
+    color: #FFF;
+    text-shadow: 0 0 5px #333;
+    -webkit-text-shadow: 0 0 5px #333;
+    letter-spacing: 5px;
+}
+.wrap{
+	width: 1200px;
+    margin: 0 auto;
+}
+nav{
+	height: 51px;
+	margin: 30px 0;
+    padding: 15px;
+    background-color: #17a7ca;
+    font-size: 16px;
+    color: #FFF;
+}
+nav>a{
+	color: #fff;
+}
+.nava{
+	float: right;
+	color: #fff;
+}
+.js{
+	margin-bottom: 100px;
+}
+.jsnr{
+	position: relative;
+    background-color: #f6f6f6;
+    overflow: hidden;
+}
+.header{
+	padding: 15px;
+}
+.h1{
+	font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.h1>a{
+	color: #000;
+}
+.bt{
+	font-size: 16px;
+    color: #a6a6a6;
+}
+.jsnav-a{
+	float: left;
+    width: 670px;
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    background: url(../img/5830369c458f4.jpg);
+}
+.djly{
+	position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.djly>span{
+	display: inline-block;
+    padding: 5px 10px;
+    background-color: #f90;
+    color: #FFF;
+}
+.right{
+	margin-left: 670px;
+    padding: 0 50px;
+}
+.right-top{
+	margin-bottom: 20px;
+}
+.right-top>span{
+	display: inline-block;
+    padding: 3px 10px;
+    margin-right: 25px;
+    border: 1px solid #61abc3;
+    color: #00abc9;
+}
+.right-mid{
+	font-weight: 100
+}
+.right-mid>dt{
+	color: #00abc9;
+    font-size: 16px;
+    margin-bottom: 5px
+}
+.right-mid>dd{
+	margin-bottom: 15px;
+    font-size: 14px;
+    height: 20px;
+    overflow: hidden;
+}
+.right-foot{
+	margin-top: 40px;
+    width: 280px;
+}
+.right-foot>ul{
+	border-right: 1px solid #d9d9d9;
+    padding-right: 20px;
+}
+.right-foot>ul>li{
+	line-height: 35px;
+	color: #f99800;
+}
+.right-foot>ul>li>label{
+	display: inline-block;
+    width: 100px;
+    margin-right: -5px;
+}
+.right-foot>ul>li>span{
+	color: #f99800;
+}
+.right-foot>ul>li>span>strong{
+	font-size: 25px;
+    font-family: arial;
+    font-weight: 100;
+    margin: 0 5px;
+}
+.ckxd{
+	display: block;
+    padding: 10px 35px;
+    background-color: #f99800;
+    color: #FFF;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+}
+.line{
+	clear: both;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-top: 1px dashed #b3b3b3;
+}

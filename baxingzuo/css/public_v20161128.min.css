@@ -1,0 +1,775 @@
+* {
+	box-sizing: border-box;
+	font-family: "microsoft yahei", Helvetica, Tahoma, Arial, sans-serif
+}
+
+body,
+html {
+	height: 100%;
+	width: 100%
+}
+
+body,
+dd,
+dl,
+dt,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+li,
+menu,
+ul {
+	padding: 0;
+	margin: 0
+}
+
+body {
+	font-size: 14px
+}
+
+img {
+	display: block
+}
+
+a {
+	text-decoration: none
+}
+
+li,
+ul {
+	list-style: none
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto
+}
+
+.top-menu {
+	height: 117px;
+	background-color: #FFF
+}
+
+.top-logo {
+	float: left;
+	width: 430px;
+	height: 60px
+}
+
+.top-menu-item {
+	margin-left: 580px;
+	margin-right: 200px
+}
+
+.top-menu-item>ul>li {
+	position: relative;
+	display: inline-block;
+	height: 117px;
+	margin-right: 20px;
+	padding-left: 20px;
+	padding-top: 55px
+}
+
+.top-menu-item>ul>li:last-child {
+	margin-right: 0
+}
+
+.top-menu-item>ul>li>a {
+	display: inline-block;
+	color: #585858;
+	font-size: 16px;
+	position: relative
+}
+
+.top-menu-item>ul>li>a.dest::after {
+	position: absolute;
+	content: '';
+	display: block;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #585858;
+	right: -15px;
+	top: 10px
+}
+
+.top-tel {
+	height: 26px;
+	line-height: 26px;
+	background: url(../img/route_sprites.png)/*tpa=http://www.8stour.com/Public/Web/images/newindex/route_sprites.png*/
+	no-repeat -5px -775px;
+	overflow: hidden;
+	font-size: 20px;
+	color: #000;
+	float: right;
+	padding-left: 35px;
+	margin-top: 52px;
+	margin-right: 20px
+}
+
+header {
+	height: 153px;
+	padding: 40px 0;
+	color: #FFF;
+	background-color: #2c353f
+}
+
+.sub-menu {
+	position: absolute;
+	display: none;
+	background-color: rgba(255, 255, 255, .95);
+	top: 80px;
+	left: -180px;
+	width: 700px;
+	margin: 0 auto;
+	z-index: 3000;
+	padding: 10px;
+	padding-top: 50px;
+	text-align: left
+}
+
+.sub-menu>dl {
+	float: left;
+	margin: 0 15px 15px;
+	width: 300px
+}
+
+.sub-menu>dl>dt {
+	color: #85d4d9;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px
+}
+
+.sub-menu>dl>dd {
+	line-height: 26px;
+	margin-left: -10px
+}
+
+.sub-menu>dl>dd>a {
+	color: #666;
+	display: inline-block;
+	font-size: 14px;
+	height: 26px;
+	line-height: 26px;
+	margin: 0 10px
+}
+
+.sub-menu>dl>dd>a:hover {
+	color: #85d4d9;
+	text-decoration: underline
+}
+
+footer {
+	background-color: #2f3840;
+	padding: 30px 0!important
+}
+
+.foot {
+	height: 150px;
+	margin-bottom: 20px
+}
+
+.foot-logo {
+	width: 150px;
+	height: 150px;
+	float: left
+}
+
+.foot-hotline {
+	width: 280px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px
+}
+
+.foot-hotline>small {
+	font-size: 16px;
+	color: #3f5b74
+}
+
+.foot-hotline>.foot-hotline-number {
+	font-size: 40px;
+	color: #3d556b
+}
+
+.foot-qrcode {
+	float: right;
+	padding-top: 5px
+}
+
+.foot-qrcode-item {
+	display: line-block;
+	margin: 0 10px;
+	width: 140px;
+	text-align: center
+}
+
+.foot-qrcode-item>img {
+	width: 120px;
+	margin: 0 auto
+}
+
+.foot-qrcode-item>.qrcode-name {
+	font-size: 14px;
+	color: #3f5b74;
+	margin-top: 10px
+}
+
+.foot-menu {
+	float: left;
+	margin-left: 100px
+}
+
+.foot-menu>ul.foot-menu-item {
+	display: inline-block;
+	margin: 0 40px;
+	vertical-align: top
+}
+
+.foot-menu>ul.foot-menu-item>li {
+	padding: 5px 0
+}
+
+.foot-menu>ul.foot-menu-item>li>a {
+	color: #5b88b1;
+	font-size: 16px
+}
+
+.foot-copyright {
+	border-top: 1px solid #3b556c;
+	clear: both;
+	margin-top: 50px;
+	padding-top: 20px;
+	color: #3f5b74;
+	text-align: center;
+	line-height: 24px;
+	font-size: 14px
+}
+
+#right-menu {
+	color: #fff;
+	width: 142px;
+	background-color: #fff;
+	position: fixed;
+	_position: absolute;
+	_top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||200)-(parseInt(this.currentStyle.marginBottom, 10)||0)));
+	right: 10px;
+	bottom: 25%;
+	z-index: 1000
+}
+
+#right-menu .piece {
+	background: url(../img/right-menu.png)/*tpa=http://www.8stour.com/Public/images/common/right-menu.png*/
+	no-repeat;
+	display: block
+}
+
+#right-menu .right-tel {
+	height: 65px
+}
+
+#right-menu .right-kefu {
+	background-position: 0 -160px
+}
+
+#right-menu .right-kefu a {
+	height: 61px;
+	display: block
+}
+
+#right-menu .right-vip {
+	background-position: 0 -221px
+}
+
+#right-menu .right-vip a {
+	height: 61px;
+	display: block
+}
+
+#right-menu .right-top {
+	background-position: 0 -282px
+}
+
+#right-menu .right-top a {
+	height: 61px;
+	display: block
+}
+
+#rsidebar {
+	background-color: #ccc;
+	z-index: 999;
+	left: 50%;
+	bottom: 180px;
+	margin-left: 600px;
+	width: 50px;
+	position: fixed;
+	_position: absolute;
+	_margin-top: expression(document.documentElement.scrollTop-this.style.pixelHeight)
+}
+
+#rsidebar ul {
+	width: 50px;
+	margin-left: 10px;
+	bottom: 40%;
+	position: fixed
+}
+
+#rsidebar ul li {
+	height: 50px;
+	margin-bottom: 4px;
+	background: url(../img/rsidebar.png)/*tpa=http://www.8stour.com/Public/images/common/rsidebar.png*/
+	no-repeat;
+	cursor: pointer;
+	position: relative
+}
+
+#rsidebar ul li.qq {
+	background-position: 0 -56px
+}
+
+#rsidebar ul li.phone {
+	background-position: 0 -112px
+}
+
+#rsidebar ul li.wx {
+	background-position: 0 -168px
+}
+
+#rsidebar ul li.backtop {
+	background-position: 0 -224px
+}
+
+#rsidebar ul li:hover {
+	background-position-x: -50px
+}
+
+#rsidebar .rsbox {
+	background-color: #fff;
+	padding: 10px;
+	width: 180px;
+	position: absolute;
+	left: -212px;
+	top: -120px;
+	border: 1px solid #6DC8CF
+}
+
+#rsidebar .rsbox p {
+	line-height: 22px;
+	color: #575757;
+	text-align: center
+}
+
+#rsidebar ul li:hover .rsbox {
+	display: block
+}
+
+.kefu_list {
+	position: fixed;
+	right: 1px;
+	bottom: 180px;
+	width: 50px;
+	z-index: 10084;
+	height: 255px
+}
+
+.kefu_list>li {
+	position: relative;
+	float: left;
+	width: 50px;
+	height: 51px
+}
+
+.kefu_list .slide_wrapper {
+	position: absolute;
+	top: 0;
+	right: -240px;
+	z-index: 1;
+	background-color: #fff;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out
+}
+
+.kefu_list .simple {
+	width: 80px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #333
+}
+
+.kefu_list li:hover .slide_wrapper {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: translateX(-290px);
+	-moz-transform: translateX(-290px);
+	-o-transform: translateX(-290px);
+	transform: translateX(-290px)
+}
+
+.ie .kefu_list li:hover .slide_wrapper {
+	right: 50px
+}
+
+li.wq_to_top {
+	display: none
+}
+
+.kefu_list>li>a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/bg_kefu.png)/*tpa=http://www.8stour.com/Public/Web/images/common/bg_kefu.png*/
+	;
+	background-repeat: no-repeat;
+	cursor: pointer
+}
+
+#toTop {
+	background-position: 0 -204px
+}
+
+#toTop:hover {
+	background-position: -51px -204px
+}
+
+#wechatCode {
+	background-position: 0 -153px
+}
+
+#wechatCode:hover {
+	background-position: -51px -153px
+}
+
+#tmallKefu {
+	background-position: -102px -102px
+}
+
+#tmallKefu:hover {
+	background-position: -153px -102px
+}
+
+#onlineKefu {
+	background-position: 0 0
+}
+
+#onlineKefu:hover {
+	background-position: -51px 0
+}
+
+.tel_list {
+	position: relative
+}
+
+.tel_list div {
+	padding: 10px;
+	width: 220px
+}
+
+.tel_list p {
+	overflow: hidden;
+	line-height: 24px
+}
+
+.tel_list p span {
+	float: left;
+	color: #848484;
+	font-size: 12px
+}
+
+.tel_list p .country {
+	width: 100px;
+	text-align: right;
+	margin-right: 10px
+}
+
+#telList {
+	background-position: 0 -102px
+}
+
+#telList:hover {
+	background-position: -51px -102px
+}
+
+#qqKefu {
+	background-position: 0 -51px
+}
+
+#qqKefu:hover {
+	background-position: -51px -51px
+}
+
+.m-app-open {
+	position: fixed;
+	z-index: 99999;
+	left: 0;
+	bottom: 0;
+	height: 157px;
+	width: 100%;
+	min-width: 1000px
+}
+
+.m-app-open .box-background {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #263646;
+	opacity: .85;
+	filter: alpha(opacity=85)
+}
+
+.m-app-open .box-inner {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	z-index: 2
+}
+
+.m-app-open .background-img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 0
+}
+
+.m-app-open .background-img a {
+	position: absolute;
+	left: 60px;
+	bottom: 0;
+	width: 670px;
+	height: 140px;
+	z-index: 3;
+	opacity: 0;
+	background: #fff;
+	filter: alpha(opacity=0)
+}
+
+.m-app-open .background-imgimg {
+	width: 1000px
+}
+
+.m-app-open .btn-post {
+	position: absolute;
+	z-index: 1;
+	left: 570px;
+	top: 50px
+}
+
+.btn-post .fl_pop_items {
+	position: relative;
+	margin-top: 7px;
+	height: 100px
+}
+
+.btn-post .fl_pop_items input {
+	border: 0;
+	padding: 0 10px;
+	height: 38px;
+	font-size: 14px;
+	line-height: 38px;
+	color: #333;
+	outline: 0
+}
+
+.btn-post .fl_pop_items input::-webkit-input-placeholder {
+	color: #999
+}
+
+.btn-post .fl_pop_items input::-moz-placeholder {
+	color: #999;
+	opacity: 1
+}
+
+.btn-post .fl_pop_items input:-ms-input-placeholder {
+	color: #999
+}
+
+.btn-post .fl_pop_items .fl_pop_input_dest {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 280px
+}
+
+.btn-post .fl_pop_items .fl_pop_submit {
+	position: absolute;
+	left: 0;
+	top: 44px;
+	width: 280px;
+	height: 38px
+}
+
+.btn-post .fl_pop_items .fl_pop_input_secode {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 104px
+}
+
+.btn-post .fl_pop_items .fl_pop_input_phone {
+	position: absolute;
+	left: 105px;
+	top: 0;
+	width: 175px
+}
+
+.btn-post .fl_pop_items .float_pop_secode {
+	position: absolute;
+	left: 131px;
+	top: 0;
+	width: 90px;
+	overflow: hidden
+}
+
+.btn-post .fl_pop_btn_normal {
+	position: absolute;
+	left: 200px;
+	top: 0;
+	width: 80px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	background: #f90;
+	color: #fff;
+	font-size: 17px;
+	cursor: pointer;
+	border: none;
+}
+
+.btn-post .fl_pop_btn_normal:hover {
+	text-decoration: none
+}
+
+.m-app-open .btn-close {
+	position: absolute;
+	top: 10px;
+	right: -50px;
+	z-index: 1;
+	cursor: pointer;
+	transition: all 300ms;
+	-webkit-transition: all 300ms
+}
+
+.m-app-open .btn-close img {
+	width: 39px
+}
+
+.m-app-open .btn-close:hover {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg)
+}
+
+.m-app-close {
+	position: fixed;
+	z-index: 99999;
+	right: 0;
+	bottom: 0;
+	width: 50px;
+	background-color: #263646;
+	padding: 10px 0
+}
+
+.m-app-close a {
+	display: block;
+	width: 30px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 20px;
+	color: #FFBA00;
+	margin-left: 10px
+}
+
+.m-app-close .background-img {
+	cursor: pointer
+}
+
+.m-app-close .background-img img {
+	width: 167px
+}
+
+.top-tips {
+	border-bottom: 1px solid #ddd;
+	height: 50px;
+	overflow: hidden
+}
+
+.top-tips .title {
+	float: left
+}
+
+.top-tips h1 {
+	font-size: 24px;
+	line-height: 50px;
+	padding-left: 20px
+}
+
+.crumbs {
+	float: right;
+	line-height: 30px;
+	margin: 10px;
+	padding-left: 25px
+}
+
+.crumbs,
+.crumbs a {
+	color: #787878
+}
+
+.crumbs,
+.icon-flights,
+.icon-hotel,
+.icon-product,
+.icon-sight,
+.icon-tips,
+.icon-traffic,
+.icon-visa {
+	background: rgba(0, 0, 0, 0) url(icon_subnav.png)/*tpa=http://www.8stour.com/Public/Web/images/common/icon_subnav.png*/
+	no-repeat scroll 0 5px
+}
+
+.icon-product {
+	background-position: 0 -73px
+}
+
+.icon-hotel {
+	background-position: 0 -98px
+}
+
+.icon-sight {
+	background-position: 0 -123px
+}
+
+.icon-traffic {
+	background-position: 0 -148px
+}
+
+.icon-flights {
+	background-position: 0 -173px
+}
+
+.icon-visa {
+	background-position: 0 -198px
+}
+
+.icon-tips {
+	background-position: 0 -223px
+}
