@@ -1,0 +1,154 @@
+.Max {
+	display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #efeff4;
+}
+.MaxTitle {
+    overflow: hidden;
+    width: 100%;
+    background-color: #262626;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.Return {
+    float: left;
+    transform: rotate(180deg);
+    margin-top: 12px;
+    margin-left: 4%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.MaxTitleText {
+    float: left;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+}
+.MaxMenu {
+    height: 40px;
+    margin: 5px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: right;
+}
+
+.fansSelect {
+    overflow: hidden;
+    width: 95%;
+    margin: 15px auto;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ff0202;
+}
+
+.fansSelect div {
+    float: left;
+    height: 100%;
+    text-align: center;
+    color: #262626;
+    line-height: 35px;
+}
+.yesSee {
+    width: 33%;
+}
+.fansSelect div {
+    float: left;
+    height: 100%;
+    text-align: center;
+    color: #262626;
+    line-height: 35px;
+}
+.noSee {
+    width: 34%;
+}
+.hotFan {
+    width: 33%;
+}
+
+.fansUl1, .fansUl2, .fansUl3 {
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    position: absolute;
+    top: 120px;
+}
+.fansUl1 li:first-child, .fansUl2 li:first-child, .fansUl3 li:first-child {
+    border-top: 1px solid #262626;
+}
+.fansUl1 li, .fansUl2 li, .fansUl3 li {
+    text-indent: 5px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

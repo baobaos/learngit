@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/search.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	</head>
+	<body>
+		 <div class="top">
+    <a href="javascript:history.back()" class="back lf"></a>
+    <input type="text" class="search lf">
+    <button type="submit" class="search_btn">搜索</button>
+</div>
+    <div class="main">
+        <div class="hot_search">
+            <p class="title">热门搜索</p>
+            <div class="hot_content">
+                <a class="item" href="JavaScript:void(0)">护肤</a>
+                <a class="item" href="JavaScript:void(0)">手表</a>
+                <a class="item" href="JavaScript:void(0)">钱包</a>
+                <a class="item" href="JavaScript:void(0)">香水</a>
+                <a class="item" href="JavaScript:void(0)">烟酒</a>
+                <a class="item" href="JavaScript:void(0)">保健品</a>
+                <a class="item" href="JavaScript:void(0)">手链</a>
+                <a class="item" href="JavaScript:void(0)">腰带</a>
+                <a class="item" href="JavaScript:void(0)">鞋子</a>
+                <a class="item" href="JavaScript:void(0)">戒指</a>
+            </div>
+        </div>
+        <div class="history">
+            <p class="title">历史</p>
+            <div class="hot_content">
+                <a class="item" href="JavaScript:void(0)">&nbsp;</a>
+            </div>
+        </div>
+        <div class="empty">
+            <a class="clear" href="javascript:void(0)">清空历史搜索</a>
+        </div>
+    </div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+    $(".item").click(function(){
+        $(".search").val($(this).text());
+
+    });
+    $(".search_btn").click(function(){
+        if($(".search").val()!=""){
+            if($(".history a.item").length<=5){
+                $("<a/>").text( $(".search").val()).addClass("item").appendTo($(".history .hot_content"));
+            }
+        }
+//      window.location.href="list.html";
+    });
+    $(".clear").click(function(){
+        $(".history a.item").remove();
+    });
+});
+	</script>
+</html>

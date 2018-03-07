@@ -1,0 +1,87 @@
+.search_box{
+	padding: 7px 5%;
+    background: #2F2F2F;
+    overflow: hidden;
+}
+.back{
+	display: block;
+    width: 10%;
+    height: 30px;
+    background: url(../img/back.png) no-repeat 0 center;
+    background-size: 15px 20px;
+}
+.search{
+	display: block;
+    width: 90%;
+    padding: 0 36px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #B5B5B5;
+    border-radius: 4px;
+    background: #EBEBEB url(../img/search.png) no-repeat 9px center;
+    background-size: 18px;
+}
+/*主体*/
+.main{
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	overflow: hidden;
+}
+.main_f{
+	width: 26%;
+	height: 568px;
+	background: #EFEFF4;
+}
+.main_f ul{
+	background: #fff;
+}
+.main_f ul li{
+	width: 100%;
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.current{
+	color: #ED2F38;
+    background: #EFEFF4;
+}
+/*右边*/
+.main_r{
+	overflow: hidden;
+    padding: 0 5px;
+    height: 568px;
+    background: #EFEFF4;
+}
+.right_content{
+	width: 100%;
+	height: 100%;
+}
+.title {
+    height: 37px;
+    line-height: 37px;
+}
+.show {
+    overflow: hidden;
+}
+.show .product {
+    display: inline-block;
+    width: 32%;
+    background: #fff;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+.link {
+    color: #000000;
+}
+.show .product .introduce {
+    height: 20px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.show .product img {
+    display: block;
+    width: 90%;
+    margin: 5px auto 7px;
+}

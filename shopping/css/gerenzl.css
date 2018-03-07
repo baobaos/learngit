@@ -1,0 +1,294 @@
+.messageDiv {
+    /* display: none; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: #efeff4;
+    
+}
+
+.MaxTitle {
+    overflow: hidden;
+    width: 100%;
+    background-color: #262626;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+
+.mes{
+    float: left;
+    transform: rotate(180deg);
+    margin-top: 12px;
+    margin-left: 4%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.MaxTitleText {
+    float: left;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+
+.MaxMenu {
+    height: 40px;
+    margin: 5px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: right;
+}
+
+
+.basisBoxTitle, .bankTitle {
+    margin: 10px;
+    color: #787878;
+    text-align: left;
+}
+
+.basisBox, .bank {
+    width: 100%;
+    background-color: #efeff4;
+}
+
+.basisBox>div, .bank>div {
+    width: 100%;
+    margin: auto;
+    text-indent: 2%;
+}
+.headImg {
+    height: 70px;
+    zoom: 1;
+    margin: 5px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #b1b1b1;
+}
+
+.basisBox .z {
+    font-weight: bold;
+    float: left;
+}
+
+.headImgBox {
+    margin-right: 10px;
+    float: right;
+}
+.headImgBox img {
+    min-width: 50px;
+    min-height: 50px;
+    
+}
+.basisBox input {
+    width: 100px;
+    outline: none;
+}
+
+
+
+.smallBox {
+    height: 50px;
+    zoom: 1;
+    border-bottom: 1px solid #b1b1b1;
+    background-color: #fff;
+}
+
+.basisBox .z {
+    font-weight: bold;
+}
+.leftBox {
+    line-height: 50px;
+}
+.z {
+    float: left;
+}
+
+.basisBox, .bank {
+    width: 100%;
+    background-color: #efeff4;
+}
+.basisBox .rightBox {
+    margin-right: 10px;
+}
+.rightBox {
+    line-height: 50px;
+}
+.y {
+    float: right;
+}
+.basisBox input[type="text"] {
+    padding-left: 5px;
+}
+.basisBox input {
+    width: 100px;
+    outline: none;
+    border:1px solid #ccc;
+}
+
+.VipNum .rightBox p {
+    color: #cecece;
+}
+
+.basisBox input[type="text"] {
+    padding-left: 5px;
+}
+.Email .rightBox input {
+    width: 150px;
+}
+.basisBox input {
+    width: 100px;
+    outline: none;
+}
+
+.site {
+    zoom: 1;
+    border-bottom: 1px solid #b1b1b1;
+    height: auto;
+    min-height: 50px;
+    position: relative;
+    background-color: #fff;
+}
+
+.site .leftBox {
+    width: 25%;
+}
+.mydizhi {
+    font-weight: bold;
+}
+
+
+.mydizhiBox .rightBox {
+    width: 40%;
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    line-height: 2.5;
+    top: 0px;
+}
+.bankSelect {
+    width: 100px;
+}
+#loc_province2, #loc_city2 {
+    width: 100px;
+}
+
+.blank_15 {
+    height: 15px;
+}
+
+
+.basisBox input {
+    width: 100px;
+    outline: none;
+}
+.saveBtn {
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #ff3c32;
+    margin: auto;
+    display: block;
+    border: 0px;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

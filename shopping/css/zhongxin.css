@@ -1,0 +1,193 @@
+body{
+	font-size: 14px;
+	background: #EFEFF4
+}
+.shopping_con{
+	width: 100%;
+	/*min-width: 320px;
+	max-width: 640px;*/
+	margin: 0 auto;
+	background:#efefef;
+}
+.main{
+	width: 100%;
+}
+.user_box {
+    height: 160px;
+    background: url(../img/user-box-bg.png) no-repeat center;
+    background-size: 100% 160px;
+}
+.user_info {
+    height: 105px;
+}
+.vip_data {
+    height: 108px;
+    display: block;
+    padding-left: 15px;
+    color: #fff;
+}
+.head {
+    /* position: relative; */
+    float: left;
+    margin: 22px 12px;
+    width: 18%;
+    height: 68px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.head img {
+    /* position: relative; */
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.vip_right {
+    float: left;
+    margin: 22px auto;
+    position: relative;
+    background: url(../img/right.png) no-repeat 90% center;
+    background-size: 10px 15px;
+    padding-right: 15%;
+    width: 70%;
+}
+.open_vip {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    background: #FF3D3D;
+    border-radius: 3px;
+    padding: 0 6px;
+    font-size: 12px;
+    vertical-align: bottom;
+}
+.tjr {
+    zoom: 1;
+    margin-top: 3px;
+    max-width: 160px;
+}
+.tjr p {
+    float: left;
+}
+.tjr_xg {
+    color: #FA4040;
+    margin-left: 7px;
+}
+.tjr, .vip_number {
+    height: 20px;
+    line-height: 20px;
+}
+.user_order {
+    width: 100%;
+    height: 48px;
+    background: rgba(0,0,0,0.6);
+    overflow: hidden;
+}
+.user_order a {
+    display: block;
+    float: left;
+    width: 25%;
+    height: 50px;
+    line-height: 16px;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.vip_rank,.my_purse{
+   width: 100%;
+    margin:26px 0;
+    background: #fff;
+}
+.vip_rank_title,.my_purse_title{
+    padding: 0 15px;
+}
+.vip_rank_title_link,.my_purse_title_link{
+    display: block;
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    padding-right: 15px;
+    background: url(../img/right.png) no-repeat right 16px;
+    background-size: 10px 14px;
+    font-size: 17px;
+    font-weight: 500;
+    border-bottom:1px solid #EEEEEE;
+    color: #444444;
+}
+.vip_rank_title_link .rf{
+    color: #8E8E93;
+}
+
+.vip_rank_content,.my_purse_content{
+    width:100%;
+    overflow: hidden;
+}
+.vip_rank_content a,.my_purse_content a{
+    display: block;
+    float: left;
+    width:33.3%;
+    padding: 10px;
+    color: #787878;
+    text-align: center;
+}
+.vip_rank_content a p,.my_purse_content a p{
+    padding: 5px 0;
+}
+.my_purse_title_link b{
+    display: inline-block;
+    width:29px;
+    height:29px;
+    background: url("../img/icon_wallets.png") no-repeat;
+    background-size: 29px 29px;
+    position: relative;
+    top:8px;
+}
+
+.item_list{
+    background: #fff;
+    margin-bottom: 65px;
+}
+.item{
+    padding-left: 15px;
+    height:45px;
+    line-height: 45px;
+}
+.item a{
+    display: block;
+    padding-left: 45px;
+}
+.item_order_link{
+    background: url("../img/icon_order.png") no-repeat 0 center;
+    background-size: 30px 30px;
+}
+.item_content{
+    color: #000000;
+    background: url(../img/right.png) no-repeat calc(100% - 15px)  center;
+    background-size: 10px 14px;
+    padding-right: 30px;
+}
+div.item_content{
+    border-bottom: 1px solid #EEEEEE;
+}
+.item_content span{
+    float: right;
+    color: #8E8E93;
+}
+.item_er_link{
+    background: url("../img/icon_qrcode_green.png") no-repeat 0 center;
+    background-size: 30px 30px;
+}
+
+.couponsBox{
+    display:none;
+}
+.Max{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: #efeff4;
+}
+

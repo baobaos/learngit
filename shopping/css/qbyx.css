@@ -1,0 +1,202 @@
+.Max {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #efeff4;
+}
+
+.MaxTitle {
+    overflow: hidden;
+    width: 100%;
+    background-color: #262626;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.Return {
+    float: left;
+    
+    transform: rotate(180deg);
+    margin-top: 12px;
+    margin-left: 4%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.MaxTitleText {
+    float: left;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+}
+.MaxMenu {
+    height: 40px;
+    margin: 5px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: right;
+}
+
+.moneyTop {
+    overflow: hidden;
+    text-align: center;
+    height: 35%;
+    background-color: #fa4142;
+}
+
+.moneyTop p:first-child {
+    margin: 10% 0;
+    font-size: .7rem;
+}
+.moneyTop p {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.moneyContent {
+    width: 100%;
+    color: #cccccc;
+    overflow: hidden;
+    background-color: #fff;
+}
+.moneyContent div {
+    width: 50%;
+    float: left;
+    height: 80px;
+    line-height: 40px;
+    text-indent: 15px;
+}
+
+.moneyNum {
+    color: #fa4142;
+}
+.moneyBtn {
+    width: 95%;
+    border-radius: 5px;
+    height: 35px;
+    margin: 20px auto;
+    color: #fff;
+    font-size: 1rem;
+    background-color: #fa4142;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
