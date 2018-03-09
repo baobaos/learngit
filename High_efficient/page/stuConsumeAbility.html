@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>高校大学生数据分析系统</title>
+<!--整体前台框架css文件-->
+<link href="../css/pc/cores/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/cores.css" rel="stylesheet" type="text/css">
+<!--时间插件css文件-->
+<link media="all" href="../css/pc/cores/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+<!--提示框css文件-->
+<link href="../css/pc/cores/alert.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main">
+	<!-- 学生消费能力分析开始 -->
+	<div class="subnav">
+	当前位置：
+		<a href="#">首页</a> &gt; 学生购买力 &gt; 学生生活费调查
+	</div>
+	<div class="tabbox">
+		<div class="tab">
+			<a href="#" class="active">不同性别学生生活费</a>
+			<!--<a href="#">学生按月消费金额和平均消费金额</a>
+			<a href="#">学生消费次数</a>
+			<a href="#">学生高中低消费水平统计</a>-->
+		</div>
+		<div class="clear">
+		</div>
+		<div class="tabcontent">
+			<!-- 不同性别学生生活费	 -->
+			<div class="box" style="display:block">
+				<div class="search row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="input-group date form_date" data-date="" data-date-format="yyyy" data-link-field="dtp_input2" data-link-format="yyyy">
+								<input class="form-control" size="16" type="text" value="" id="changes_ability_text">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+							</div>
+							<input type="hidden" id="dtp_input2" value=""/><br/>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<button type="button" class="btn btn-success" id="changes_ability_search">搜索</button>
+					</div>
+				</div>
+				<div id="changes_ability" style="height:445px;overflow:hidden">
+				</div>
+			</div>
+			<!-- 不同性别学生生活费 -->
+			<!-- 学生按月消费金额和平均消费金额 -->
+			<div class="box">
+				<div class="search row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="input-group date form_date" data-date="" data-date-format="yyyy" data-link-field="dtp_input2" data-link-format="yyyy">
+								<input class="form-control" size="16" type="text" value="" readonly id="month_average_text">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+							</div>
+							<input type="hidden" id="dtp_input2" value=""/><br/>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<button type="button" class="btn btn-success" id="month_average_search">搜索</button>
+					</div>
+				</div>
+				<div id="month_average" style="height:445px;overflow:hidden">
+				</div>
+			</div>
+			<!-- 学生按月消费金额和平均消费金额结束 -->
+			<!-- 学生消费次数 -->
+			<div class="box">
+				<div class="search row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="input-group date form_date" data-date="" data-date-format="yyyy" data-link-field="dtp_input2" data-link-format="yyyy">
+								<input class="form-control" size="16" type="text" value="" readonly id="consumption_times_text">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+							</div>
+							<input type="hidden" id="dtp_input2" value=""/><br/>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<button type="button" class="btn btn-success" id="consumption_times_search">搜索</button>
+					</div>
+				</div>
+				<div id="consumption_times" style="height:445px;overflow:hidden">
+				</div>
+			</div>
+			<!-- 学生消费次数结束 -->
+			<!-- 学生消费能力变化 -->
+			<div class="box">
+				<div id="spending_power" style="height:445px;overflow:hidden">
+				</div>
+			</div>
+			<!-- 学生消费能力变化结束 -->
+		</div>
+	</div>
+</div>
+<!--右侧内容结束-->
+<!--整体前台框架js文件-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="../js/pc/cores/html5shiv.js"></script>
+<script src="../js/pc/cores/respond.min.js"></script>
+<![endif]-->
+<script src="../js/pc/cores/jquery-1.11.2.min.js"></script>
+<script src="../js/pc/cores/bootstrap.min.js"></script>
+<!--时间插件-->
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.zh-CN.js"></script>
+<!--echarts插件-->
+<script src="../js/pc/cores/echarts.min.js"></script>
+<!--选项卡插件-->
+<script src="../js/pc/cores/tab.js"></script>
+<!--提示框插件-->
+<script src="../js/pc/cores/Alert.js"></script>
+<script>
+	/*获取服务器数据*/
+	var result='{"consumeAllList":[{"month":"01","year":"2017","totalConsumeMoney":2516},{"month":"03","year":"2017","totalConsumeMoney":25169.70},{"month":"04","year":"2017","totalConsumeMoney":25820.89},{"month":"05","year":"2017","totalConsumeMoney":25961.34},{"month":"06","year":"2017","totalConsumeMoney":26086.87},{"month":"09","year":"2017","totalConsumeMoney":26493.79},{"month":"10","year":"2017","totalConsumeMoney":26373.98},{"month":"11","year":"2017","totalConsumeMoney":25014.99},{"month":"12","year":"2017","totalConsumeMoney":25338.20}],"searchYear":"null","consumeAbilityList":[{"month":"01","year":"2017","supermktConsume":"38.90","totalConsume":"52.81"},{"month":"03","year":"2017","supermktConsume":"38.90","totalConsume":"52.81"},{"month":"04","year":"2017","supermktConsume":"38.58","totalConsume":"49.76"},{"month":"05","year":"2017","supermktConsume":"37.60","totalConsume":"46.36"},{"month":"06","year":"2017","supermktConsume":"42.78","totalConsume":"52.86"},{"month":"09","year":"2017","supermktConsume":"42.70","totalConsume":"51.39"},{"month":"10","year":"2017","supermktConsume":"36.88","totalConsume":"47.23"},{"month":"11","year":"2017","supermktConsume":"36.97","totalConsume":"52.18"},{"month":"12","year":"2017","supermktConsume":"38.33","totalConsume":"51.47"}],"superMktAvg":"5,498.89","consumeLevelList":[{"avgMoney":"222.38","highPercent":"2.86","totalMoney":667.14,"consumeValuesLabel":1,"highNum":3},{"avgMoney":"312.83","highPercent":"52.38","totalMoney":17205.85,"consumeValuesLabel":3,"highNum":55},{"avgMoney":"120.41","highPercent":"59.05","totalMoney":7465.21,"consumeValuesLabel":5,"highNum":62}],"superMktCountList":[{"consumeCount":188,"month":"03","year":"2017"},{"consumeCount":185,"month":"04","year":"2017"},{"consumeCount":192,"month":"05","year":"2017"},{"consumeCount":201,"month":"06","year":"2017"},{"consumeCount":188,"month":"09","year":"2017"},{"consumeCount":184,"month":"10","year":"2017"},{"consumeCount":187,"month":"11","year":"2017"},{"consumeCount":183,"month":"12","year":"2017"}]}';
+	result=JSON.parse(result);	
+</script>
+<!-- echarts封装模板 -->
+<script src="../js/pc/cores/echarts_Template.js"></script>
+<script src="../js/pc/cores/stuConsumeAbility.js"></script>
+<!-- 学生消费内容分析结束 -->
+</body>
+</html>

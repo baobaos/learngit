@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>高校大学生数据分析系统</title>
+<!--整体前台框架css文件-->
+<link href="../css/pc/cores/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/cores.css" rel="stylesheet" type="text/css">
+<!--时间插件css文件-->
+<link media="all" href="../css/pc/cores/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+<!--提示框css文件-->
+<link href="../css/pc/cores/alert.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main">
+	<div class="subnav">
+		当前位置：
+		<a href="#">首页</a> &gt; 学生消费行为分析 &gt; 学生个人消费能力排名
+	</div>
+	<div class="box">
+		<div class="title">
+			学生个人消费能力排名
+		</div>
+		<div class="layout">
+			<div class="search row">
+				<div class="col-md-3">
+					<div class="form-group">
+						<input class="form-control" placeholder="学号" size="16" type="text" id="month_average_text_id">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="form-group">
+						<div class="input-group date form_date" data-date="" data-date-format="yyyy" data-link-field="dtp_input2" data-link-format="yyyy">
+							<input class="form-control" size="16" type="text" value="" readonly id="month_average_text">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+						</div>
+						<input type="hidden" id="dtp_input2" value=""/><br/>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-success" id="month_average_search">搜索</button>
+				</div>
+			</div>
+			<div class="message_box">
+				<div class="col-md-3">
+					<div class="message_layout">
+						<div class="message_layout_title t1">
+							12月服装支出
+						</div>
+						<div class="message_layout_content">
+							0
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="message_layout">
+						<div class="message_layout_title t2">
+							12月食品支出
+						</div>
+						<div class="message_layout_content">
+							0元
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="message_layout">
+						<div class="message_layout_title t3">
+							12月交通支出
+						</div>
+						<div class="message_layout_content">
+							0次
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="message_layout">
+						<div class="message_layout_title t4">
+							12月租房支出
+						</div>
+						<div class="message_layout_content">
+							0元
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear">
+			</div>
+			<div id="consumption_ranking" style="height:420px;overflow:hidden;margin-top:15px">
+			</div>
+		</div>
+	</div>
+</div>
+<!--整体前台框架js文件-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="../js/pc/cores/html5shiv.js"></script>
+<script src="../js/pc/cores/respond.min.js"></script>
+<![endif]-->
+<script src="../js/pc/cores/jquery-1.11.2.min.js"></script>
+<script src="../js/pc/cores/bootstrap.min.js"></script>
+<!--本页代码-->
+<script>	
+	/*获取服务器数据*/
+	var result='{"searchYear":"null","consumeRankingList":[{"rownum":1,"consumeCount":8,"studensName":"张丽雅","consumeValues":96.56,"studensSex":"2","userId":2015011115,"month":"12","consumeAvg":"14.33","year":"2017","totalConsumeMoney":444.24},{"rownum":2,"consumeCount":5,"studensName":"王伟东","consumeValues":80.51,"studensSex":"2","userId":2015011301,"month":"12","consumeAvg":"7.19","year":"2017","totalConsumeMoney":222.90},{"rownum":3,"consumeCount":6,"studensName":"柳雨辰","consumeValues":79.80,"studensSex":"2","userId":2015011108,"month":"12","consumeAvg":"9.94","year":"2017","totalConsumeMoney":308.04},{"rownum":4,"consumeCount":11,"studensName":"王越","consumeValues":76.82,"studensSex":"2","userId":2015011217,"month":"12","consumeAvg":"16.54","year":"2017","totalConsumeMoney":512.64},{"rownum":5,"consumeCount":3,"studensName":"王东一","consumeValues":73.74,"studensSex":"2","userId":2015011114,"month":"12","consumeAvg":"2.73","year":"2017","totalConsumeMoney":84.60},{"rownum":6,"consumeCount":5,"studensName":"贾龙","consumeValues":72.98,"studensSex":"2","userId":2015011125,"month":"12","consumeAvg":"4.17","year":"2017","totalConsumeMoney":129.26},{"rownum":7,"consumeCount":12,"studensName":"薛瑶","consumeValues":71.06,"studensSex":"2","userId":2015011221,"month":"12","consumeAvg":"21.68","year":"2017","totalConsumeMoney":672.00},{"rownum":8,"consumeCount":6,"studensName":"李玉龙","consumeValues":68.96,"studensSex":"2","userId":2015011109,"month":"12","consumeAvg":"5.99","year":"2017","totalConsumeMoney":185.76},{"rownum":9,"consumeCount":15,"studensName":"刘韩","consumeValues":63.36,"studensSex":"1","userId":2015011214,"month":"12","consumeAvg":"19.54","year":"2017","totalConsumeMoney":605.87},{"rownum":10,"consumeCount":13,"studensName":"吴爽","consumeValues":62.41,"studensSex":"2","userId":2015011210,"month":"12","consumeAvg":"17.30","year":"2017","totalConsumeMoney":536.22}]}';
+	result=JSON.parse(result);
+</script>
+<!--时间插件-->
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.zh-CN.js"></script>
+<!--echarts插件-->
+<script src="../js/pc/cores/echarts.min.js"></script>
+<script src="../js/pc/cores/Alert.js"></script>
+<!-- echarts封装模板 -->
+<script src="../js/pc/cores/echarts_Template.js"></script>
+<script src="../js/pc/cores/stuConsumeRanking.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/*
+ *@本css功能：页面login初始化css文件
+ *@本css作者：杨环宇
+ *@编写时间：2017年1月17日
+ *@修改人：杨环宇
+ *@修改时间：无
+ *@修改原因：无
+ *@修改位置或名称：无
+ */
+
+/*页面初始化*/
+body,dd,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,ul {
+	margin: 0;
+	padding: 0;
+}
+
+body,html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: #fff;
+	color: #515151;
+	font-size: 1em;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	line-height: 1.2;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	border: none;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255,0,0,0);
+}
+
+input:focus {
+	outline: 0;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.rel {
+	position: relative;
+}
+
+.abs {
+	position: absolute;
+}
+
+.clear {
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
+
+.uppercase{
+	text-transform:uppercase;
+}
+
+/* logo样式 */
+.logo{
+	padding-left: 5%;
+}
+
+.logo_left{
+	float: left;
+	margin-right: 30px;
+}
+
+
+
+.logo_right{
+	float: left;
+	line-height: 100px;
+}
+
+.logo_right p{
+	font-size: 30px;
+	color: #333333;
+}
+
+.logo_right span{
+	display: block;
+	color: #bbbbbb;
+	font-size: 14px;
+}
+
+/* 登陆区样式 */
+.land{
+	background: url(../../../images/pc/land_bg.jpg) no-repeat;
+	background-position: center;
+	height: 618px;
+}
+
+.window{
+	width: 317px;
+	height: 394px;
+	background: #ffffff;
+	top:20%;
+	right: 12%;
+	border-radius: 5px;
+}
+
+.window h3{
+	height: 99px;
+	background: #FFFFFF;
+	text-align: center;
+	line-height: 99px;
+	color: #18c5a0;
+}
+
+.land_form {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.land_form div{
+	position: relative;
+	margin-bottom: 22px;
+	padding: 0;
+}
+
+.land_form input{
+	background: none;
+	line-height: 38px;
+	height: 38px;
+	width: 100%;
+}
+
+.window h5{
+    position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+}
+
+.buttom button{
+	width: 90%;
+	height: 48px;
+	background: #18c5a0;
+	color: #FFFFFF;
+	font-size: 18px;
+	margin-left: 5%;
+	border: none;
+	border-radius: 5px;
+}
+
+.window label{
+	margin-left: 5%;
+	font-weight: normal;
+	margin-right: 5%;
+	color: #999999;
+}
+.pull-right a{
+	color: #999999;
+}
+
+/* footer样式 */
+.footer{
+	text-align: center;
+	font-size: 12px;
+	color: #999999;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	line-height: 25px;
+}
+
+
+
+
+

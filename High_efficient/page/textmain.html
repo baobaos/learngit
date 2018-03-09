@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>高校大学生消费分析系统</title>
+<!--整体前台框架css文件-->
+<link href="../css/pc/cores/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/cores.css" rel="stylesheet" type="text/css">
+<!--弹出盒子的css文件-->
+<link href="../css/pc/cores/alert.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--左侧导航-->
+<div class="left-side">
+	<!--logo-->
+	<div class="logo">
+		<a href='beforeLogin?jsonStr={}'><img src="../images/pc/logo.png" width="100" alt=""></a>
+	</div>
+	<!--logo-->
+	<!--左侧导航-->
+	<div class="nav_left">
+		<ul class="nav nav-pills nav-stacked" role="tablist">
+			<li role="presentation"><a href="#" class="dropdown-toggle"><img src="../images/pc/ico01.png">学生画像</a>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="portraitList.html" target="main" id="portraitBtn">综合画像</a></li>
+			</ul>
+			<div class="clear">
+			</div>
+			</li>
+			<li role="presentation"><a href="#" class="dropdown-toggle"><img src="../images/pc/ico02.png" alt="退出系统">高校大学生购买力</a>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="stuConsumeAbility.html" target="main" id="consumeAbilityBtn">每月生活费</a></li>
+				<li><a href="stuConsumeRanking.html" target="main" id="consumeRankBtn">每月基本消费支出</a></li>
+				<li><a href="placeRankingList.html" target="main" id="consumeSiteRankBtn">每月非必须支出</a></li>
+			</ul>
+			<div class="clear">
+			</div>
+			</li>
+			<li role="presentation"><a href="#" class="dropdown-toggle"><img src="../images/pc/ico03.png" alt="退出系统">休闲娱乐支出</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="libBorrowPercent.html" target="main" id="percentBtn">每月旅游费用</a></li>
+					<li><a href="placeRankingnew.html" target="main" id="percentBtn">每月聚餐消费</a></li>
+					<li><a href="comaLowAilAnalysis.html" target="main" id="percentBtn">每月观影消费</a></li>
+				</ul>
+				<div class="clear">
+			</div>
+			</li>
+			<li role="presentation"><a href="#" class="dropdown-toggle"><img src="../images/pc/ico04.png" alt="退出系统">高档消费品</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="onlineHighGroupAnalysis.html" target="main" id="nightInternetBtn"> 高档产品类别</a></li>
+					<li><a href="onlineHighGroupAnalysis.html" target="main" id="gradeRowsBtn"> 高档产品更换频率</a></li>
+					<li><a href="onlineHighGroupAnalysis.html" target="main" id="sumBigRowsSearchBtn"> 高档产品价格区间</a></li>
+				</ul>
+				<div class="clear"></div>
+			</li>
+			<li role="presentation"><a href="#" class="dropdown-toggle"><img src="../images/pc/ico05.png" alt="退出系统">关联分析</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href='gradeAssociationAnalysis.html' target="main" id="gradeRelBtn">成绩关联分析</a></li>
+				</ul>
+				<div class="clear"></div>
+			</li>
+			<li role="presentation"><a href="#" class="dropdown-toggle"><img src="../images/pc/ico06.png" alt="退出系统">消费关注点</a>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="javascript:void(0)" target="main" class="dropdown-toggle" id="sumBigRowsSearchBtn">价格</a></li>
+				<li><a href="javascript:void(0)" target="main" class="dropdown-toggle">质量</a></li>
+				<li><a href="javascript:void(0)" target="main" class="dropdown-toggle">潮流</a></li>
+				
+			</ul>
+			<div class="clear">
+			</div>
+			</li>
+			
+		</ul>
+	</div>
+	<!--左侧导航-->
+</div>
+<!--左侧导航-->
+<!--右侧内容-->
+<div class="right_content">
+	<!--头部内容开始-->
+	<div class="header">
+		<p class="navbar-text">
+			高校学生大数据分析系统
+		</p>
+		<div class="sign_out">
+			<a href="#" id="out"><img src="../images/pc/icon_02.jpg" alt="退出系统"></a>
+		</div>
+		<div class="Login_name">
+			<i class="icon_01"><img src="../images/pc/icon_01.jpg"></i><span id="name">未知</span>
+		</div>
+	</div>
+	<!--头部内容结束-->
+	<iframe src="pcMain.html" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" name="main" class="iframemain" allowtransparency="yes" border="0">
+	</iframe>
+</div>
+<!--右侧内容-->
+<!--整体前台框架js文件-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="../js/pc/cores/html5shiv.js"></script>
+<script src="../js/pc/cores/respond.min.js"></script>
+<![endif]-->
+<script src="../js/pc/cores/jquery-1.11.2.min.js"></script>
+<script src="../js/pc/cores/bootstrap.min.js"></script>
+<!-- 弹出盒子插件 -->
+<script>	
+	/*获取服务器数据*/
+	var result='{"userName":"顾敏","roleId":1}';
+	result=JSON.parse(result);
+	$("#name").text(result.userName+"欢迎您");
+</script>
+<script src="../js/pc/cores/Alert.js"></script>
+<script src="../js/pc/cores/nav.js"></script>
+</body>
+</html>

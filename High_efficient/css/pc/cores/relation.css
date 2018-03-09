@@ -1,0 +1,80 @@
+@charset "utf-8";
+/*
+ *@本css功能：关联css
+ *@本css作者：白丹丹
+ *@编写时间：2017年2月20日
+ *@修改人：无
+ *@修改时间：无
+ *@修改原因：无
+ *@修改位置或名称：无
+ */
+
+/* 添加人员 */
+#relation{
+	margin:15px auto
+}
+.relation_introduce{
+	color:rgba(255,255,255,.6);
+	margin-top:15px;
+	font-size: 18px;
+}
+.relation_strong{
+	text-align: center;
+	color: rgba(255,255,255,.4);
+	margin-bottom:-200px;
+	padding:10px 40px;
+}
+.relation_strong .left{
+
+	float: left;
+}
+.relation_strong .right{
+	float: right;
+}
+#relation{
+	/*position: absolute;*/
+}
+/*图书阅读*/
+#read_proportion{
+	color: #fff;
+	line-height: 40px;	
+}
+#read_proportion .woman{
+	background: url(../../../images/pc/ioc09.png) no-repeat left center;
+	padding-left: 30px
+}
+#read_proportion .woman span{
+	color: #fa9023;
+}
+#read_proportion .man{
+	background: url(../../../images/pc/ioc10.png) no-repeat left center;
+	padding-left: 30px
+}
+#read_proportion .man span{
+	color: #22b6f2;
+}
+option{color: #000;border: :none;line-height: 32px;}
+.box_percent .col-md-6
+{
+	width: 49%;
+}
+.book_iframemain{width: 100%;height: 800px;}
+.BodyTransparent{background:transparent;}
+/*图书排名对齐*/
+.bookNameRank{
+	width: 32%;
+  }
+.bookauthorNameRank{
+	width: 18%;
+}
+.bookRank{
+	text-align: left;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+	overflow:hidden;
+}
+.bookPublishRank{width: 30%;}
+.bookAuthorListRank{width: 35%;}
+.bookAuthorListRow{width: 40%;}
+.box_table{min-height: 445px;}

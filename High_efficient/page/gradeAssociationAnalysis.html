@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>高校大学生数据分析系统</title>
+<!--整体前台框架css文件-->
+<link href="../css/pc/cores/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/cores.css" rel="stylesheet" type="text/css">
+<!--时间插件css文件-->
+<link media="all" href="../css/pc/cores/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+<!--提示框css文件-->
+<link href="../css/pc/cores/alert.css" rel="stylesheet" type="text/css">
+<!--样式css文件-->
+<link href="../css/pc/cores/relation.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main">
+	<div class="subnav">
+		当前位置：
+		<a href="#">首页</a> &gt; 关联分析 &gt; 成绩关联分析
+	</div>
+	<div class="box">
+		<div class="title">
+			成绩关联分析
+		</div>
+		<div class="layout">
+			<div class="search row">
+				<div class="col-md-3">
+					<div class="form-group">
+						<div class="input-group date form_date" data-date="" data-date-format="yyyy" data-link-field="dtp_input2" data-link-format="yyyy">
+							<input class="form-control" size="16" type="text" value="" readonly id="month_average_text">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+						</div>
+						<input type="hidden" id="dtp_input2" value=""/><br/>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-success" id="relation_search">搜索</button>
+				</div>
+			</div>
+			<div class="relation_introduce">
+				关联值含义：与学习能力越接近，关联度越高。
+			</div>
+			<div id="relation" style="height:420px;width:420px;">
+			</div>
+			<div class="relation_strong" style="width:420px;margin:auto">
+				<div class="left">
+					弱------关联值-----强
+				</div>
+				<div class="center">
+				</div>
+				<div class="right">
+					强------关联值-----弱
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--整体前台框架js文件-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="../js/pc/cores/html5shiv.js"></script>
+<script src="../js/pc/cores/respond.min.js"></script>
+<![endif]-->
+<script src="../js/pc/cores/jquery-1.11.2.min.js"></script>
+<script src="../js/pc/cores/bootstrap.min.js"></script>
+<!--本页代码-->
+<script>	
+	/*获取服务器数据*/
+	var result='{"consumeDate":null,"assAnalyList":[{"aName":"学习能力","correlation":-0.13,"bName":"消费能力"},{"aName":"学习能力","correlation":-0.07,"bName":"食堂消费"},{"aName":"学习能力","correlation":-0.17,"bName":"超市消费"},{"aName":"学习能力","correlation":0.12,"bName":"知识偏好"},{"aName":"学习能力","correlation":-0.05,"bName":"学生阅读能力"},{"aName":"学习能力","correlation":-0.06,"bName":"阅读广泛度"},{"aName":"学习能力","correlation":-0.15,"bName":"上网时长"},{"aName":"学习能力","correlation":0.16,"bName":"信用度"},{"aName":"学习能力","correlation":-0.03,"bName":"个人卫生"},{"aName":"学习能力","correlation":-0.08,"bName":"健康程度"},{"aName":"学习能力","correlation":0.67,"bName":"细心程度"}],"Aattribute":1}';
+	result=JSON.parse(result);	
+</script>
+<!--时间插件-->
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.zh-CN.js"></script>
+<!--echarts插件-->
+<script src="../js/pc/cores/echarts.min.js"></script>
+<script src="../js/pc/cores/Alert.js"></script>
+<!-- echarts封装模板 -->
+<script src="../js/pc/cores/math.js"></script>
+<!-- 算法js -->
+<script src="../js/pc/cores/echarts_Template.js"></script>
+<script src="../js/pc/cores/gradeAssociationAnalysis.js"></script>
+</body>
+</html>

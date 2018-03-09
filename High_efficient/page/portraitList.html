@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>综合画像</title>
+</head>
+<!--整体前台框架css文件-->
+<link href="../css/pc/cores/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/cores.css" rel="stylesheet" type="text/css">
+<!--人员管理css文件-->
+<link href="../css/pc/cores/personnel.css" rel="stylesheet" type="text/css">
+<!--提示框css文件-->
+<link href="../css/pc/cores/alert.css" rel="stylesheet" type="text/css">
+<body>
+<div class="main">
+	<!-- 面包屑开始 -->
+	<div class="subnav">
+		当前位置：
+		<a href="#">首页</a> &gt; <a href="#">画像</a> &gt; <a href="#">综合画像</a> &gt; 学生个人画像
+	</div>
+	<!-- 面包屑结束 -->
+	<!-- 综合画像开始 -->
+	<div class="box col-md-12">
+		<div class="title">
+			学生个人画像
+		</div>
+		<div class="search row">
+			<div class="col-md-3">
+				<div class="form-group">
+					<input class="form-control" placeholder="学号" size="16" type="text" id="month_average_text_id" maxlength="10">
+				</div>
+			</div>
+			<div class="col-md-2 padding_left_0">
+				<button type="button" class="btn btn-success" id="search">搜索</button>
+			</div>
+		</div>
+		<div class="clear">
+		</div>
+		<div class="col-md-5 character" style="position: relative;">
+			<img src="" id="people_icon" style="width: 350px;margin-left: -50px;">
+			<img src="../images/pc/icon_people_13.png" id="jy" style="width: 150px;display: none; right:20%; top:45%;position: absolute;opacity: 0.7;">
+			<div class="information">
+				<p id="userId">
+					学号：未知
+				</p>
+				<p id="studensName">
+					姓名：未知
+				</p>
+				<p id="studensSex">
+					性别：未知
+				</p>
+				<p id="studensCollege">
+					学院：未知
+				</p>
+				<p id="studensProfess">
+					专业：未知
+				</p>
+				<p id="studensClass">
+					班级：未知
+				</p>
+				<p id="studenClassCode">
+					学生类型：未知
+				</p>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div id="consumption_ranking" style="height:420px;overflow:hidden;margin-top:105px">
+			</div>
+			<p id="dataDate" class="hxsj">
+			</p>
+			<p id="py" class="hxsj" style="color: #dddb54;">
+			</p>
+		</div>
+		<div class="clear">
+		</div>
+	</div>
+	<!-- 综合画像结束 -->
+	<!-- 学生表格开始 -->
+	<div class="box col-md-12">
+		<div class="title">
+			学生表格
+		</div>
+		<div class="search row">
+			<div class="col-md-2">
+				<div class="form-group">
+					<input class="form-control" placeholder="学院" size="16" type="text" id="s_collegeValue">
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="form-group">
+					<input class="form-control" placeholder="专业" size="16" type="text" id="s_professValue">
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="form-group">
+					<input class="form-control" placeholder="班级" size="16" type="text" id="s_studensClass">
+				</div>
+			</div>
+			<div class="col-md-2">
+				<button type="button" class="btn btn-success" id="month_average_search">搜索</button>
+			</div>
+		</div>
+		<div class="form_bottom">
+			<table class="table responsive">
+			<thead>
+			<tr>
+				<th class="head1">
+					学号
+				</th>
+				<th class="head1" style="padding-left: 0px;text-align: left;">
+					学院
+				</th>
+				<th class="head1" style="padding-left: 0px;text-align: left;">
+					专业
+				</th>
+				<th class="head1" style="padding-left: 0px;text-align: left;">
+					班级
+				</th>
+				<th class="head1" style="padding-left: 0px;text-align: left;">
+					综合成绩
+				</th>
+				<th class="head1" style="padding-left: 0px;text-align: left;">
+					学习成绩
+				</th>
+				<th class="head1" style="padding-left: 0px;text-align: left;">
+					消费能力
+				</th>
+				<th class="head1" style="padding-left: 0px;text-align: left;">
+					阅读程度
+				</th>
+				<th class="head1" style="padding-left: 0px;text-align: left;">
+					上网程度
+				</th>
+				<th class="head1" style="padding-left: 0px;text-align: left;">
+					学生类型
+				</th>
+				<th class="head1">
+					学生详情
+				</th>
+			</tr>
+			</thead>
+			<tbody id="tbody_box">
+			</tbody>
+			</table>
+		</div>
+		<div class="page">
+			<div class="tcdPageCode">
+			</div>
+		</div>
+	</div>
+	<!-- 学生表格结束 -->
+</div>
+<!--整体前台框架js文件-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="../js/pc/cores/html5shiv.js"></script>
+<script src="../js/pc/cores/respond.min.js"></script>
+<![endif]-->
+<script src="../js/pc/cores/jquery-1.11.2.min.js"></script>
+<!-- cookie 文件-->
+<script src="../js/pc/cores/bootstrap.min.js"></script>
+<script>
+/*获取服务器数据*/
+var result='{"allPortraitList":[{"gardeValues":66.34,"creditValues":100.00,"creditAvgValues":76.58,"studensSex":"2","readValues":20,"userId":2012011101,"remarkMsg":"该生是应届毕业，高档开销较大，基本开销一般，存在严重的不合理消费情况。","collegeValue":"农学院","readAvgValues":37.25,"studensClass":"农学12","onlineAvgValues":66.89,"readValuesLabel":"较低","consumeAvgValues":50.20,"consumeValuesLabel":"低","onlineValuesLabel":"几乎不上网","compreValuesLabel":"较低","studensName":"丁聪华","consumeValues":7.86,"dataDate":"2016-12","gradStuFlag":0,"studenClassCode":4,"onlineValues":43.62,"studenClassName":"普通","gardeAvgValues":56.78,"compreValues":56.78,"gardeValuesLable":"中","professValue":"农学"},{"gardeValues":43.54,"creditValues":40.00,"creditAvgValues":76.58,"studensSex":"1","readValues":20,"userId":2012011102,"remarkMsg":"该生成绩普通，每月高档消费较多，正常开销少于额外开销，存在不合理消费情况。","collegeValue":"农学院","readAvgValues":37.25,"studensClass":"农学12","onlineAvgValues":66.89,"readValuesLabel":"较低","consumeAvgValues":50.20,"consumeValuesLabel":"低","onlineValuesLabel":"经常","compreValuesLabel":"较低","studensName":"夏潇琦","consumeValues":13.85,"dataDate":"2016-12","gradStuFlag":2,"studenClassCode":4,"onlineValues":75.57,"studenClassName":"普通","gardeAvgValues":56.78,"compreValues":56.24,"gardeValuesLable":"差","professValue":"农学"},{"gardeValues":78.23,"creditValues":100.00,"creditAvgValues":76.58,"studensSex":"2","readValues":20,"userId":2012011103,"remarkMsg":"该生是应届毕业生，综合能力较低，学习能力良，阅读能力低，该生已经就业。","collegeValue":"农学院","readAvgValues":37.25,"studensClass":"农学12","onlineAvgValues":66.89,"readValuesLabel":"低","consumeAvgValues":50.20,"consumeValuesLabel":"低","onlineValuesLabel":"较少","compreValuesLabel":"较低","studensName":"曾帛员","consumeValues":7.82,"dataDate":"2016-12","gradStuFlag":0,"studenClassCode":4,"onlineValues":59.37,"studenClassName":"普通","gardeAvgValues":56.78,"compreValues":55.77,"gardeValuesLable":"良","professValue":"农学"},{"gardeValues":67.22,"creditValues":100.00,"creditAvgValues":76.58,"studensSex":"1","readValues":20,"userId":2012011104,"remarkMsg":"该生是应届毕业生，综合能力较低，学习能力中，阅读能力低，该生还未就业。","collegeValue":"农学院","readAvgValues":37.25,"studensClass":"农学12","onlineAvgValues":66.89,"readValuesLabel":"低","consumeAvgValues":50.20,"consumeValuesLabel":"低","onlineValuesLabel":"较少","compreValuesLabel":"较低","studensName":"孙蝶妃","consumeValues":25.37,"dataDate":"2016-12","gradStuFlag":2,"studenClassCode":4,"onlineValues":49.10,"studenClassName":"普通","gardeAvgValues":56.78,"compreValues":58.15,"gardeValuesLable":"中","professValue":"农学"},{"gardeValues":57.20,"creditValues":90.00,"creditAvgValues":76.58,"studensSex":"2","readValues":20,"userId":2012011105,"remarkMsg":"该生是应届毕业生，综合能力较低，学习能力较差，阅读能力低，该生已经就业。","collegeValue":"农学院","readAvgValues":37.25,"studensClass":"农学12","onlineAvgValues":66.89,"readValuesLabel":"低","consumeAvgValues":50.20,"consumeValuesLabel":"低","onlineValuesLabel":"几乎不上网","compreValuesLabel":"较低","studensName":"江浩华","consumeValues":44.16,"dataDate":"2016-12","gradStuFlag":0,"studenClassCode":4,"onlineValues":31.40,"studenClassName":"普通","gardeAvgValues":56.78,"compreValues":51.86,"gardeValuesLable":"较差","professValue":"农学"},{"gardeValues":55.97,"creditValues":100.00,"creditAvgValues":76.58,"studensSex":"2","readValues":20,"userId":2012011106,"remarkMsg":"该生是应届毕业生，综合能力低，学习能力较差，阅读能力低，该生已经考研。","collegeValue":"农学院","readAvgValues":37.25,"studensClass":"农学12","onlineAvgValues":66.89,"readValuesLabel":"低","consumeAvgValues":50.20,"consumeValuesLabel":"低","onlineValuesLabel":"经常","compreValuesLabel":"低","studensName":"田宇旺","consumeValues":27.78,"dataDate":"2016-12","gradStuFlag":1,"studenClassCode":4,"onlineValues":72.61,"studenClassName":"普通","gardeAvgValues":56.78,"compreValues":41.79,"gardeValuesLable":"较差","professValue":"农学"},{"gardeValues":63.55,"creditValues":95.00,"creditAvgValues":76.58,"studensSex":"2","readValues":20,"userId":2012011107,"remarkMsg":"该生是应届毕业生，综合能力较低，学习能力中，阅读能力较高，该生还未就业。","collegeValue":"农学院","readAvgValues":37.25,"studensClass":"农学12","onlineAvgValues":66.89,"readValuesLabel":"较高","consumeAvgValues":50.20,"consumeValuesLabel":"中","onlineValuesLabel":"沉迷","compreValuesLabel":"较低","studensName":"孔良超","consumeValues":65.05,"dataDate":"2016-12","gradStuFlag":2,"studenClassCode":2,"onlineValues":99.69,"studenClassName":"上网沉迷","gardeAvgValues":56.78,"compreValues":54.65,"gardeValuesLable":"中","professValue":"农学"},{"gardeValues":53.30,"creditValues":100.00,"creditAvgValues":76.58,"studensSex":"1","readValues":20,"userId":2012011108,"remarkMsg":"该生是应届毕业生，综合能力低，学习能力较差，阅读能力低，该生已经考研。","collegeValue":"农学院","readAvgValues":37.25,"studensClass":"农学12","onlineAvgValues":66.89,"readValuesLabel":"低","consumeAvgValues":50.20,"consumeValuesLabel":"中","onlineValuesLabel":"适度","compreValuesLabel":"低","studensName":"许娇翔","consumeValues":68.90,"dataDate":"2016-12","gradStuFlag":1,"studenClassCode":4,"onlineValues":63.71,"studenClassName":"普通","gardeAvgValues":56.78,"compreValues":43.84,"gardeValuesLable":"较差","professValue":"农学"},{"gardeValues":37.49,"creditValues":100.00,"creditAvgValues":76.58,"studensSex":"1","readValues":20,"userId":2012011109,"remarkMsg":"该生是应届毕业生，综合能力低，学习能力差，阅读能力低，该生已经考研。","collegeValue":"农学院","readAvgValues":37.25,"studensClass":"农学12","onlineAvgValues":66.89,"readValuesLabel":"低","consumeAvgValues":50.20,"consumeValuesLabel":"较低","onlineValuesLabel":"几乎不上网","compreValuesLabel":"低","studensName":"庞妍","consumeValues":55.06,"dataDate":"2016-12","gradStuFlag":1,"studenClassCode":4,"onlineValues":21.98,"studenClassName":"普通","gardeAvgValues":56.78,"compreValues":34.05,"gardeValuesLable":"差","professValue":"农学"},{"gardeValues":19.70,"creditValues":100.00,"creditAvgValues":76.58,"studensSex":"1","readValues":20,"userId":2012011110,"remarkMsg":"该生是应届毕业生，综合能力较低，学习能力差，阅读能力低，该生还未就业。","collegeValue":"农学院","readAvgValues":37.25,"studensClass":"农学12","onlineAvgValues":66.89,"readValuesLabel":"低","consumeAvgValues":50.20,"consumeValuesLabel":"较低","onlineValuesLabel":"适度","compreValuesLabel":"较低","studensName":"陈莲眉","consumeValues":52.97,"dataDate":"2016-12","gradStuFlag":2,"studenClassCode":4,"onlineValues":65.85,"studenClassName":"普通","gardeAvgValues":56.78,"compreValues":49.00,"gardeValuesLable":"差","professValue":"农学"}],"pageNow":1,"studensClass":null,"userId":null,"pageSize":10,"professValue":null,"totalPage":12,"collegeValue":null}';
+result=JSON.parse(result); //可以将json字符串转换成js对象 
+</script>
+<!--echarts插件-->
+<script src="../js/pc/cores/echarts.min.js"></script>
+<script src="../js/pc/cores/Alert.js"></script>
+<!-- 验证插件 -->
+<script src="../js/pc/cores/verification.js"></script>
+<!-- 分页插件 -->
+<script src="../js/pc/extends/jquery.page.js"></script>
+<!-- echarts封装模板 -->
+<script src="../js/pc/cores/echarts_Template.js"></script>
+<script src="../js/pc/cores/portraitList.js"></script>
+</body>
+</html>

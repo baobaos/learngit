@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>图书列表</title>
+</head>
+<!--整体前台框架css文件-->
+<link href="../css/pc/cores/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/cores.css" rel="stylesheet" type="text/css">
+<!--弹出盒子的css文件-->
+<link href="../css/pc/cores/alert.css" rel="stylesheet" type="text/css">
+<!--时间插件css文件-->
+<link media="all" href="../css/pc/cores/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+<!--人员管理css文件-->
+<link href="../css/pc/cores/personnel.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/relation.css" rel="stylesheet" type="text/css">
+<body>
+<div class="main">
+	<!-- 面包屑开始 -->
+	<div class="subnav">
+		当前位置：
+		<a href="#">首页</a> &gt; <a href="#">行为突变分析</a> &gt; 成绩突变群体查询
+	</div>
+	<!-- 面包屑结束 -->
+	<!-- 图书列表开始 -->
+	<div class="tabbox">
+		<div class="tab">
+			<a href="#" class="active">成绩上升突变群体查询</a>
+			<a href="#">成绩下降突变群体查询</a>
+		</div>
+		<div class="clear"></div>
+		<div class="tabcontent">
+			<!-- 成绩上升突变群体查询	 -->	
+			<div class="box" style="display:block">
+				<div class="search row">
+					<div class="col-md-3">
+						<div class="form-group">		               
+			                 <input class="form-control" placeholder="学号" size="16" type="text" id="book_value1">
+			            </div>
+					</div>
+<!-- 					<div class="col-md-3">
+						<div class="form-group">		               
+			                <div class="input-group date form_date" data-date="" data-date-format="yyyy" data-link-field="dtp_input2" data-link-format="yyyy">
+			                    <input class="form-control" size="16" type="text" value="" readonly id="book_text1">
+			                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+			                </div>
+							<input type="hidden" id="dtp_input2" value="" /><br/>
+			            </div>
+					</div> -->
+					<div class="col-md-2">
+						<button type="button" class="btn btn-success" id="book_search">搜索</button>
+					</div>
+				</div>
+				<div class="col-md-12 words_title words_title1">
+					<p>
+						<span id="year"></span>成绩上升突变群体查询
+					</p>
+				</div>
+				<div class="form_bottom box1">
+					<table class="table responsive table1">
+						<thead>
+						<tr>
+							<th class="head1">
+								排名
+							</th>
+							<th class="head1">
+								学号
+							</th>
+							<th class="head1">
+								上学期成绩
+							</th>
+							<th class="head1">
+								本学期成绩
+							</th>
+							<th class="head1">
+								学生详情
+							</th>
+						</tr>
+						</thead>
+						<tbody id="tbody_id">
+						
+						</tbody>
+					</table>
+				</div>
+				<div class="clear" style="height:20px"></div>
+			</div>
+			<!-- 成绩上升突变群体查询结束 -->
+			<!-- 成绩下降突变群体查询 -->
+			<div class="box">
+				<div class="search row">
+					<div class="col-md-3">
+						<div class="form-group">		               
+			                 <input class="form-control" placeholder="学号" size="16" type="text" id="book_value2">
+			            </div>
+					</div>
+					<div class="col-md-2">
+						<button type="button" class="btn btn-success" id="book_search2">搜索</button>
+					</div>
+				</div>
+				<div class="col-md-12 words_title words_title2">
+					<p>成绩下降突变群体查询</p>
+				</div>
+				<div class="form_bottom box2">
+					<table class="table responsive table2">
+					<thead>
+					<tr>
+						<th class="head1">
+							排名
+						</th>
+						<th class="head1">
+							学号
+						</th>
+						<th class="head1">
+							上学期成绩
+						</th>
+						<th class="head1">
+							本学期成绩
+						</th>
+						<th class="head1">
+							学生详情
+						</th>
+					</tr>
+					</thead>
+					<tbody id="tbody_id2">
+					
+					</tbody>
+				</table>
+				</div>
+				<div class="clear" style="height:20px"></div>
+			</div>		
+			<!-- 成绩下降突变群体查询结束 -->
+
+		</div>
+
+
+	</div>
+</div>
+
+		<!-- 人员列表结束 -->
+	</div>
+<script src="../js/pc/cores/jquery-1.11.2.min.js"></script>
+<script src="../js/pc/cores/bootstrap.min.js"></script>
+<!-- 验证插件 -->
+<script src="../js/pc/cores/verification.js"></script>
+<!-- 分页插件 -->
+<script src="../js/pc/extends/jquery.page.js"></script>
+<!-- 弹出盒子插件 -->
+<script src="../js/pc/cores/Alert.js"></script>
+<!-- 全选删除 -->
+<script src="../js/pc/cores/del.js"></script>
+<!--选项卡插件-->
+<script src="../js/pc/cores/tab.js"></script>
+<!--时间插件-->
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.zh-CN.js"></script>
+<script>
+
+/*获取服务器数据*/
+var result='{"lowGradeMutationList":[{"rownum":1,"befgardeValues":77.74,"befgardeValuesLable":2,"chagrades":0.00,"userId":"2015011115","nowgardeValuesLable":1,"nowgardeValues":77.74}],"pageOneUserId":null,"highGradeMutationList":[{"rownum":1,"befgardeValues":78.01,"befgardeValuesLable":2,"chagrades":"3","userId":"2015011212","nowgardeValuesLable":3,"nowgardeValues":78.01},{"rownum":2,"befgardeValues":59.08,"befgardeValuesLable":4,"chagrades":"3","userId":"2015011111","nowgardeValuesLable":5,"nowgardeValues":59.08},{"rownum":3,"befgardeValues":64.51,"befgardeValuesLable":3,"chagrades":"3","userId":"2015011230","nowgardeValuesLable":4,"nowgardeValues":64.51},{"rownum":4,"befgardeValues":75.52,"befgardeValuesLable":2,"chagrades":"3","userId":"2015011216","nowgardeValuesLable":3,"nowgardeValues":75.52}],"pageTwoUserId":null,"pageTwoSemester":null,"pageOneSemester":null}';
+result=JSON.parse(result); //可以将json字符串转换成json对象 
+var Loading1 = new Loading(); // loadng 盒子初始化
+Loading1.init(); // 插入loading 盒子
+var Alert1 = new Alert(); //弹出盒子初始化
+var confirm1 = new Confirm(); // 确定取消盒子初始化
+</script>
+<script src="../js/pc/cores/getGradeMutaionList.js"></script>
+</body>
+</html>

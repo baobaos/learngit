@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>人员列表</title>
+</head>
+<!--整体前台框架css文件-->
+<link href="../css/pc/cores/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/cores.css" rel="stylesheet" type="text/css">
+<!--弹出盒子的css文件-->
+<link href="../css/pc/cores/alert.css" rel="stylesheet" type="text/css">
+<!--人员管理css文件-->
+<link href="../css/pc/cores/personnel.css" rel="stylesheet" type="text/css">
+<body>
+<div class="main">
+	<!-- 面包屑开始 -->
+	<div class="subnav">
+		当前位置：
+		<a href="#">首页</a> &gt; <a href="#">综合能力强群体</a> &gt; 综合能力强群体查询
+	</div>
+	<!-- 面包屑结束 -->
+	<!-- 人员列表开始 -->
+	<div class="box col-md-12">
+		<div class="title">
+			综合能力强群体查询
+		</div>
+		<div class="search row">
+			<div class="col-md-3">
+				<div class="form-group">
+					<input class="form-control" placeholder="学号" size="16" type="text" id="month_average_text_id">
+				</div>
+			</div>
+			<div class="col-md-2">
+				<button type="button" class="btn btn-success" id="month_average_search">搜索</button>
+			</div>
+		</div>
+		<div class="col-md-12 words_title">
+			<p>
+				<span id="year"></span>年学生综合能力强群体详情
+			</p>
+		</div>
+		<div class="form_bottom">
+			<table class="table responsive">
+			<thead>
+			<tr>
+				<th class="head1">
+					排名
+				</th>
+				<th class="head1">
+					学号
+				</th>
+				<th class="head1">
+					学生综合评分
+				</th>
+				<th class="head1">
+					综合分析
+				</th>
+			</tr>
+			</thead>
+			<tbody id="tbody_id">
+			</tbody>
+			</table>
+		</div>
+		<div class="clear" style="height:20px">
+		</div>
+	</div>
+	<!-- 人员列表结束 -->
+</div>
+<script src="../js/pc/cores/jquery-1.11.2.min.js"></script>
+<script src="../js/pc/cores/bootstrap.min.js"></script>
+<!-- 验证插件 -->
+<script src="../js/pc/cores/verification.js"></script>
+<!-- 分页插件 -->
+<script src="../js/pc/extends/jquery.page.js"></script>
+<!-- 弹出盒子插件 -->
+<script src="../js/pc/cores/Alert.js"></script>
+<!-- 全选删除 -->
+<script src="../js/pc/cores/del.js"></script>
+<script>
+/*获取服务器数据*/
+var result='{"dataDate":null,"userId":null,"stucomList":[{"rownum":1,"dataDate":"2016-12","userId":"2015011119","compreValues":92.03},{"rownum":2,"dataDate":"2016-12","userId":"2015011128","compreValues":91.81},{"rownum":3,"dataDate":"2016-12","userId":"2015011102","compreValues":89.70},{"rownum":4,"dataDate":"2016-12","userId":"2015011216","compreValues":85.33},{"rownum":5,"dataDate":"2016-12","userId":"2015011127","compreValues":71.50},{"rownum":6,"dataDate":"2016-12","userId":"2015011212","compreValues":70.42},{"rownum":7,"dataDate":"2016-12","userId":"2015011208","compreValues":70.14}]}';
+result=JSON.parse(result); //可以将json字符串转换成json对象 
+</script>
+<script src="../js/pc/modules/comaAilAnalysis.js"></script>
+</body>
+</html>

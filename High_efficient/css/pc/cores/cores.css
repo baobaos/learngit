@@ -1,0 +1,430 @@
+@charset "utf-8";
+/*
+ *@本css功能：整体架构css
+ *@本css作者：孟令超
+ *@编写时间：2016年11月14日
+ *@修改人：孟令超
+ *@修改时间：2016年11月14日
+ *@修改原因：修改整体页面样式
+ *@修改位置或名称：
+ */
+ 
+/*
+ * 页面初始化
+ */
+body,dd,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,ul {
+	margin: 0;
+	padding: 0
+}
+
+body,html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-size: 1em;
+	line-height: 0;
+	font-family: "Microsoft YaHei";
+	color: #515151;
+	font-size: 14px;
+	background: #373d41;
+}
+
+ul {
+	list-style: none
+}
+
+img {
+	border: none
+}
+
+a {
+	text-decoration: none;
+	color: #1f1f1f
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255,0,0,0)
+}
+
+input:focus {
+	outline: 0
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.rel {
+	position: relative
+}
+
+.abs {
+	position: absolute
+}
+
+.clear {
+	clear: both;
+	overflow: hidden;
+	height: 0
+}
+
+
+/*---------------------------------
+             左侧导航
+----------------------------------*/
+.left-side {
+	width: 240px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*logo样式*/
+.logo {
+	padding-top: 0px;
+	height: 80px;
+	background: #373d41;
+}
+
+.logo a {
+	font-size: 28px;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	height: 80px;
+	line-height: 80px;
+}
+
+.logo img {
+	width: 100%;
+}
+/*---------------------------------
+           左侧导航的导航
+----------------------------------*/
+.nav-stacked > li + li {
+	margin-top: 0px;
+	margin-left: 0;
+}
+
+.nav-pills > li.open > a, .nav-pills > li.open > a:hover, .nav-pills > li.open > a:focus {
+	color: #fff;
+	background-color: #00bfdc;
+	background-image: url(../../../images/pc/icon_04.png);
+	background-repeat: no-repeat;
+	background-position: 90% center;
+}
+
+.nav-pills > li > a {
+	color: #FFFFFF;
+	border-radius: 0px;
+	border-bottom: 1px solid #272b2e;
+	background-image: url(../../../images/pc/icon_05.png);
+	background-repeat: no-repeat;
+	background-position: 90% center;
+	font-size: 16px;
+}
+
+.nav_left .dropdown-menu > li > .dropdown-toggle {
+	color: #FFFFFF;
+	border-radius: 0px;
+	border-bottom: 1px solid #272b2e;
+	background-image: url(../../../images/pc/icon_05.png);
+	background-repeat: no-repeat;
+	background-position: 90% center;
+}
+
+.nav-pills > li > a.active {
+	background-color: #00bfdc;
+}
+
+.nav-pills > li > a >img {
+	margin-right: 10px;
+}
+/*导航鼠标经过*/
+.nav > li > a:hover, .nav > li > a:focus {
+	text-decoration: none;
+	background-color: #00bfdc;
+}
+/*---------------------------------
+       左侧导航的导航的子导航
+----------------------------------*/
+/*子导航*/
+.nav_left .dropdown-menu {
+	position: static;
+	width: 100%;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 0px 0;
+	margin: 0px 0 0;
+	list-style: none;
+	font-size: 12px;
+	background: none;
+	border: none;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.nav_left .dropdown-menu > li {
+	margin-top: 0px;
+	margin-left: 0;
+}
+
+.nav_left .dropdown-menu > li > a {
+	padding: 6px 60px;
+	color: #FFFFFF;
+	background: #373d41;
+	font-size: 15px;
+}
+/*子导航鼠标经过*/
+.nav_left .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	text-decoration: none;
+	color: #fff;
+	background-color: #00bfdc;
+}
+/*---------------------------------
+             右侧内容
+----------------------------------*/
+.right_content {
+	margin-left: 240px;
+	background: #eff0f4;
+}
+/*---------------------------------
+           右侧内容头部
+----------------------------------*/
+.header {
+	background: #373d41;
+	height: 80px;
+	line-height: 80px;
+}
+/*系统名称*/
+.navbar-text {
+	margin-top: 0;
+	margin-bottom: 0px;
+	font-size: 24px;
+	color: #FFFFFF;
+	margin-left: 30px;
+}
+/*登录人姓名*/
+.Login_name {
+	font-size: 16px;
+	color: #FFFFFF;
+	float: right;
+}
+/*登录人姓名小图标*/
+.icon_01 {
+	width: 26px;
+	height: 26px;
+	margin-right: 10px;
+}
+/*退出按钮*/
+.sign_out {
+	float: right;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+/*iframe*/
+.iframemain {
+	width: 100%;
+}
+/*右侧主内容盒*/
+.main {
+	min-height: 520px;
+	background-image: linear-gradient(To bottom, #182a65, #268cad);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#02cba9',endColorStr='#0e4265',gradientType='0');
+	padding: 0 30px 30px;
+}
+
+.subnav {
+	color: #fff;
+	line-height: 62px;
+}
+
+.subnav>a {
+	color: #fff;
+}
+
+.box {
+	background: rgba(0,0,0,.3);
+	min-height: 300px;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.box>.title {
+	line-height: 52px;
+	color: #03fcdb;
+	font-size: 18px;
+	padding: 0 16px;
+	/*border-bottom: solid 1px #272b2e;*/
+}
+
+.box>.title>a {
+	float: right;
+	color: #03fcdb;
+	font-size: 14px
+}
+
+.tabbox>.tab>a {
+	float: left;
+	line-height: 50px;
+	color: #fff;
+	background: rgba(255,255,255,.2);
+	border-radius: 10px 10px 0 0;
+	padding: 0 20px;
+	margin-right: 7px;
+	text-decoration: none;
+}
+
+.tabbox>.tab>a.active {
+	background: rgba(0,0,0,.4);
+}
+
+.tabbox>.tabcontent>.box {
+	border-radius: 0 0 10px 10px;
+	padding: 20px;
+	display: none;
+}
+
+.search .form-control {
+	background: rgba(255,255,255,.5);
+	border: none;
+	color: #fff;
+}
+
+.search .form-control::-webkit-input-placeholder {
+	color: #dce8e4;
+}
+
+.search .form-control::-moz-placeholder {
+	color: #dce8e4;
+}
+
+.search .form-control:-moz-placeholder {
+	color: #dce8e4;
+}
+
+.search .input-group-addon {
+	background: rgba(255,255,255,.5);
+	border: none;
+}
+
+.search .btn-success {
+	background: #00bdda;
+	border: none;
+}
+
+.nodata {
+	text-align: center;
+	font-size: 18px;
+	margin-top: 100px;
+	color: #cdd7d9;
+}
+
+.layout {
+	padding: 20px;
+}
+
+.message_box {
+	margin-top: 20px;
+}
+
+.message_box .message_layout {
+	text-align: center;
+}
+
+.message_box .message_layout>.message_layout_title {
+	font-size: 24px;
+	color: #fff;
+	line-height: 54px;
+	border-radius: 10px 10px 0 0;
+}
+
+.message_box .message_layout>.message_layout_content {
+	font-size: 18px;
+	line-height: 96px;
+	border-radius: 0 0 10px 10px;
+	background: #b8d2d3;
+}
+
+.message_layout_title.t1 {
+	background: #24a086;
+}
+
+.message_layout_title.t1 + .message_layout_content {
+	color: #24a086;
+}
+
+.message_layout_title.t2 {
+	background: #c18427;
+}
+
+.message_layout_title.t2 + .message_layout_content {
+	color: #c18427;
+}
+
+.message_layout_title.t3 {
+	background: #2b8ac4;
+}
+
+.message_layout_title.t3 + .message_layout_content {
+	color: #2b8ac4;
+}
+
+.message_layout_title.t4 {
+	background: #526897;
+}
+
+.message_layout_title.t4 + .message_layout_content {
+	color: #526897;
+}
+
+.tabcontextbox {
+	display: none;
+}
+
+.tabcontextbox>.box {
+	border-radius: 0 0 10px 10px;
+}
+
+.tabcontextbox>.row {
+	margin: 0
+}
+
+.tabcontextbox>.row>.col-md-6 {
+	width: 48%;
+}
+
+.tabcontextbox>.row>.col-md-8 {
+	width: 64%;
+}
+
+#sumpermarket_proportion {
+	color: #fff;
+	line-height: 40px;
+}
+
+#sumpermarket_proportion .woman {
+	background: url(../../../images/pc/ioc09.png) no-repeat left center;
+	padding-left: 30px
+}
+
+#sumpermarket_proportion .woman span {
+	color: #fa9023;
+}
+
+#sumpermarket_proportion .man {
+	background: url(../../../images/pc/ioc10.png) no-repeat left center;
+	padding-left: 30px
+}
+
+#sumpermarket_proportion .man span {
+	color: #22b6f2;
+}

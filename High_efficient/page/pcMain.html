@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>高校大学生数据分析系统</title>
+<!--整体前台框架css文件-->
+<link href="../css/pc/cores/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/cores.css" rel="stylesheet" type="text/css">
+<!--时间插件css文件-->
+<link media="all" href="../css/pc/cores/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+<!--提示框css文件-->
+<link href="../css/pc/cores/alert.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main">
+	<div class="subnav">
+		当前位置：首页
+	</div>
+	<div class="box">
+		<div class="title">
+			学生整体画像
+		</div>
+		<div class="layout">
+			<div class="search row">
+				<div class="col-md-3">
+					<div class="form-group">
+						<div class="input-group date form_date" data-date="" data-date-format="yyyy" data-link-field="dtp_input2" data-link-format="yyyy">
+							<input class="form-control" size="16" type="text" value="" readonly id="month_average_text">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+						</div>
+						<input type="hidden" id="dtp_input2" value=""/><br/>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-success" id="month_average_search">搜索</button>
+				</div>
+			</div>
+			<div class="clear">
+			</div>
+			<div class="row">
+				<div class="col-md-5" style="text-algin:center">
+					<img src="../images/pc/ico_1_03.png" style="margin:40px 0 0 150px">
+				</div>
+				<div class="col-md-6" style="position: relative;">
+					<p style="position: absolute;top: -30px;left: 0px;text-align: center;width:100%;color: #ccd8d6;color: #ccd8d6;font-size: 16px;font-weight: bold;" id="py">
+					</p>
+					<div id="consumption_ranking" style="height:300px;overflow:hidden;margin-top:15px">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="title">
+			学生综合能力变化
+		</div>
+		<div class="layout">
+			<div class="search row">
+				<div class="col-md-3">
+					<div class="form-group">
+						<div class="input-group date form_date1" data-date="" data-date-format="yyyy" data-link-field="dtp_input2" data-link-format="yyyy">
+							<input class="form-control" size="16" type="text" value="" readonly id="month_average_text1">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+						</div>
+						<input type="hidden" id="dtp_input2" value=""/><br/>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-success" id="month_average_search1">搜索</button>
+				</div>
+			</div>
+			<div class="clear">
+			</div>
+			<div id="consumption_ranking1" style="height:420px;overflow:hidden;margin-top:15px">
+			</div>
+		</div>
+	</div>
+</div>
+<!--整体前台框架js文件-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="../js/pc/cores/html5shiv.js"></script>
+<script src="../js/pc/cores/respond.min.js"></script>
+<![endif]-->
+<script src="../js/pc/cores/jquery-1.11.2.min.js"></script>
+<script src="../js/pc/cores/bootstrap.min.js"></script>
+<!--本页代码-->
+<script>	
+	/*获取服务器数据*/
+	var result='{"searchYearMonth":null,"searchYear":null,"userName":"test1","totalAvg":[{"compreAvgValues":39.74,"month":"02","year":"2017"},{"compreAvgValues":65.46,"month":"03","year":"2017"},{"compreAvgValues":65.21,"month":"04","year":"2017"},{"compreAvgValues":64.82,"month":"05","year":"2017"},{"compreAvgValues":65.48,"month":"06","year":"2017"},{"compreAvgValues":63.67,"month":"07","year":"2017"},{"compreAvgValues":63.01,"month":"08","year":"2017"},{"compreAvgValues":65.20,"month":"09","year":"2017"},{"compreAvgValues":65.86,"month":"10","year":"2017"},{"compreAvgValues":64.32,"month":"11","year":"2017"},{"compreAvgValues":60.36,"month":"12","year":"2017"}],"stuAvg":{"readAvgValues":37.25,"dataDate":"2017-12","compreAvgValues":56.78,"creditAvgValues":76.58,"gardeAvgValues":56.78,"onlineAvgValues":66.89,"consumeAvgValues":50.20}}';
+	result=JSON.parse(result);
+</script>
+<!--时间插件-->
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.zh-CN.js"></script>
+<!--echarts插件-->
+<script src="../js/pc/cores/echarts.min.js"></script>
+<script src="../js/pc/cores/Alert.js"></script>
+<!-- echarts封装模板 -->
+<script src="../js/pc/cores/echarts_Template.js"></script>
+<script src="../js/pc/cores/pcMain.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>消费突变群体分析</title>
+</head>
+<!--整体前台框架css文件-->
+<link href="../css/pc/cores/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/cores.css" rel="stylesheet" type="text/css">
+<!--时间插件css文件-->
+<link media="all" href="../css/pc/cores/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+<!--提示框css文件-->
+<link href="../css/pc/cores/alert.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/personnel.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/relation.css" rel="stylesheet" type="text/css">
+
+<body>
+<div class="main">
+	<!-- 面包屑开始 -->
+	<div class="subnav">
+		当前位置：
+		<a href="#">首页</a> &gt; <a href="#">行为突变分析</a> &gt; 成绩突变群体分析
+	</div>
+	<!-- 面包屑结束 -->
+	<!-- 图书列表开始 -->
+	<div class="tabbox">
+		<div class="tab">
+			<a href="#" class="active">成绩上升突变群体分析</a>
+			<a href="#">成绩下降突变群体分析</a>
+		</div>
+		<div class="clear"></div>
+		<div class="tabcontent">
+			<!-- 成绩上升突变群体查询	 -->	
+			<div class="box" style="display:block">
+				<div class="search row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<select class="form-control" id="month_average_text"> 
+								<option value ="0"></option>
+								<option value ="2">第二学期</option> 
+								<option value ="3">第三学期</option> 
+								<option value ="4">第四学期</option>
+								<option value ="5">第五学期</option> 
+								<option value ="6">第六学期</option> 
+								
+							</select>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<button type="button" class="btn btn-success" id="month_average_search">搜索</button>
+					</div>
+				</div>
+				<div class="message_box high_box">
+					<div class="col-md-6">
+						<div class="message_layout">
+							<div class="message_layout_title t1 ">突变人数</div>
+							<div class="message_layout_content high_stu">0</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="message_layout">
+							<div class="message_layout_title t2">突变人数占比</div>
+							<div class="message_layout_content high_ex">0</div>
+						</div>
+					</div>
+				</div>
+
+	<!-- 			<div class="col-md-12 words_title words_title1">
+					<p>
+						<span id="year"></span>200155544111学生成绩上升突变分析
+					</p>
+				</div> -->
+				<div class="clear"></div>
+				<div >
+					<div id="consumption_ranking" style="height:600px;overflow:hidden;margin:30px auto 0;"></div>
+		    		<p id="PY" class="py comment"></p>
+				</div>
+			</div>
+			<!-- 成绩上升突变群体查询结束 -->
+			<!-- 成绩下降突变群体查询 -->
+			<div class="box">
+				<div class="search row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<select class="form-control" id="month_average_text2"> 
+								<option value ="0"></option> 
+								<option value ="2">第二学期</option> 
+								<option value ="3">第三学期</option> 
+								<option value ="4">第四学期</option>
+								<option value ="5">第五学期</option> 
+								<option value ="6">第六学期</option> 
+								
+							</select>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<button type="button" class="btn btn-success" id="month_average_search1">搜索</button>
+					</div>
+				</div>
+				<div class="message_box low_box">
+					<div class="col-md-6">
+						<div class="message_layout">
+							<div class="message_layout_title t1">突变人数</div>
+							<div class="message_layout_content low_stu">0</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="message_layout">
+							<div class="message_layout_title t2">突变人数占比</div>
+							<div class="message_layout_content low_ex">0</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div>
+					<div id="consumption_ranking2" style="height:600px;overflow:hidden;margin:30px auto 0;"></div>
+		    		<p id="PY" class="py lowpy comment"></p>
+				</div>
+			</div>		
+			<!-- 成绩下降突变群体查询结束 -->
+
+		</div>
+
+
+	</div>
+</div>
+
+		<!-- 人员列表结束 -->
+	</div>
+<script src="../js/pc/cores/jquery-1.11.2.min.js"></script>
+<script src="../js/pc/cores/bootstrap.min.js"></script>
+<!-- 验证插件 -->
+<script src="../js/pc/cores/verification.js"></script>
+<!-- 分页插件 -->
+<script src="../js/pc/extends/jquery.page.js"></script>
+<!-- 弹出盒子插件 -->
+<script src="../js/pc/cores/Alert.js"></script>
+<!-- 全选删除 -->
+<script src="../js/pc/cores/del.js"></script>
+<!--选项卡插件-->
+<script src="../js/pc/cores/tab.js"></script>
+<!--时间插件-->
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.zh-CN.js"></script>
+<script>
+
+/*获取服务器数据*/
+var result='{"mutaHighStuCount":4,"lowCommit":"阅读能力项对成绩下降的影响最大","highCommit":"阅读能力项对成绩上升的影响最大","gradeLowMutationMap":{"nowsemester":"3","nowreadValues":100.00,"befconsumeValues":95.30,"nowconsumeValues":64.92,"befhealthValues":80.00,"nowhealthValues":80.00,"befonlineValues":31.84,"nowonlineValues":33.81,"befreadValues":35.00,"befsemester":"2"},"sumStu":105,"gradeHighMutationMap":{"nowsemester":"3","nowreadValues":43.50,"befconsumeValues":45.84,"nowconsumeValues":46.72,"befhealthValues":80.00,"nowhealthValues":80.00,"befonlineValues":62.05,"nowonlineValues":62.78,"befreadValues":25.25,"befsemester":"2"},"lowStuCom":0.01,"mutaLowStuCount":1,"highStuCom":0.04,"pageTwoSemester":null,"pageOneSemester":null}';
+result=JSON.parse(result); //可以将json字符串转换成json对象 
+</script>
+<script src="../js/pc/cores/echarts.min.js"></script>
+<script src="../js/pc/cores/echarts_Template.js"></script>
+<script src="../js/pc/cores/getGradeMutationAnalysis.js"></script>
+</body>
+</html>

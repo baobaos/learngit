@@ -1,0 +1,410 @@
+@charset "utf-8";
+/* 弹出背景样式 */
+
+.abs_bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	background: #333;
+	opacity: 1;
+}
+
+/*信息提示盒样式*/
+.alert {
+	position: fixed;
+	top: 30%;
+	left: 0;
+	width: 40%;
+	z-index: 100;
+	margin-left: 30%;
+}
+
+.alert_box {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.alert_contenthead {
+	background: #00bdda;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+	font-size: 18px;
+	line-height: 50px
+}
+
+.alert_content {
+	text-align: center;
+	font-size: 18px;
+	color: #494949;
+	border-bottom: solid 1px #f3f3f3;
+	line-height: 50px;
+	background: #fff;
+	padding: 10px
+}
+
+.alert_btn {
+	padding: 32px;
+	text-align: center;
+	border-radius: 0 0 5px 5px;
+	background: #fff;
+}
+
+.alert_btn a {
+	color: #fff;
+	padding: 10px 40px;
+	border-radius: 5px;
+}
+
+.alert_btn .alert_confirm {
+	background: #00bdda;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.alert_btn .alert_close {
+	background: #00bdda;
+	cursor: pointer;
+}
+
+.guide_img {
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 30%
+}
+
+
+/*放大图样式*/
+.abs_img {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 100;
+	text-align: center;
+	left: 0;
+	top: 0;
+}
+
+.abs_img a {
+	width: 30px;
+	height: 30px;
+}
+
+.abs_img a.return {
+	background: url(../../images/public/img_icon_06.png) no-repeat center center;
+	margin: 20px 0 0 20px;
+	float: left;
+}
+
+.abs_img a.del {
+	background: url(../../images/public/img_icon_03.png) no-repeat center center;
+	margin: 20px 20px 0 0;
+	float: right
+}
+
+.abs_img .big_img {
+	vertical-align: middle;
+	width: 100%;
+	clear: both;
+	margin-top: 80px;
+}
+
+.abs_img .big_img img {
+	width: 80%;
+	height: auto;
+}
+
+.abs_img .big_img2 {
+	vertical-align: middle;
+	width: 100%;
+	clear: both;
+	margin-top: 60px;
+	overflow: auto;
+	height: 70%;
+}
+
+.abs_img .big_img2 img {
+}
+/*loading样式*/
+.loader {
+	position: fixed;
+	width: 60%;
+	top: 25%;
+	z-index: 100;
+	left: 20%;
+}
+
+.loader-inner {
+	width: 80%;
+	margin: 0 auto
+}
+
+.loader-inner img {
+	width: 100%;
+}
+
+
+
+
+/*选择城市*/
+#weathercity {
+	position: fixed;
+	z-index: 100;
+	background: #fff;
+	right: 0;
+	top: 0;
+	width: 0%;
+	overflow: auto;
+}
+
+.choicecity,.allcity {
+	line-height: 35px;
+	color: #fff;
+	border-top: solid 1px #f3f3f3;
+	margin-bottom: 15px
+}
+
+.allcity_current {
+	padding: 0 10px;
+}
+
+.allcity>span {
+	background: #e1a402;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+}
+
+.choicecity .prompt {
+	font-size: 0.8em;
+	color: #999;
+}
+
+.chosentcity {
+	font-size: 1.2em;
+	overflow: hidden;
+	line-height: 1.5;
+}
+
+.chosentcity a {
+	border: solid 1px #8fcb1d;
+	padding: 5px;
+	margin: 0 10px 10px 0;
+	float: left
+}
+
+.chosentcity a span {
+	display: inline-block;
+	background: url(../../images/public/close_03.png) no-repeat center center;
+	width: 18px;
+	margin-left: 5px;
+}
+
+.chosentcity .loca {
+	display: none
+}
+
+.allcity {
+	padding-bottom: 100px
+}
+
+.allcity li>div {
+	font-size: 18px;
+	border-bottom: solid 1px #e7e7e7;
+	color: #717171;
+}
+
+.allcity li>div>span {
+	float: right;
+	border: solid 1px #e1a402;
+	width: 18px;
+	height: 18px;
+	margin-top: 10px;
+}
+
+.allcity li.locacity .loca {
+	display: none
+}
+
+.allcity li.locacity>div>span.current {
+	background: url(../../images/public/chone_07.png) no-repeat center center;
+}
+
+.allcity li>ul {
+	margin: 0 10px;
+}
+
+.allcity .province>div>span {
+	border: none;
+	background: url(../../images/public/jiantou_10.png) no-repeat center center;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.allcity .province>div>span.current {
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+#weathercity .buttonbj {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #000;
+	opacity: .8;
+	height: 50px;
+}
+
+#weathercity .button {
+	position: fixed;
+	bottom: 5px;
+	width: 100%;
+	line-height: 40px;
+}
+
+#weathercity .button .center {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#weathercity .button a {
+	display: inline-block;
+	padding: 0 23px;
+	width: 30%;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#weathercity .button a.submit {
+	background: #e1a402;
+	margin-left: 10px
+}
+
+#weathercity .button a.reset {
+	background: #e85237;
+}
+
+.province>ul {
+	display: none
+}
+
+#container canvas {
+	width: 220px;
+	height: 220px;
+	background: #fff;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#container img {
+	width: 70%;
+	display: block;
+	margin: 80px auto 0;
+	clear: both;
+}
+
+/*地图样式*/
+
+#showmap {
+	position: fixed;
+	z-index: 4;
+	background: #fff;
+	right: 0;
+	top: 0;
+	width: 0;
+	overflow: auto;
+}
+
+#showmap h1 {
+	background: #f9f9f9;
+	border-top: solid 1px #e9e9e9;
+	border-bottom: solid 1px #e9e9e9;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 0 20px;
+	line-height: 35px;
+	margin-bottom: 0px;
+}
+
+#showmap #container {
+	width: 95%;
+	margin: 20px auto;
+	height: 400px;
+}
+
+#showmap .res {
+	background: #e1a402;
+	width: 95%;
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	padding: 10px 0;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#showmap .search {
+	padding: 10px 20px;
+}
+
+#showmap .search #address {
+	border: solid 1px #e9e9e9;
+	border-radius: 5px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	width: 60%;
+}
+
+#showmap .search #search {
+	background: #31bc87;
+	color: #fff;
+	border-radius: 5px;
+	width: 27%;
+	text-align: center;
+	line-height: 30px;
+	border: solid 1px #fff;
+	margin-left: 5px
+}
+
+#showmap .button {
+	width: 95%;
+	margin: 0 auto;
+}
+
+#showmap a#mapsumbit {
+	background: #31bc87;
+	display: inline-block;
+	padding: 0 23px;
+	width: 30%;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 40px;
+	margin-left: 10px;
+	margin-left: 10%
+}
+
+#showmap a#mapres {
+	background: #31bc87;
+	display: inline-block;
+	padding: 0 23px;
+	width: 30%;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 40px;
+	margin-left: 10%
+}
+
+/*分割背景*/
+.beijing {
+	background: #EBEBEB;
+}

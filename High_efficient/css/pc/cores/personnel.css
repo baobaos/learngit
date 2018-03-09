@@ -1,0 +1,374 @@
+@charset "utf-8";
+/*
+ *@本css功能：人员管理css
+ *@本css作者：杨环宇
+ *@编写时间：2017年2月7日
+ *@修改人：无
+ *@修改时间：无
+ *@修改原因：无
+ *@修改位置或名称：无
+ */
+
+/* 添加人员 */
+.form-horizontal {
+	padding-top: 0px;
+}
+
+.search .colorb {
+	color: #000;
+}
+
+.form-horizontal .control-label {
+	font-weight: 100;
+	color: #FFFFFF;
+	line-height: 34px;
+	height: 34px;
+	padding-top: 0px;
+}
+
+.search .btn-add {
+	margin: 0 auto;
+	width: 100%;
+	margin-left: 70%;
+}
+
+.padding_27 {
+	padding-bottom: 27px;
+}
+
+.search {
+	margin-top: 20px;
+}
+
+.navbar-form_fl {
+	float: left;
+	margin-left: 15px;
+}
+
+.padding_left_0 {
+	padding-left: 0;
+}
+
+.navbar-form {
+	margin-top: 0;
+}
+
+.form_bottom {
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.gradeX:hover {
+	color: #05dbbf;
+}
+
+.gradeX:hover a {
+	color: #05dbbf;
+}
+
+.table-bordered>thead>tr>th {
+	border: none;
+}
+
+.table {
+	margin-bottom: 0px;
+}
+
+.table thead>tr {
+	height: 50px;
+}
+
+.table tbody>tr>td {
+	border: none;
+	padding: 0px;
+	line-height: 44px;
+}
+
+.table .btn {
+	vertical-align: initial;
+}
+
+.table thead>tr>th {
+	border: none;
+	text-align: center;
+	background: #00bdda;
+	line-height: 34px;
+}
+
+.table tr:nth-child(even) {
+	background: #2b7d7b;
+}
+
+.gradeX .btn-success {
+	background: #00bdda;
+	border: none;
+}
+
+.margin_left_15 {
+	margin-left: 15px;
+}
+
+.pagination {
+	margin-left: 35%;
+}
+
+.pagination>li:first-child>a {
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+.pagination>li:last-child>a {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.pagination>li>a {
+	margin-left: 5px;
+	background-color: #12485a;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+}
+
+.pagination>li>a:hover {
+	background: #00bdda;
+}
+
+/*分页样式*/
+.tcdPageCode {
+	padding: 15px 20px;
+	text-align: left;
+	width: 770px;
+	margin: 0 auto;
+	color: #eee;
+}
+
+.tcdPageCode a {
+	display: inline-block;
+	height: 30px;
+	line-height: 26px;
+	padding: 0 10px;
+	margin: 0 2px;
+	color: #eee;
+	background: none;
+	border: 1px solid #bfbfbf;
+    /* border-radius: 4px; */
+	vertical-align: middle;
+}
+
+.tcdPageCode a:hover {
+	background: #00bdda;
+}
+
+.tcdPageCode span.current {
+	display: inline-block;
+	height: 30px;
+	line-height: 26px;
+	padding: 0 10px;
+	margin: 0 2px;
+	color: #eee;
+	background: #00bdda;
+	border: 1px solid #bfbfbf;
+    /* border-radius: 4px; */
+	vertical-align: middle;
+}
+
+.tcdPageCode span.disabled {
+	display: inline-block;
+	height: 30px;
+	line-height: 26px;
+	padding: 0 10px;
+	margin: 0 2px;
+	color: #eee;
+	background: none;
+	border: 1px solid #bfbfbf;
+	vertical-align: middle;
+}
+
+/*分页样式结束*/
+.pic_img {
+	margin: 9% 17%;
+	;
+}
+
+.box_right {
+	width: 60%;
+	margin-right: 1%;
+}
+
+.box_left {
+	width: 38%;
+	margin-left: 1%;
+}
+
+.words {
+	color: #ffffff;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.words_title {
+	line-height: 30px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.Modular li {
+	width: 22%;
+	height: 150px;
+	background: #b9d5d4;
+	float: left;
+	margin-left: 2%;
+}
+
+.Modular li .Modular_color {
+	line-height: 54px;
+	background: #24a086;
+	text-align: center;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.Modular li .Modular_color_01 {
+	line-height: 54px;
+	background: #c18426;
+	text-align: center;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.Modular li .Modular_color_02 {
+	line-height: 54px;
+	background: #2b89c3;
+	text-align: center;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.Modular li .Modular_color_03 {
+	line-height: 54px;
+	background: #526897;
+	text-align: center;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.Modular li .Modular_color_span {
+	display: block;
+	line-height: 96px;
+	text-align: center;
+	font-size: 24px;
+	color: #24a086;
+}
+
+.Modular li .Modular_color_span0 {
+	display: block;
+	line-height: 96px;
+	text-align: center;
+	font-size: 24px;
+	color: #c18426;
+}
+
+.Modular li .Modular_color_span1 {
+	display: block;
+	line-height: 96px;
+	text-align: center;
+	font-size: 24px;
+	color: #24a086;
+}
+
+.Modular li .Modular_color_span2 {
+	display: block;
+	line-height: 96px;
+	text-align: center;
+	font-size: 24px;
+	color: #526897;
+}
+
+.comment {
+	color: #dddb54;
+	font-size: 14px;
+	text-align: center;
+	height: 24px;
+	line-height: 24px;
+	margin-bottom: 30px;
+}
+
+
+/*图书*/
+.books {
+	margin-bottom: 20px;
+}
+
+.books_img {
+	margin-right: 20px;
+}
+
+.books_word {
+	margin-top: 50px;
+	line-height: 35px;
+	color: #ffffff;
+	font-size: 15px;
+}
+
+
+/* 图像 */
+.character {
+	padding-left: 5%;
+	margin-bottom: 20px;
+}
+
+.character img {
+	margin-bottom: 20px;
+	padding-left: 7%;
+}
+
+.information {
+	width: 70%;
+	color: #FFFFFF;
+	font-size: 14px;
+	border: 1px solid rgba(255,255,255,.2);
+	border-bottom: none;
+}
+
+.information p {
+	line-height: 45px;
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	padding-left: 20px;
+}
+
+.tag_value {
+	color: #FFFFFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.tag_value caption {
+	line-height: 30px;
+	text-align: left;
+	color: #03fcdb;
+	font-size: 16px;
+}
+
+.numb {
+	width: 5%;
+	text-align: center;
+}
+
+.underline tbody>tr>td {
+	border-bottom: 1px dashed rgba(255,255,255,.2);
+}
+
+.hair {
+	text-align: center;
+	width: 5%;
+}
+
+.hxsj {
+	color: #03fcdb;
+	margin-top: 35px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 15px;
+}
+

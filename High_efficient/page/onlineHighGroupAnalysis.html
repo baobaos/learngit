@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>高校大学生数据分析系统</title>
+<!--整体前台框架css文件-->
+<link href="../css/pc/cores/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/cores.css" rel="stylesheet" type="text/css">
+<!--时间插件css文件-->
+<link media="all" href="../css/pc/cores/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+<!--提示框css文件-->
+<link href="../css/pc/cores/alert.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main">	
+	<!-- 学生消费能力分析开始 -->
+<div class="subnav">
+	当前位置：<a href="#">首页</a> &gt; 上网行为分析 &gt; 学生熬夜上网分析
+</div>
+<div class="tabbox">	
+	<div class="tabcontent">
+		<div class="tabcontextbox tc1" style="display:block">		
+			<div class="row">
+				<div class="box" style="min-height:508px">
+					<div class="title">			
+						学生熬夜上网分析
+					</div>
+					<div class="search row" style="margin:15px 0 0 15px;">
+						<div class="col-md-3">
+						<div class="form-group">		               
+			                <div class="input-group date form_date" data-date="" data-date-format="yyyy" data-link-field="dtp_input2" data-link-format="yyyy">
+			                    <input class="form-control" size="16" type="text" value="" readonly id="changes_ability_text">
+			                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+			                </div>
+							<input type="hidden" id="dtp_input2" value="" /><br/>
+			            </div>
+					</div>
+					<div class="col-md-2">
+						<button type="button" class="btn btn-success" id="changes_ability_search">搜索</button>
+					</div>
+				</div>
+				<div class="row">
+					<div id="supermarket_money" style="height:376px;overflow:hidden;margin-top:15px" class="col-md-6"></div>
+					<div id="supermarket_money1" style="height:376px;overflow:hidden;margin-top:15px" class="col-md-6">
+					</div>
+				</div>
+				</div>				
+			</div>
+		</div>			
+	</div>
+</div>
+<!--右侧内容结束-->
+<!--整体前台框架js文件-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="../js/pc/cores/html5shiv.js"></script>
+    <script src="../js/pc/cores/respond.min.js"></script>
+<![endif]-->
+<script src="../js/pc/cores/jquery-1.11.2.min.js"></script>
+<script src="../js/pc/cores/bootstrap.min.js"></script>
+<!--时间插件-->
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.zh-CN.js"></script>
+<!--echarts插件-->
+<script src="../js/pc/cores/echarts.min.js"></script>
+<!--选项卡插件-->
+<script src="../js/pc/cores/tab.js"></script>
+<!--提示框插件-->
+<script src="../js/pc/cores/Alert.js"></script>
+<script>
+	
+	/*获取服务器数据*/
+	var result='{"SixTimePro":0.09,"FiveTimePro":0.10,"ForthTimePro":0.13,"onlineGroupStuMap":{"TwoTimeStuCount":208,"FiveTimeStuCount":98,"onlineData":"2016-12","ThreeTimeStuCount":131,"sumCount":996,"SixTimeStuCount":94,"ForthTimeStuCount":115,"oneTimeStuCount":350},"TwoTimePro":0.21,"ThreeTimePro":0.13,"oneTimePro":0.35}';
+	result=JSON.parse(result);	
+</script>
+<!-- echarts封装模板 -->
+<script src="../js/pc/cores/echarts_Template.js"></script>
+<script src="../js/pc/cores/onlineHighGroupAnalysis.js"></script>
+<!-- 学生消费内容分析结束 -->
+</div>
+</body>
+</html>

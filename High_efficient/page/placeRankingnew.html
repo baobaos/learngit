@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>高校大学生数据分析系统</title>
+<!--整体前台框架css文件-->
+<link href="../css/pc/cores/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/cores.css" rel="stylesheet" type="text/css">
+<!--时间插件css文件-->
+<link media="all" href="../css/pc/cores/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+<!--提示框css文件-->
+<link href="../css/pc/cores/alert.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main">
+	<!-- 学生消费能力分析开始 -->
+	<div class="subnav">
+	当前位置：
+		<a href="#">首页</a> &gt; 学生消费行为分析 &gt; 消费地点排名
+	</div>
+	<div class="tabbox">
+		<div class="tab">
+			<a href="#" class="active">聚餐消费排名</a>
+			<a href="#">食堂消费排名</a>
+		</div>
+		<div class="clear">
+		</div>
+		<div class="tabcontent">
+			<div class="tabcontextbox tc1" style="display:block">
+				<div class="box">
+					<div class="layout">
+						<div class="search row">
+							<div class="col-md-3">
+								<div class="form-group">
+									<div class="input-group date form_date" data-date="" data-date-format="yyyy" data-link-field="dtp_input2" data-link-format="yyyy">
+										<input class="form-control" size="16" type="text" value="" readonly id="supermarketRanking_text">
+										<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+										<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+									<input type="hidden" id="dtp_input2" value=""/><br/>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<button type="button" class="btn btn-success" id="supermarketRanking_search">搜索</button>
+							</div>
+						</div>
+						<div class="message_box">
+							<div class="col-md-3">
+								<div class="message_layout">
+									<div class="message_layout_title t1">
+										消费地点
+									</div>
+									<div class="message_layout_content">
+										0
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="message_layout">
+									<div class="message_layout_title t2">
+										消费总金额
+									</div>
+									<div class="message_layout_content">
+										0元
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="message_layout">
+									<div class="message_layout_title t3">
+										消费总次数
+									</div>
+									<div class="message_layout_content">
+										0次
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="message_layout">
+									<div class="message_layout_title t4">
+										消费平均金额
+									</div>
+									<div class="message_layout_content">
+										0元
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+						</div>
+						<div id="supermarketRanking" style="height:300px;overflow:hidden;margin-top:15px">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="box col-md-6">
+						<div class="title">
+						消费总金额占比
+						</div>
+						<div id="supermarket_money" style="height:300px;overflow:hidden;margin-top:15px">
+						</div>
+					</div>
+					<div class="box col-md-6 fr">
+						<div class="title">
+						消费总次数占比
+						</div>
+						<div id="supermarket_count" style="height:300px;overflow:hidden;margin-top:15px">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tabcontextbox tc2">
+				<div class="box">
+					<div class="layout">
+						<div class="search row">
+							<div class="col-md-3">
+								<div class="form-group">
+									<div class="input-group date form_date" data-date="" data-date-format="yyyy" data-link-field="dtp_input2" data-link-format="yyyy">
+										<input class="form-control" size="16" type="text" value="" readonly id="mess_text">
+										<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+										<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+									<input type="hidden" id="dtp_input2" value=""/><br/>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<button type="button" class="btn btn-success" id="mess_search">搜索</button>
+							</div>
+						</div>
+						<div class="message_box">
+							<div class="col-md-3">
+								<div class="message_layout">
+									<div class="message_layout_title t1">
+										消费地点
+									</div>
+									<div class="message_layout_content">
+										0
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="message_layout">
+									<div class="message_layout_title t2">
+										消费总金额
+									</div>
+									<div class="message_layout_content">
+										0元
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="message_layout">
+									<div class="message_layout_title t3">
+										消费总次数
+									</div>
+									<div class="message_layout_content">
+										0次
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="message_layout">
+									<div class="message_layout_title t4">
+										消费平均金额
+									</div>
+									<div class="message_layout_content">
+										0元
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">
+						</div>
+						<div id="mess" style="height:300px;overflow:hidden;margin-top:15px">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="box col-md-6">
+						<div class="title">
+						消费总金额占比
+						</div>
+						<div id="mess_money" style="height:300px;overflow:hidden;margin-top:15px">
+						</div>
+					</div>
+					<div class="box col-md-6 fr">
+						<div class="title">
+						消费总次数占比
+						</div>
+						<div id="mess_count" style="height:300px;overflow:hidden;margin-top:15px">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--右侧内容结束-->
+<!--整体前台框架js文件-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="../js/pc/cores/html5shiv.js"></script>
+<script src="../js/pc/cores/respond.min.js"></script>
+<![endif]-->
+<script src="../js/pc/cores/jquery-1.11.2.min.js"></script>
+<!-- cookie 文件-->
+<script src="../js/pc/cores/bootstrap.min.js"></script>
+<!--时间插件-->
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.zh-CN.js"></script>
+<!--echarts插件-->
+<script src="../js/pc/cores/echarts.min.js"></script>
+<!--选项卡插件-->
+<script src="../js/pc/cores/tab.js"></script>
+<!--提示框插件-->
+<script src="../js/pc/cores/Alert.js"></script>
+<script>
+	/*获取服务器数据*/
+	var result='{"searchYear":"null","supermktPlaceList":[{"consumeCount":16.00,"month":"12","addressCode":17,"year":"2017","totalConsumeMoney":6089.36,"pointCount":"盛海饭庄"},{"consumeCount":23.00,"month":"12","addressCode":18,"year":"2017","totalConsumeMoney":1200.00,"pointCount":"重庆麻辣烫"},{"consumeCount":21.00,"month":"12","addressCode":10,"year":"2017","totalConsumeMoney":835.92,"pointCount":"火宴山"},{"consumeCount":19.00,"month":"12","addressCode":14,"year":"2017","totalConsumeMoney":824.28,"pointCount":"酸菜鱼"},{"consumeCount":32.00,"month":"12","addressCode":2,"year":"2017","totalConsumeMoney":370.08,"pointCount":"玛莎音乐餐吧"},{"consumeCount":5.00,"month":"12","addressCode":7,"year":"2017","totalConsumeMoney":75.33,"pointCount":"鱼鲜人家"},{"consumeCount":2.00,"month":"12","addressCode":3,"year":"2017","totalConsumeMoney":87.75,"pointCount":"KFC"},{"consumeCount":2.00,"month":"12","addressCode":4,"year":"2017","totalConsumeMoney":89.96,"pointCount":"重庆鸡公煲"}],"supermktMoneyPercent":"37.48","messMoneyPercent":"56.00","messPlaceList":[{"consumeCount":175.00,"month":"12","addressCode":16,"year":"2017","totalConsumeMoney":4380.12,"pointCount":"美食城2楼"},{"consumeCount":84.00,"month":"12","addressCode":9,"year":"2017","totalConsumeMoney":3042.18,"pointCount":"接待餐厅"},{"consumeCount":76.00,"month":"12","addressCode":12,"year":"2017","totalConsumeMoney":2723.46,"pointCount":"美食广场2楼"},{"consumeCount":68.00,"month":"12","addressCode":13,"year":"2017","totalConsumeMoney":2129.81,"pointCount":"美食城4楼"},{"consumeCount":40.00,"month":"12","addressCode":1,"year":"2017","totalConsumeMoney":1127.94,"pointCount":"美食城1楼"},{"consumeCount":23.00,"month":"12","addressCode":15,"year":"2017","totalConsumeMoney":705.48,"pointCount":"美食城3楼"},{"consumeCount":6.00,"month":"12","addressCode":6,"year":"2017","totalConsumeMoney":80.53,"pointCount":"美食广场1楼"}],"messCountPercent":"58.56","supermktCountPercent":"34.74"}';
+	result=JSON.parse(result);	
+	</script>
+<!-- echarts封装模板 -->
+<script src="../js/pc/cores/echarts_Template.js"></script>
+<script src="../js/pc/cores/placeRankingList.js"></script>
+<!-- 学生消费内容分析结束 -->
+</body>
+</html>

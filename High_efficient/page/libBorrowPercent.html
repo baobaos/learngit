@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>高校大学生数据分析系统</title>
+<!--整体前台框架css文件-->
+<link href="../css/pc/cores/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/cores.css" rel="stylesheet" type="text/css">
+<!--时间插件css文件-->
+<link media="all" href="../css/pc/cores/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+<!--提示框css文件-->
+<link href="../css/pc/cores/alert.css" rel="stylesheet" type="text/css">
+<link href="../css/pc/cores/relation.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main">
+	<!-- 学生消费能力分析开始 -->
+	<div class="subnav">
+	当前位置：
+		<a href="#">首页</a> &gt; 图书馆行为分析 &gt; 图书馆借书学生占比
+	</div>
+	<div class="box_percent">
+		<!-- <div class="tabcontent"> -->
+		<!-- <div class="tabcontextbox tc1" style="display:block">	 -->
+		<div class="row">
+			<div class="box col-md-6">
+				<div class="title">
+						阅读男性占全校男性的比例
+				</div>
+				<div id="borrowMale_percent" style="height:300px;overflow:hidden;margin-top:15px">
+				</div>
+				<!-- mess_money -->
+			</div>
+			<div class="box col-md-6 fr">
+				<div class="title">
+						阅读女性占全校女性的比例
+				</div>
+				<div id="borrowFmale_percent" style="height:300px;overflow:hidden;margin-top:15px">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="box col-md-6">
+				<div class="title">
+						男女各占借阅总人数比例
+				</div>
+				<div id="read_count" class="col-md-6" style="height:300px;overflow:hidden;margin-top:15px">
+				</div>
+				<div id="read_proportion" class="col-md-6">
+					<div class="woman">
+						女性占比：
+						<span></span>%
+					</div>
+					<div class="man">
+						男性占比：
+						<span></span>%
+					</div>
+					<div id="read_graphical" style="height:30px;overflow:hidden;margin-top:5px">
+					</div>
+					<div id="read_graphical1" style="height:30px;overflow:hidden;margin-top:15px">
+					</div>
+				</div>
+			</div>
+			<div class="box col-md-6 fr">
+				<div class="title">
+						借阅人数占全效总人数的比例
+				</div>
+				<div id="all_percent" style="height:300px;overflow:hidden;margin-top:15px">
+				</div>
+			</div>
+		</div>
+		<!-- </div>			 -->
+		<!-- </div> -->
+	</div>
+</div>
+<!--右侧内容结束-->
+<!--整体前台框架js文件-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="../js/pc/cores/html5shiv.js"></script>
+<script src="../js/pc/cores/respond.min.js"></script>
+<![endif]-->
+<script src="../js/pc/cores/jquery-1.11.2.min.js"></script>
+<script src="../js/pc/cores/bootstrap.min.js"></script>
+<!--时间插件-->
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../js/pc/cores/bootstrap-datetimepicker.zh-CN.js"></script>
+<!--echarts插件-->
+<script src="../js/pc/cores/echarts.min.js"></script>
+<!--选项卡插件-->
+<script src="../js/pc/cores/tab.js"></script>
+<!--提示框插件-->
+<script src="../js/pc/cores/Alert.js"></script>
+<script>
+	/*获取服务器数据*/
+	var result='{"allFemale":38,"borrowFemale":8,"fourResult":"13.33","threeResult":"86.67","fiveResult":"57.14","twoResult":"21.05","oneResult":"77.61","allMale":67,"borrowMale":52}';
+	result=JSON.parse(result);	
+	</script>
+<!-- echarts封装模板 -->
+<script src="../js/pc/cores/echarts_Template.js"></script>
+<script src="../js/pc/cores/libBorrowPercent.js"></script>
+<!-- 学生消费内容分析结束 -->
+</body>
+</html>

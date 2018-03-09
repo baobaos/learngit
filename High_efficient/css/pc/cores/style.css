@@ -1,0 +1,13 @@
+
+/*dome演示js*/
+
+
+
+/*控制td标签和th标签文字居中*/
+.table td,.table th { min-width: 90pt;text-align: center;}
+/*内容*/
+.content_box{border:1px solid #dbdbdb;margin:20px}
+/*溢出隐藏*/
+.overflow{overflow:auto;width:100%}
+/*居中对其*/
+.text_center{text-align: center;}
